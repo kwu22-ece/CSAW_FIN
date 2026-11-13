@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\rtl\\fir_audio_top.v": "2c868b30d4140f40dc5cb419bbd611d9c848aa6578d902ab509b6c4e666518e4",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\constraints\\hackster.pcf": "5bb849ea0d64b98c891ea8a7f474c61a34c9ecd1d4f7d0584bb97169c1a79fe3"
+  },
+  "configuration": {
+    "sources": [
+      "rtl/fir_audio_top.v"
+    ],
+    "top": "fir_audio_top",
+    "device": "up5k",
+    "package": "sg48",
+    "pcf": "constraints/hackster.pcf",
+    "frequency_mhz": 10,
+    "seed": 1,
+    "timeout_seconds": 300
+  }
+}

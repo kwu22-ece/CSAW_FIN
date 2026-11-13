@@ -1,0 +1,290 @@
+{
+  "source_commit": "9e172a865a543b03e226596689fd6691ffa2b779",
+  "entries": 35,
+  "content_mismatch_count": 3,
+  "results": [
+    {
+      "path": "experiments/phase05/05b-astra/rtl/fir_audio_top.v",
+      "claimed_sha256": "2c868b30d4140f40dc5cb419bbd611d9c848aa6578d902ab509b6c4e666518e4",
+      "selected_git_blob_sha256": "683fb8dda4c1105d2c0cf74caeefbb732890d8e5a390558c3c18dc99927f67d9",
+      "matching_encodings": []
+    },
+    {
+      "path": "experiments/phase05/05b-astra/rtl/phase4_dut.sv",
+      "claimed_sha256": "1d53da1d936deea3e491c1f35e38d48ff4f9408b80311badb1d7a898b9eed28c",
+      "selected_git_blob_sha256": "7e2193b2a7e507ff91b9f383931c02a70e36c43576ef988a9f00774564d13c6e",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/rtl/baseline/fir_audio_top.v",
+      "claimed_sha256": "3f7da4476296bc02bfee2d973e3c206a9bde7a661b7d68aa0c3bf779cf66b7d1",
+      "selected_git_blob_sha256": "4032e73d2e7e199f1ac1f2fb2756cc263bcb89e553dc1d8b47f9f9f26b5cfbb7",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/audit_results.py",
+      "claimed_sha256": "a4408ab5ac8f8cf7d4990ad045454bffd9f6091df6fd96b49da537cfbff21a78",
+      "selected_git_blob_sha256": "b608ef7efb9e58f5efd01bcd17580797bacf93826267284b3ab2e9131761f3f1",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/BASELINE_PROVENANCE.md",
+      "claimed_sha256": "23213b12b0c92fbab9372ede458380f570a44c517ceb7334eaad5d36619de228",
+      "selected_git_blob_sha256": "f4aba11088ed74dc8e2aa6f33d617cf6bf2b9550e252f482ec71dd07320eec2a",
+      "matching_encodings": []
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/candidate_reference.py",
+      "claimed_sha256": "f63f386044529c1e2bed8db12b73dfd10e9c1596e3576fb6f99fb1c31ca6e298",
+      "selected_git_blob_sha256": "f63f386044529c1e2bed8db12b73dfd10e9c1596e3576fb6f99fb1c31ca6e298",
+      "matching_encodings": [
+        "git_blob",
+        "lf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/prepare_vectors.py",
+      "claimed_sha256": "0214f9ae31b0e164eb163f9f5922a04581cf5e50c6b8a1abb3a0ffd081ad5443",
+      "selected_git_blob_sha256": "b4977dad1522527c4dbe8f7f969f81cae8d80609453a49f15eb2de84ad7c0ebe",
+      "matching_encodings": []
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/reference/coeffs.json",
+      "claimed_sha256": "b7e9fad6e3905f7c22f0a4431ccb3bdb058dce36d9b24afd2e2a9d2a6cf057ca",
+      "selected_git_blob_sha256": "df96da4908b805fad255d55b64ba2cc31f34b74afa884beaffbd01a90a6ca0e4",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/reference/README.md",
+      "claimed_sha256": "bfc2942de13e567469dcb88024ee775f85718d979ea578f865f192305ba7f532",
+      "selected_git_blob_sha256": "bfc2942de13e567469dcb88024ee775f85718d979ea578f865f192305ba7f532",
+      "matching_encodings": [
+        "git_blob",
+        "lf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/reference/run_reference.py",
+      "claimed_sha256": "fe9bfdf1a2778541c2d2cf31dc6bd408319d518a9edb5482fa453d3e7c91a891",
+      "selected_git_blob_sha256": "fe9bfdf1a2778541c2d2cf31dc6bd408319d518a9edb5482fa453d3e7c91a891",
+      "matching_encodings": [
+        "git_blob",
+        "lf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/reference/__init__.py",
+      "claimed_sha256": "c820d672a1a2279a9acae9c4fbd9cbcf8381edb6d848911853d3d55791cd7b0a",
+      "selected_git_blob_sha256": "c820d672a1a2279a9acae9c4fbd9cbcf8381edb6d848911853d3d55791cd7b0a",
+      "matching_encodings": [
+        "git_blob",
+        "lf",
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/boundary_stress.csv",
+      "claimed_sha256": "4b4cb57847246e50b1827c64069160ae59244db75a600f2a733d4c6ea8adee84",
+      "selected_git_blob_sha256": "65bea674f846bc1cfceee05e6cffa25546145c3c3049dca13645a3b708fecd2f",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/boundary_stress.expected.csv",
+      "claimed_sha256": "3eff64df2b9af75d72346944b2cb3821ff48af7c1e0036c81e54a32be7e0f982",
+      "selected_git_blob_sha256": "9a10c84ae87ffc23e233c9996743eef6668f2a81431ca2a52dcbb1311583b23b",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/canonical_golden.csv",
+      "claimed_sha256": "4ab5e214833e5fb56ac39a1b0c9e1a1b7ff125b1df57e6154b5283269ec1cdfe",
+      "selected_git_blob_sha256": "709a57754bf88164de8cef7bfa61a9ca4bcf7cf98658c55070714681fb4ffae5",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/near_miss_negative.csv",
+      "claimed_sha256": "d9bd7b06c972cb8cc73263f5ff59720b147179242dcb2a52a0aeb62bb6e74a7f",
+      "selected_git_blob_sha256": "372be9381efdf6de8980b07a179bf5f29ebdcce975f20fb77ccb5146bc6d6b72",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/near_miss_negative.expected.csv",
+      "claimed_sha256": "582124b3e2af4b78eaa259586812f5d4855fbaa331792d8ccb963adf1d957f17",
+      "selected_git_blob_sha256": "026912c023047f1a45054afe8c9842fef885047125f39102181149360e2cbf6a",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/noisy_audio_1024.csv",
+      "claimed_sha256": "964ef9e9fead75e73dd62d5924cbe0b68f9fed26242f19a2ff369a9a889ea6e0",
+      "selected_git_blob_sha256": "f4557c2aa594b3a0c9134549338aef7bb2168bde3ca39ade2c7616984310a87e",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/noisy_audio_1024.expected.csv",
+      "claimed_sha256": "ba337edbcb675c75f25b954317089cf27d1264b943379417c098f14a6ec703d6",
+      "selected_git_blob_sha256": "2840921922679f6ef8c7aceba70b0f368678321c272dc03a4ef7a386ee8e7331",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/random_negative.csv",
+      "claimed_sha256": "c433acd030e31671b27a6e94bf2c371b80c48baee670bb6a8fcad5cc3b0019a4",
+      "selected_git_blob_sha256": "c0c0b86094047073afa656bfbe804226f0d3b8aac0f6290b08bd930e37e01d26",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/random_negative.expected.csv",
+      "claimed_sha256": "d1940d92c197545dcb4ff19e30508b0fad86015410d955ab10e7c22a170a1942",
+      "selected_git_blob_sha256": "a30fed8f4cdc574f915d0ea105285d6e8a06b0e4b2388b3ab4737ffb94dcd4c5",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/reference_io.csv",
+      "claimed_sha256": "f1a5d1c031090d856b581835b74b44702258721a6ebe441914ced31691945ef5",
+      "selected_git_blob_sha256": "c42f46b2df0111b8ffd0c713e6e0ab6823e589d69f70fc9ffdfb3e2bff476249",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/reference_io.generic.csv",
+      "claimed_sha256": "bedfcf49619f4d069de44ec1147190a2fc3259fb5cfcf5dd1942c7e6042bf50f",
+      "selected_git_blob_sha256": "6876c136eb3549d79631f790b106360b7d6ef59777a76342f8fda7e1946bad70",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/reference_io.in.csv",
+      "claimed_sha256": "2a3a8b882b202d1f27e0b5ef335a6eaad5fd61ca20ab3a355642611d4284f1cb",
+      "selected_git_blob_sha256": "c3f575123c1d2c8038b2eda6d36f4187de9ed61ebb570203ffd360416ea1e72b",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/retrigger_1mhz.csv",
+      "claimed_sha256": "f4e71d5b620b79046513cc0b0bb6ba6377caeee4cd7d65ecac0ee2a0c18740ce",
+      "selected_git_blob_sha256": "45ca06135be81e7268afcec6df8c9d70c9dd9efb082ac331eeaa9e4d16772b54",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/split_sequence_negative.csv",
+      "claimed_sha256": "cfc1a4f710c20874fed4a0970fb994ed757d85eb2ecb29f93c6031eba8880e2e",
+      "selected_git_blob_sha256": "ed11a79ff6514417181391c6d30aed98e4290e3ad8201ab1f3348ee69413663b",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/split_sequence_negative.expected.csv",
+      "claimed_sha256": "ce0ebce3a50e1c09066313d2c3972fb38f98d1e95497fb1ee7836bfa93584012",
+      "selected_git_blob_sha256": "f563ca0021cd89c96914344b2085603ac5412493f4f40f0195da9b90475504cf",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/startup_edges.csv",
+      "claimed_sha256": "3d1f5a9d2ebd92a36c54c12540183a13afc08807a9ca5580afa398238ffa6f2a",
+      "selected_git_blob_sha256": "d934443832efe6cbd40175a3525b60ed0c870aa46f59097e35055113734bad26",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/startup_edges.expected.csv",
+      "claimed_sha256": "f68f4386ad063db7b08dc91e4a5e43098aeda1fd5fbb3636014465e82ce2103a",
+      "selected_git_blob_sha256": "39298f09afca42f9a0755ebb25267e535ae852e14a02239fa0a60c08966335d8",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/trigger_1mhz.csv",
+      "claimed_sha256": "c3879761043c8f8b5638c59cdb229e7c3d1f814e88b1d25582117d98ad8cbb1e",
+      "selected_git_blob_sha256": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/vectors/trigger_625khz.csv",
+      "claimed_sha256": "c3879761043c8f8b5638c59cdb229e7c3d1f814e88b1d25582117d98ad8cbb1e",
+      "selected_git_blob_sha256": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+      "matching_encodings": [
+        "crlf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/constraints/hackster.pcf",
+      "claimed_sha256": "5bb849ea0d64b98c891ea8a7f474c61a34c9ecd1d4f7d0584bb97169c1a79fe3",
+      "selected_git_blob_sha256": "5bb849ea0d64b98c891ea8a7f474c61a34c9ecd1d4f7d0584bb97169c1a79fe3",
+      "matching_encodings": [
+        "git_blob",
+        "lf"
+      ]
+    },
+    {
+      "path": "what_a_piece_of_work-noisy.wav",
+      "claimed_sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+      "selected_git_blob_sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+      "matching_encodings": [
+        "git_blob"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/prepare_full_audio.py",
+      "claimed_sha256": "503ca62cf7e9defd838250cd3147ae22a28a26a275a34a49ca4d296e52b62e84",
+      "selected_git_blob_sha256": "503ca62cf7e9defd838250cd3147ae22a28a26a275a34a49ca4d296e52b62e84",
+      "matching_encodings": [
+        "git_blob",
+        "lf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/full_audio_manifest.json",
+      "claimed_sha256": "f7b108e86460133c609d465da91914be04e0932f40dc58fba73c45d05a30d559",
+      "selected_git_blob_sha256": "f7b108e86460133c609d465da91914be04e0932f40dc58fba73c45d05a30d559",
+      "matching_encodings": [
+        "git_blob",
+        "lf"
+      ]
+    },
+    {
+      "path": "experiments/phase05/05b-astra/tests/audit_full_audio.py",
+      "claimed_sha256": "57f0e612c5343c997c7b03e447fb327613266ef1d09737d045cb80341248b554",
+      "selected_git_blob_sha256": "57f0e612c5343c997c7b03e447fb327613266ef1d09737d045cb80341248b554",
+      "matching_encodings": [
+        "git_blob",
+        "lf"
+      ]
+    }
+  ]
+}

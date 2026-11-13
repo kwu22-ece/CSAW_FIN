@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "phase": "05S",
+  "status": "provisional_selection",
+  "evaluation_date_local": "2026-11-13",
+  "winner": {
+    "candidate_id": "05B",
+    "immutable_package_commit_sha": "9e172a865a543b03e226596689fd6691ffa2b779",
+    "unchanged_rtl_origin_commit_sha": "15a8a6525e225ad82d931b3bc75399f744638b2e"
+  },
+  "common_baseline_commit_sha": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+  "ranking": [
+    {"rank": 1, "candidate_id": "05B", "snapshot_sha": "9e172a865a543b03e226596689fd6691ffa2b779", "role": "primary"},
+    {"rank": 2, "candidate_id": "05C", "snapshot_sha": "f4e8eedcb55d73f5f3adc97431a4a1a3a9c65c87", "role": "backup"},
+    {"rank": 3, "candidate_id": "05D", "snapshot_sha": "629c7d4a1dd158ff1b6585e0e84e9aff74f8810f", "role": "independent DSP coverage"},
+    {"rank": 4, "candidate_id": "05A", "snapshot_sha": "99a3fdb6d1f87ffd75bcfa46d7adc94664d97b29", "role": "minimal-payload comparison"}
+  ],
+  "official_rubric": {
+    "source": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/main/finals/challenge_3/README.md",
+    "base_categories_max": {"creative_ai": 35, "trojan_quality": 25, "system_automation": 15, "documentation_reproducibility": 15, "hardware_demonstration": 10},
+    "note": "The category estimates below are evaluator judgments from submitted and fresh local evidence, not official judge scores. Creative AI is unscored because complete main-session prompt/response logs are not in these packages. No total is assigned."
+  },
+  "environment": {
+    "suite": "C:/Users/lowbr/oss-cad-suite",
+    "python": "C:/Users/lowbr/oss-cad-suite/lib/python3.exe",
+    "target": "iCE40-UP5K SG48",
+    "clock_constraint_mhz": 10,
+    "place_route_seed": 1,
+    "comparison": "signed 16-bit, exact, zero tolerance and zero latency adjustment",
+    "common_build": "direct fir_audio_top, same 9-pin Hackster PCF, 10 MHz, seed 1",
+    "common_simulation": "same recovered Phase 2 supplied vectors, 1 MHz and 625 kHz BCLK, RESET_CYCLES=64",
+    "restricted_process_observation": "Icarus returned Windows access violation 3221225477 inside the restricted process sandbox; the same archived sources passed using ordinary process execution as Phase 4 documents."
+  },
+  "common_build_metrics": {
+    "baseline": {"logic_cells": 3283, "fmax_mhz": 14.963339805603027, "bitstream_sha256": "a8dd48ed1a7c27bc8d921a79e2992efd5a18a57001ca5fd6d496fa85d8a466a4"},
+    "05A": {"logic_cells": 3336, "delta_logic_cells": 53, "fmax_mhz": 15.213521003723145, "dsp": 0, "ram": 0, "io": 9, "timing_met": true},
+    "05B": {"logic_cells": 3313, "delta_logic_cells": 30, "fmax_mhz": 15.48466968536377, "dsp": 0, "ram": 0, "io": 9, "timing_met": true, "bitstream_sha256": "7fff6e2d74e617354d0d06b4098758137f6f82f5e0ba2d362ec8ab39e5ac47bd"},
+    "05C": {"logic_cells": 3322, "delta_logic_cells": 39, "fmax_mhz": 15.143025398254395, "dsp": 0, "ram": 0, "io": 9, "timing_met": true},
+    "05D": {"logic_cells": 3652, "delta_logic_cells": 369, "fmax_mhz": 15.18326187133789, "dsp": 0, "ram": 0, "io": 9, "timing_met": true}
+  },
+  "candidate_results": {
+    "05A": {
+      "baseline_control": "7/7 simulations and FPGA build passed on fresh rerun",
+      "own_regression": "7/7 simulations and FPGA build passed; 15/15 framework tests passed on isolated retry after one transient FST failure",
+      "common_vectors": "2/2 passed; 1032 output words; zero error",
+      "controlled_activation": {"case": "activation", "compared_words": 130, "changed_left_words": 55, "changed_right_words": 0, "first_changed_word": 20, "payload": "left output LSB xor 1"},
+      "native_build": {"logic_cells": 3360, "fmax_mhz": 14.792680740356445},
+      "gate_results": {"sources_dependencies": "pass", "baseline_simulation": "pass", "tests_executed": "pass", "reproducible": "pass", "synthesis": "pass", "resource_timing": "pass", "ai_provenance": "incomplete", "physical": "not_run"},
+      "rubric_estimate": {"creative_ai": null, "trojan_quality": 15, "system_automation": 6, "documentation_reproducibility": 9, "hardware_demonstration": 0},
+      "issues": ["Full prompt/response transcript absent", "The one-bit corruption is a moderate payload", "Manifest lists milestone commit c1bc85b3a9827b783510ec2ae9f288ded5b44100; package tip is a documentation-only successor", "Manifest hash inventory has missing or nonmatching entries"]
+    },
+    "05B": {
+      "baseline_control": "7/7 no-trigger standard cases; zero errors over 22248 words",
+      "own_regression": "10/10 simulations and FPGA build passed; 15/15 framework tests passed",
+      "full_audio": {"source_frames": 240000, "segments": 4, "compared_words": 481082, "baseline_mismatches": 0, "trigger_hits": 0, "reset_isolated_with_overlap": true},
+      "common_vectors": "2/2 passed; 1032 output words; zero error",
+      "controlled_activation": {"case": "activation-1mhz", "compared_words": 1000, "changed_left_words": 128, "changed_right_words": 0, "first_changed_word": 42, "successful_trigger_events_across_suite": 4, "bypass_frames_per_event": 128},
+      "post_bypass_boundary_issue": {
+        "status": "user_reported_not_independently_reproduced_in_phase_05s",
+        "behavior": "The detector ignores the first input sample after bypass ends. A new trigger sequence beginning on that sample is missed; beginning one sample later works.",
+        "coverage_gap": "The existing retrigger-2x case does not start its second trigger at the first post-bypass sample.",
+        "recommended_check": "Add directed sequences beginning at the first and second post-bypass samples, compare activation count and 128-frame bypass windows to a corrected reference, then rerun full regression and synthesis."
+      },
+      "native_build": {"logic_cells": 3313, "fmax_mhz": 15.48466968536377},
+      "gate_results": {"sources_dependencies": "pass", "baseline_simulation": "pass", "tests_executed": "pass", "reproducible_from_frozen_sha": "pass", "submitted_receipt_match": "fail", "synthesis": "pass", "resource_timing": "pass", "ai_provenance": "incomplete", "physical": "not_run"},
+      "rubric_estimate": {"creative_ai": null, "trojan_quality": 20, "system_automation": 9, "documentation_reproducibility": 9, "hardware_demonstration": 0},
+      "issues": ["User-reported retrigger boundary defect: first input sample after bypass is ignored; a trigger starting there is missed", "Full prompt/response transcript absent; session-record.md is a summary", "Submitted validation-run-7 reports a different RTL input hash, 3662 logic cells and bitstream 49e24471..., while the frozen commit freshly builds at 3313 logic cells and bitstream 7fff6e2d...", "Fresh validate and fresh common build both produced identical 7fff6e2d... bitstreams; the earlier submitted receipt is excluded", "Manifest does not carry an exact package commit SHA; STATUS.md identifies the earlier RTL origin commit"]
+    },
+    "05C": {
+      "baseline_control": "8/8 inactive equivalence simulations and FPGA build passed",
+      "own_regression": "3/3 active and 5/5 near-miss simulations passed",
+      "common_vectors": "2/2 passed; 1032 output words; zero error",
+      "controlled_activation": {"case": "active-arm-tone", "compared_words": 276, "changed_left_words": 127, "changed_right_words": 0, "first_changed_word": 22, "payload": "sticky FIR bypass"},
+      "native_build": {"logic_cells": 3292, "fmax_mhz": 14.835914611816406},
+      "gate_results": {"sources_dependencies": "pass_after_regenerating_untracked_phase2_inputs_and_absolute_manifests", "baseline_simulation": "pass", "tests_executed": "pass", "reproducible": "pass_after_preparation", "synthesis": "pass", "resource_timing": "pass", "ai_provenance": "incomplete", "physical": "not_run"},
+      "rubric_estimate": {"creative_ai": null, "trojan_quality": 20, "system_automation": 6, "documentation_reproducibility": 6, "hardware_demonstration": 0},
+      "issues": ["Right-slot trigger needs a custom host driver; supplied stream_audio.py duplicates mono left into right", "Committed run manifests contain absolute paths to an unavailable original worktree and untracked recovered inputs", "Full main-session prompt/response transcript absent", "Manifest identifies milestone commit db2e291cbb6e7e8f87d415da35c0e967a82d6e1e; package tip is a documentation-only successor"]
+    },
+    "05D": {
+      "baseline_control": "6/6 baseline simulations passed",
+      "own_regression": "10/10 untriggered simulations and FPGA build; 3/3 triggered simulations passed",
+      "common_vectors": "2/2 passed; 1032 output words; zero error",
+      "controlled_activation": {"case": "key-then-lowprobe", "compared_words": 3456, "changed_left_words": 925, "changed_right_words": 0, "first_changed_word": 1156, "payload": "coefficient-sign spectral inversion"},
+      "native_build": {"logic_cells": 3704, "fmax_mhz": 14.409013748168945},
+      "gate_results": {"sources_dependencies": "pass_for_hdl_checks", "baseline_simulation": "pass", "tests_executed": "pass", "reproducible": "pass", "synthesis": "pass", "resource_timing": "pass", "ai_provenance": "incomplete_main_session", "physical": "not_run"},
+      "rubric_estimate": {"creative_ai": null, "trojan_quality": 15, "system_automation": 6, "documentation_reproducibility": 9, "hardware_demonstration": 0},
+      "issues": ["Workflow subagent transcripts exist, but the main session that authored RTL lacks full prompt/response transcript", "Manifest candidate commit is described as HEAD rather than a literal SHA", "Manifest references reports/verification-report.md, absent from the immutable package", "Resource overhead is 369 logic cells under common build conditions"]
+    }
+  },
+  "evidence": {
+    "immutable_snapshot_method": "git archive of each exact package SHA into ignored .worktrees/05s-{a,b,c,d}; no candidate branch checkout was changed",
+    "fresh_report_sha256": {
+      "05A_candidate": "d2d7fc3683dca8b8d07f2a15f4252d4a89887a22e8c928cfceafcab2b2ddacfd",
+      "05A_baseline": "ac705e67a25072bdabf7f1e03e82c3e55aa9ce779f03718c0f9806d9d8894747",
+      "05B_candidate": "134618c086201496b808bfdff6a19a1d8991d939f170a073fd8df459372dd552",
+      "05B_full_audio": "78b65dcf70d4123a8f9a15d841aab8e3e9c2eea8da81f6154ff043346e208f75",
+      "05B_full_audio_audit": "6feb221df89587e644cb1b9b3a28b8a24046f29995484bfc91fa9627f9541cd1",
+      "05C_inactive": "892db8d1904b9804ff5577ea10f870c350ea8c57afcf69d0c5d86aa175227910",
+      "05C_directed": "ec1a4cfd8063de07e3d62062fa57d31577c954f0980a9db9b985e8ec64204acb",
+      "05D_baseline": "dac07b59dd53db0626449340149528b0d80de947db50f83104b0e49557f7abd8",
+      "05D_untriggered": "9b423d632500e186ac87829b0aa97fb1bf385726d908fd315b497f3662b6c315",
+      "05D_triggered": "ba5243157528fbe306aea434438e5dcc293c475808ed5b8c325ba9117b867f58"
+    },
+    "common_vectors_report_sha256": {"05A": "5d848c285eb418ecfa41ec150a1be3599efc8f678da8674feb70f07ea37be8ea", "05B": "f3656dcff7233ebc2b774fbb0040facbbf9df25583127a627187a2852de53df7", "05C": "65ab72fa2e20baffa1f025c29af3ce0c7814e99ef060d0819f5cc2ea62a5553b", "05D": "ae7e56ce3817bd50c4c30e9480fc37f70d88b356fb61c4b1ea7ce02b09f81e07"}
+  },
+  "selection_blockers": [
+    "No candidate has a physical-board normal-operation and exploit demonstration.",
+    "No package contains complete prompts and responses for the main AI session that authored its Trojan RTL; official submission provenance remains incomplete.",
+    "05B submitted source-hash and bitstream receipts do not match its selected immutable package, even though fresh tests and two fresh builds agree.",
+    "A user-reported 05B post-bypass boundary defect needs a focused reproducer and correction before reliability signoff."
+  ],
+  "recommended_quality_priorities": [
+    "Reproduce and fix the 05B boundary defect: a trigger beginning on the first input sample after bypass ends is missed, while one beginning a sample later works. Add both boundary cases and rerun standard/full-audio regressions and the FPGA build.",
+    "Recover and attach the full 05B Codex main-session prompt/response history with a source-to-prompt provenance map; verify competition transcript sufficiency.",
+    "Reissue 05B hashes, manifest metadata and all build receipts from immutable package SHA 9e172a865a543b03e226596689fd6691ffa2b779.",
+    "Program the Hackster and capture the official bit-identical baseline audio comparison, echo link check, exact-trigger bypass, timing/LED behavior, and host-side input/output artifacts.",
+    "Add a single reproducible host exploit command for 05B and package the technical brief and evidence without publishing sensitive artifacts.",
+    "Use 05C right-slot near-miss tests and 05D spectral/near-tone tests as independent coverage ideas without combining their implementations."
+  ],
+  "reproduction_commands": {
+    "snapshot": [
+      "git archive --format=tar --output=.worktrees/05s-b.tar 9e172a865a543b03e226596689fd6691ffa2b779",
+      "tar -xf .worktrees/05s-b.tar -C .worktrees/05s-b"
+    ],
+    "winner_from_snapshot_root": [
+      "& C:/Users/lowbr/oss-cad-suite/lib/python3.exe infrastructure/run.py --suite C:/Users/lowbr/oss-cad-suite validate --manifest experiments/phase05/05b-astra/manifest.json --output build/05s-validate-b-escalated",
+      "& C:/Users/lowbr/oss-cad-suite/lib/python3.exe experiments/phase05/05b-astra/tests/prepare_full_audio.py",
+      "& C:/Users/lowbr/oss-cad-suite/lib/python3.exe infrastructure/run.py --suite C:/Users/lowbr/oss-cad-suite sim --manifest experiments/phase05/05b-astra/tests/full_audio_manifest.json --output build/05s-full-audio",
+      "& C:/Users/lowbr/oss-cad-suite/lib/python3.exe experiments/phase05/05b-astra/tests/audit_full_audio.py --run build/05s-full-audio --summary experiments/phase05/05b-astra/reports/full-audio-vectors/source-summary.json --output build/05s-full-audio-audit.json"
+    ],
+    "all_candidates_and_common_settings": "See selection.md, Reproduction section. Use fresh output-directory names on every rerun."
+  },
+  "documentation_agent": {
+    "target": "Project Scribe (csaw-fin-scribe)",
+    "state_at_evaluation": "Prepared but model synthesis and Google publishing not activated",
+    "handoff_path": "handoffs/phase-05/selection.md",
+    "notification": "Record selection commit and local preview through Scribe's supported controller interface; no model or Google publication is implied."
+  }
+}

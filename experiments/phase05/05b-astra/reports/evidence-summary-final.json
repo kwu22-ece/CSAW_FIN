@@ -1,0 +1,234 @@
+{
+  "run_directory": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\final-validation-run",
+  "regression_report_passed": true,
+  "regression_cases": {
+    "passed": 11,
+    "failed": 0,
+    "blocked": 0
+  },
+  "framework_unit_test_summary": "Ran 15 tests in 1.753s",
+  "baseline_mismatch_count": 0,
+  "normal_cases": {
+    "phase3-golden": {
+      "status": "passed",
+      "samples_compared": 512,
+      "mismatch_count": 0
+    },
+    "noisy-audio-1024": {
+      "status": "passed",
+      "samples_compared": 2048,
+      "mismatch_count": 0
+    },
+    "startup-edges": {
+      "status": "passed",
+      "samples_compared": 272,
+      "mismatch_count": 0
+    },
+    "boundary-stress": {
+      "status": "passed",
+      "samples_compared": 1024,
+      "mismatch_count": 0
+    },
+    "random-negative": {
+      "status": "passed",
+      "samples_compared": 16384,
+      "mismatch_count": 0
+    },
+    "near-miss-negative": {
+      "status": "passed",
+      "samples_compared": 1000,
+      "mismatch_count": 0
+    },
+    "split-sequence-negative": {
+      "status": "passed",
+      "samples_compared": 1008,
+      "mismatch_count": 0
+    }
+  },
+  "negative_test_count": 7,
+  "negative_test_pass_count": 7,
+  "right_echo_mismatch_count": 0,
+  "startup_zero_frames_verified": 2,
+  "activation_events_tested": 4,
+  "activation_events_succeeded": 4,
+  "activation_success_rate": 1,
+  "activation_events": [
+    {
+      "case": "activation-1mhz",
+      "trigger_completion_input_frame": 19,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    },
+    {
+      "case": "activation-625khz",
+      "trigger_completion_input_frame": 19,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    },
+    {
+      "case": "retrigger-2x",
+      "trigger_completion_input_frame": 19,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    },
+    {
+      "case": "retrigger-2x",
+      "trigger_completion_input_frame": 177,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    }
+  ],
+  "raw_pass_through_mismatch_count": 0,
+  "payload_frequency_metrics": [
+    {
+      "case": "activation-1mhz",
+      "stable_tone_frames": 63,
+      "input_rms": 8532.817752281528,
+      "baseline_filtered_rms": 8.149398653440535,
+      "bypass_output_rms": 8532.817752281528,
+      "baseline_attenuation_db": -60.39933813348164,
+      "bypass_vs_input_max_abs_error": 0
+    },
+    {
+      "case": "activation-625khz",
+      "stable_tone_frames": 63,
+      "input_rms": 8532.817752281528,
+      "baseline_filtered_rms": 8.149398653440535,
+      "bypass_output_rms": 8532.817752281528,
+      "baseline_attenuation_db": -60.39933813348164,
+      "bypass_vs_input_max_abs_error": 0
+    },
+    {
+      "case": "retrigger-2x",
+      "stable_tone_frames": 63,
+      "input_rms": 8532.817752281528,
+      "baseline_filtered_rms": 8.149398653440535,
+      "bypass_output_rms": 8532.817752281528,
+      "baseline_attenuation_db": -60.39933813348164,
+      "bypass_vs_input_max_abs_error": 0
+    }
+  ],
+  "fpga_build": {
+    "passed": true,
+    "frequency_mhz": 10,
+    "fmax": {
+      "ICE_CLK$SB_IO_IN_$glb_clk": {
+        "achieved": 15.131569862365723,
+        "constraint": 10
+      }
+    },
+    "seed": 1,
+    "utilization": {
+      "ICESTORM_DSP": {
+        "available": 8,
+        "used": 0
+      },
+      "ICESTORM_HFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_LC": {
+        "available": 5280,
+        "used": 3662
+      },
+      "ICESTORM_LFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_PLL": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 30,
+        "used": 0
+      },
+      "ICESTORM_SPRAM": {
+        "available": 4,
+        "used": 0
+      },
+      "IO_I3C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_FILTER_50NS": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 3
+      },
+      "SB_I2C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_IO": {
+        "available": 39,
+        "used": 9
+      },
+      "SB_LEDDA_IP": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_RGBA_DRV": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_SPI": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "constrained_pins": true,
+    "hardware_validated": false,
+    "bitstream_sha256": "49e24471d676518619d57df5855c533b5eae166feef662cd47fd10d989efb02b"
+  },
+  "reproducibility": {
+    "repeated_run": true,
+    "run1_bitstream_sha256": "49e24471d676518619d57df5855c533b5eae166feef662cd47fd10d989efb02b",
+    "run2_bitstream_sha256": "49e24471d676518619d57df5855c533b5eae166feef662cd47fd10d989efb02b",
+    "bitstream_identical": true,
+    "input_contents_identical": true
+  },
+  "hardware_validation": "not run; no Hackster board attached to this environment",
+  "final_validation_snapshot": {
+    "head": "dbca7054b0f7610442a3f43463d4a9670b43b511",
+    "manifest_sha256": "7581f34c6839166c95849eefc5cecfc146fc82ccc0a3fcbf4f9233d4f06d3e2e",
+    "git_status": "",
+    "timestamp_utc": "2026-11-13T04:23:26.709280+00:00",
+    "report_sha256": "224e00a8d2dc9a44a3d936bd09dd51dfff8071ce8f082ca73caf6386029cc43e"
+  },
+  "full_audio_regression": {
+    "source_path": "what_a_piece_of_work-noisy.wav",
+    "source_sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+    "source_frames": 240000,
+    "sample_rate_hz": 16000,
+    "trigger_hit_count": 0,
+    "segment_count": 4,
+    "segments_passed": 4,
+    "segments_failed": 0,
+    "segments_blocked": 0,
+    "simulated_frames": 240541,
+    "compared_words": 481082,
+    "baseline_mismatch_count": 0,
+    "chunk_overlap_frames": 7,
+    "flush_frames_per_chunk": 130,
+    "repeat_simulation": false,
+    "audit_sha256": "c91572f8945f2773435bb44b893779995e2cfd73a7706208363cdde8f17039e3",
+    "run_report_sha256": "58797e3830c5eecd6212fcd209a11b3cb50374048c37a4d632a1b96b338ad573",
+    "hardware_validation": "not run; no physical board was available"
+  },
+  "combined_baseline_comparison_words": 503330,
+  "combined_report_cases_passed": 15,
+  "combined_report_cases_failed": 0,
+  "combined_report_cases_blocked": 0
+}

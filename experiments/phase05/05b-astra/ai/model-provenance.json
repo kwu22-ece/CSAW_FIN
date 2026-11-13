@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "agent": "Codex",
+  "model_label_from_user": "Astra",
+  "provider": "OpenAI",
+  "exact_runtime_model_id": "not exposed in this session",
+  "reasoning_effort": "maximum available, user requested",
+  "competition_specific_logic_ai_generated": true,
+  "official_specification": {
+    "url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/main/finals/challenge_3/README.md",
+    "blob_sha": "4159341c417f652fea45cd412d79cc52f0d9cad4"
+  },
+  "research_models": {
+    "repository": "https://github.com/KennethLei1492/prebuilt-ai-technique-models",
+    "commit": "996c6a3e77ea5ed3b5d406d081e09baf602071c1",
+    "consulted": ["Answer Verification", "Task Decomposition"],
+    "imported_code": false
+  },
+  "physical_hardware": "not available; no test claimed"
+}

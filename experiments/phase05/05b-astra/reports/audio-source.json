@@ -1,0 +1,10 @@
+{
+  "path": "what_a_piece_of_work-noisy.wav",
+  "sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+  "channels": 1,
+  "sample_rate_hz": 16000,
+  "sample_width_bytes": 2,
+  "frames_in_file": 240000,
+  "frames_used": 1024,
+  "selection": "first channel; no resampling or normalization"
+}

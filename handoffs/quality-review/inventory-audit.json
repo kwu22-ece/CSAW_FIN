@@ -1,0 +1,254 @@
+{
+  "passed": true,
+  "encoding": "SHA-256; listed text extensions normalize CRLF to LF; binary bytes unchanged",
+  "entries": 41,
+  "failures": 0,
+  "results": [
+    {
+      "path": "rtl/fir_audio_top.v",
+      "expected": "f27cc72fd2b231aa98fd7d0ee135de13b30d99e4491bc8be7379b6e94ef4b5ea",
+      "actual": "f27cc72fd2b231aa98fd7d0ee135de13b30d99e4491bc8be7379b6e94ef4b5ea",
+      "passed": true
+    },
+    {
+      "path": "rtl/phase4_dut.sv",
+      "expected": "7e2193b2a7e507ff91b9f383931c02a70e36c43576ef988a9f00774564d13c6e",
+      "actual": "7e2193b2a7e507ff91b9f383931c02a70e36c43576ef988a9f00774564d13c6e",
+      "passed": true
+    },
+    {
+      "path": "rtl/baseline/fir_audio_top.v",
+      "expected": "4032e73d2e7e199f1ac1f2fb2756cc263bcb89e553dc1d8b47f9f9f26b5cfbb7",
+      "actual": "4032e73d2e7e199f1ac1f2fb2756cc263bcb89e553dc1d8b47f9f9f26b5cfbb7",
+      "passed": true
+    },
+    {
+      "path": "tests/audit_results.py",
+      "expected": "b608ef7efb9e58f5efd01bcd17580797bacf93826267284b3ab2e9131761f3f1",
+      "actual": "b608ef7efb9e58f5efd01bcd17580797bacf93826267284b3ab2e9131761f3f1",
+      "passed": true
+    },
+    {
+      "path": "tests/BASELINE_PROVENANCE.md",
+      "expected": "f4aba11088ed74dc8e2aa6f33d617cf6bf2b9550e252f482ec71dd07320eec2a",
+      "actual": "f4aba11088ed74dc8e2aa6f33d617cf6bf2b9550e252f482ec71dd07320eec2a",
+      "passed": true
+    },
+    {
+      "path": "tests/candidate_reference.py",
+      "expected": "9f8176ca5c4df0496c1f3aa2d6d997099adfe72a66972af5cf7fd70c571a8c6d",
+      "actual": "9f8176ca5c4df0496c1f3aa2d6d997099adfe72a66972af5cf7fd70c571a8c6d",
+      "passed": true
+    },
+    {
+      "path": "tests/prepare_vectors.py",
+      "expected": "b4977dad1522527c4dbe8f7f969f81cae8d80609453a49f15eb2de84ad7c0ebe",
+      "actual": "b4977dad1522527c4dbe8f7f969f81cae8d80609453a49f15eb2de84ad7c0ebe",
+      "passed": true
+    },
+    {
+      "path": "tests/reference/coeffs.json",
+      "expected": "df96da4908b805fad255d55b64ba2cc31f34b74afa884beaffbd01a90a6ca0e4",
+      "actual": "df96da4908b805fad255d55b64ba2cc31f34b74afa884beaffbd01a90a6ca0e4",
+      "passed": true
+    },
+    {
+      "path": "tests/reference/README.md",
+      "expected": "bfc2942de13e567469dcb88024ee775f85718d979ea578f865f192305ba7f532",
+      "actual": "bfc2942de13e567469dcb88024ee775f85718d979ea578f865f192305ba7f532",
+      "passed": true
+    },
+    {
+      "path": "tests/reference/run_reference.py",
+      "expected": "fe9bfdf1a2778541c2d2cf31dc6bd408319d518a9edb5482fa453d3e7c91a891",
+      "actual": "fe9bfdf1a2778541c2d2cf31dc6bd408319d518a9edb5482fa453d3e7c91a891",
+      "passed": true
+    },
+    {
+      "path": "tests/reference/__init__.py",
+      "expected": "c820d672a1a2279a9acae9c4fbd9cbcf8381edb6d848911853d3d55791cd7b0a",
+      "actual": "c820d672a1a2279a9acae9c4fbd9cbcf8381edb6d848911853d3d55791cd7b0a",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/boundary_stress.csv",
+      "expected": "65bea674f846bc1cfceee05e6cffa25546145c3c3049dca13645a3b708fecd2f",
+      "actual": "65bea674f846bc1cfceee05e6cffa25546145c3c3049dca13645a3b708fecd2f",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/boundary_stress.expected.csv",
+      "expected": "9a10c84ae87ffc23e233c9996743eef6668f2a81431ca2a52dcbb1311583b23b",
+      "actual": "9a10c84ae87ffc23e233c9996743eef6668f2a81431ca2a52dcbb1311583b23b",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/canonical_golden.csv",
+      "expected": "709a57754bf88164de8cef7bfa61a9ca4bcf7cf98658c55070714681fb4ffae5",
+      "actual": "709a57754bf88164de8cef7bfa61a9ca4bcf7cf98658c55070714681fb4ffae5",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/near_miss_negative.csv",
+      "expected": "372be9381efdf6de8980b07a179bf5f29ebdcce975f20fb77ccb5146bc6d6b72",
+      "actual": "372be9381efdf6de8980b07a179bf5f29ebdcce975f20fb77ccb5146bc6d6b72",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/near_miss_negative.expected.csv",
+      "expected": "026912c023047f1a45054afe8c9842fef885047125f39102181149360e2cbf6a",
+      "actual": "026912c023047f1a45054afe8c9842fef885047125f39102181149360e2cbf6a",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/noisy_audio_1024.csv",
+      "expected": "f4557c2aa594b3a0c9134549338aef7bb2168bde3ca39ade2c7616984310a87e",
+      "actual": "f4557c2aa594b3a0c9134549338aef7bb2168bde3ca39ade2c7616984310a87e",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/noisy_audio_1024.expected.csv",
+      "expected": "2840921922679f6ef8c7aceba70b0f368678321c272dc03a4ef7a386ee8e7331",
+      "actual": "2840921922679f6ef8c7aceba70b0f368678321c272dc03a4ef7a386ee8e7331",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/random_negative.csv",
+      "expected": "c0c0b86094047073afa656bfbe804226f0d3b8aac0f6290b08bd930e37e01d26",
+      "actual": "c0c0b86094047073afa656bfbe804226f0d3b8aac0f6290b08bd930e37e01d26",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/random_negative.expected.csv",
+      "expected": "a30fed8f4cdc574f915d0ea105285d6e8a06b0e4b2388b3ab4737ffb94dcd4c5",
+      "actual": "a30fed8f4cdc574f915d0ea105285d6e8a06b0e4b2388b3ab4737ffb94dcd4c5",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/reference_io.csv",
+      "expected": "c42f46b2df0111b8ffd0c713e6e0ab6823e589d69f70fc9ffdfb3e2bff476249",
+      "actual": "c42f46b2df0111b8ffd0c713e6e0ab6823e589d69f70fc9ffdfb3e2bff476249",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/reference_io.generic.csv",
+      "expected": "6876c136eb3549d79631f790b106360b7d6ef59777a76342f8fda7e1946bad70",
+      "actual": "6876c136eb3549d79631f790b106360b7d6ef59777a76342f8fda7e1946bad70",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/reference_io.in.csv",
+      "expected": "c3f575123c1d2c8038b2eda6d36f4187de9ed61ebb570203ffd360416ea1e72b",
+      "actual": "c3f575123c1d2c8038b2eda6d36f4187de9ed61ebb570203ffd360416ea1e72b",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/retrigger_1mhz.csv",
+      "expected": "45ca06135be81e7268afcec6df8c9d70c9dd9efb082ac331eeaa9e4d16772b54",
+      "actual": "45ca06135be81e7268afcec6df8c9d70c9dd9efb082ac331eeaa9e4d16772b54",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/split_sequence_negative.csv",
+      "expected": "ed11a79ff6514417181391c6d30aed98e4290e3ad8201ab1f3348ee69413663b",
+      "actual": "ed11a79ff6514417181391c6d30aed98e4290e3ad8201ab1f3348ee69413663b",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/split_sequence_negative.expected.csv",
+      "expected": "f563ca0021cd89c96914344b2085603ac5412493f4f40f0195da9b90475504cf",
+      "actual": "f563ca0021cd89c96914344b2085603ac5412493f4f40f0195da9b90475504cf",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/startup_edges.csv",
+      "expected": "d934443832efe6cbd40175a3525b60ed0c870aa46f59097e35055113734bad26",
+      "actual": "d934443832efe6cbd40175a3525b60ed0c870aa46f59097e35055113734bad26",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/startup_edges.expected.csv",
+      "expected": "39298f09afca42f9a0755ebb25267e535ae852e14a02239fa0a60c08966335d8",
+      "actual": "39298f09afca42f9a0755ebb25267e535ae852e14a02239fa0a60c08966335d8",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/trigger_1mhz.csv",
+      "expected": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+      "actual": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+      "passed": true
+    },
+    {
+      "path": "tests/vectors/trigger_625khz.csv",
+      "expected": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+      "actual": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+      "passed": true
+    },
+    {
+      "path": "constraints/hackster.pcf",
+      "expected": "5bb849ea0d64b98c891ea8a7f474c61a34c9ecd1d4f7d0584bb97169c1a79fe3",
+      "actual": "5bb849ea0d64b98c891ea8a7f474c61a34c9ecd1d4f7d0584bb97169c1a79fe3",
+      "passed": true
+    },
+    {
+      "path": "../../../what_a_piece_of_work-noisy.wav",
+      "expected": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+      "actual": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+      "passed": true
+    },
+    {
+      "path": "tests/prepare_full_audio.py",
+      "expected": "503ca62cf7e9defd838250cd3147ae22a28a26a275a34a49ca4d296e52b62e84",
+      "actual": "503ca62cf7e9defd838250cd3147ae22a28a26a275a34a49ca4d296e52b62e84",
+      "passed": true
+    },
+    {
+      "path": "tests/full_audio_manifest.json",
+      "expected": "f7b108e86460133c609d465da91914be04e0932f40dc58fba73c45d05a30d559",
+      "actual": "f7b108e86460133c609d465da91914be04e0932f40dc58fba73c45d05a30d559",
+      "passed": true
+    },
+    {
+      "path": "tests/audit_full_audio.py",
+      "expected": "57f0e612c5343c997c7b03e447fb327613266ef1d09737d045cb80341248b554",
+      "actual": "57f0e612c5343c997c7b03e447fb327613266ef1d09737d045cb80341248b554",
+      "passed": true
+    },
+    {
+      "path": "../../quality/audit_directed.py",
+      "expected": "8dc23c1d193028d7487a038c3774b4b75f209e75277e80c08baf985dce607797",
+      "actual": "8dc23c1d193028d7487a038c3774b4b75f209e75277e80c08baf985dce607797",
+      "passed": true
+    },
+    {
+      "path": "../../quality/collect.py",
+      "expected": "1884a30178e68cba457ac370fd6c180ee75340d01b9a21e6098939ec9e6e318b",
+      "actual": "1884a30178e68cba457ac370fd6c180ee75340d01b9a21e6098939ec9e6e318b",
+      "passed": true
+    },
+    {
+      "path": "../../quality/prepare.py",
+      "expected": "54439fb172a09a3abfa1e9b717de071a739225465974b9599146728dc83ff30a",
+      "actual": "54439fb172a09a3abfa1e9b717de071a739225465974b9599146728dc83ff30a",
+      "passed": true
+    },
+    {
+      "path": "../../quality/preserve_transcripts.py",
+      "expected": "0b8eedaaa99358d8ba3e55625ef404610e263d917073125a12983a49dacb2347",
+      "actual": "0b8eedaaa99358d8ba3e55625ef404610e263d917073125a12983a49dacb2347",
+      "passed": true
+    },
+    {
+      "path": "../../quality/run.py",
+      "expected": "6186fb776fa9a6a5ecf280f7f961ad304816c4fca7a7c41b4cf44d1b4742da15",
+      "actual": "6186fb776fa9a6a5ecf280f7f961ad304816c4fca7a7c41b4cf44d1b4742da15",
+      "passed": true
+    },
+    {
+      "path": "../../quality/verify_inventory.py",
+      "expected": "47b9ad97814bce2f2a6540e30233e3170913eb11876dd2cac8c4980fa29d73a7",
+      "actual": "47b9ad97814bce2f2a6540e30233e3170913eb11876dd2cac8c4980fa29d73a7",
+      "passed": true
+    }
+  ]
+}

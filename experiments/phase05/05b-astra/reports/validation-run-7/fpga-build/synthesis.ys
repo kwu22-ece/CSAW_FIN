@@ -1,0 +1,5 @@
+read_verilog -sv "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05b-astra/experiments/phase05/05b-astra/rtl/fir_audio_top.v"
+hierarchy -check -top fir_audio_top
+synth_ice40 -top fir_audio_top -json netlist.json
+check -assert
+tee -o utilization.json stat -json

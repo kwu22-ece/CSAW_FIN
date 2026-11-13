@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="phase04" tests="11" failures="0" skipped="0"><testcase name="phase3-golden" /><testcase name="noisy-audio-1024" /><testcase name="startup-edges" /><testcase name="boundary-stress" /><testcase name="random-negative" /><testcase name="near-miss-negative" /><testcase name="split-sequence-negative" /><testcase name="activation-1mhz" /><testcase name="activation-625khz" /><testcase name="retrigger-2x" /><testcase name="fpga-build" /></testsuite>

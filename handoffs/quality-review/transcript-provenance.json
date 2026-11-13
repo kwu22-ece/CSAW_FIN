@@ -1,0 +1,505 @@
+{
+  "scope": "Private local snapshot; no external publication",
+  "completeness": "All available records copied at capture time; live session still open",
+  "entries": [
+    {
+      "source_filename": "rollout-2026-11-12T21-02-41-01a1d2a4-8c60-7bc0-ba32-0373f9709de7.jsonl",
+      "raw_sha256": "ad2e3426e23cca3dc23a051807118e8f02314a28ebcbfb893fe87d9934118a2a",
+      "raw_bytes": 5311611,
+      "interaction_sha256": "5028a872a64b1bcdfdce6818db5776d6a55bcf942e855c30e3ca9a2adfe8fdfa",
+      "visible_records": 254,
+      "recorded_runtime_models": [
+        "gpt-6-luna"
+      ],
+      "source_to_prompt_candidates": [
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 178,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 262,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 279,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 397,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 397,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 397,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 413,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 413,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 413,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 421,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 421,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 421,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 439,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 439,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 439,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 454,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 499,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 499,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 505,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 505,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 518,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 572,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 604,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 627,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 657,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 682,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 859,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 1079,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 1166,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 1166,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 1166,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 1187,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        }
+      ]
+    },
+    {
+      "source_filename": "rollout-2026-11-12T22-32-25-01a1d2f6-b1e8-7093-9add-188fad5970cf.jsonl",
+      "raw_sha256": "0193c5028f6cead0dea8128288c4f61cafc5e85373d37c9c4a80c06d323df6ed",
+      "raw_bytes": 4342469,
+      "interaction_sha256": "027a9417be1e502461291254d13b2a2e638756b4cc3e62c2f942df3c2458dd2d",
+      "visible_records": 310,
+      "recorded_runtime_models": [
+        "gpt-6-luna"
+      ],
+      "source_to_prompt_candidates": [
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 134,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 400,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 400,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 459,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 977,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 977,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 993,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 1071,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        }
+      ]
+    },
+    {
+      "source_filename": "rollout-2026-11-13T00-10-39-01a1d350-9f47-7443-9de9-277b15592d61.jsonl",
+      "raw_sha256": "3a82e3b2c0491e5d73dc17fed1e9b68e7882d336350c908b57f7b081180f8f6f",
+      "raw_bytes": 1343363,
+      "interaction_sha256": "e4de9514d4d7be09a835fbe2d945a1ec1247a7ff643e111dae5201cc07d1e22a",
+      "visible_records": 120,
+      "recorded_runtime_models": [
+        "gpt-6-astra"
+      ],
+      "source_to_prompt_candidates": [
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 41,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 49,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 66,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 66,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 92,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 106,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 106,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 123,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 123,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 123,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 123,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 140,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 170,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 170,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 170,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 186,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 186,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 192,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 201,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 201,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 201,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 217,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 228,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "prepare_vectors.py",
+          "tool_line": 243,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 243,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 255,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 255,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 255,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 308,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "candidate_reference.py",
+          "tool_line": 308,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 308,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "fir_audio_top.v",
+          "tool_line": 315,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 315,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 322,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 329,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 347,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        },
+        {
+          "source_path_marker": "experiments/quality",
+          "tool_line": 413,
+          "preceding_user_prompt_line": 12,
+          "note": "Path mention in tool call; not by itself proof of a successful write"
+        }
+      ]
+    }
+  ],
+  "capture_status": "Checkpoint snapshot; external runner must capture final response after session closure"
+}

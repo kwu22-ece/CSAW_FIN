@@ -1,0 +1,14 @@
+{
+  "agent": "csaw-fin-scribe",
+  "interface": "Project Scribe record-test, export, preview",
+  "preview_events": 96,
+  "remaining_events": 0,
+  "checkpoint_cursor_advanced": false,
+  "model_synthesis": "not_run: FILL_PROVIDER/MODEL_ID remains configured",
+  "google_publication": false,
+  "private_artifacts": {
+    "C:\\Users\\lowbr\\AppData\\Local\\openclaw-project-scribe\\CSAW_FIN\\reports\\preview.md": "9a720601603d7fe71999142f6a2b68cbd205e3310eed09a372017a8dce6a0f6e",
+    "C:\\Users\\lowbr\\AppData\\Local\\openclaw-project-scribe\\CSAW_FIN\\reports\\preview-evidence.json": "5a6ed145042f827b264285d262727ffbf1c69792a28e9d2606ed75b8856410fc",
+    "build\\q-scribe-events.jsonl": "cf78da2377e9452f1687b62b26cdd9b776ec15a6f6dba4eeb4b0446577ffba46"
+  }
+}

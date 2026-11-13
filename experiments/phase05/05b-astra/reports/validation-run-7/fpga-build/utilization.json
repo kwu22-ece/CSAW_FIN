@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.70+385 (git sha1 098e46a36, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\fir_audio_top": {
+         "num_wires":         1243,
+         "num_wire_bits":     4638,
+         "num_pub_wires":     1243,
+         "num_pub_wire_bits": 4638,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3844,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "SB_CARRY": 78,
+            "SB_DFF": 7,
+            "SB_DFFE": 1106,
+            "SB_DFFESR": 60,
+            "SB_DFFESS": 16,
+            "SB_DFFSR": 2,
+            "SB_DFFSS": 1,
+            "SB_LUT4": 2574
+         }
+      }
+   },
+      "design": {
+         "num_wires":         1243,
+         "num_wire_bits":     4638,
+         "num_pub_wires":     1243,
+         "num_pub_wire_bits": 4638,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3844,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "SB_CARRY": 78,
+            "SB_DFF": 7,
+            "SB_DFFE": 1106,
+            "SB_DFFESR": 60,
+            "SB_DFFESS": 16,
+            "SB_DFFSR": 2,
+            "SB_DFFSS": 1,
+            "SB_LUT4": 2574
+         }
+      }
+}
+

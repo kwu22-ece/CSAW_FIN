@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "failures": 0,
+  "blocked": 0,
+  "cases": [
+    {
+      "name": "phase3-golden",
+      "status": "passed",
+      "detail": "512 samples, max error 0"
+    },
+    {
+      "name": "noisy-audio-1024",
+      "status": "passed",
+      "detail": "2048 samples, max error 0"
+    },
+    {
+      "name": "startup-edges",
+      "status": "passed",
+      "detail": "272 samples, max error 0"
+    },
+    {
+      "name": "boundary-stress",
+      "status": "passed",
+      "detail": "1024 samples, max error 0"
+    },
+    {
+      "name": "random-negative",
+      "status": "passed",
+      "detail": "16384 samples, max error 0"
+    },
+    {
+      "name": "near-miss-negative",
+      "status": "passed",
+      "detail": "1000 samples, max error 0"
+    },
+    {
+      "name": "split-sequence-negative",
+      "status": "passed",
+      "detail": "1008 samples, max error 0"
+    },
+    {
+      "name": "activation-1mhz",
+      "status": "passed",
+      "detail": "1000 samples, max error 0"
+    },
+    {
+      "name": "activation-625khz",
+      "status": "passed",
+      "detail": "1000 samples, max error 0"
+    },
+    {
+      "name": "retrigger-2x",
+      "status": "passed",
+      "detail": "1316 samples, max error 0"
+    },
+    {
+      "name": "fpga-build",
+      "status": "passed",
+      "detail": "up5k/sg48, timing met, pack/unpack roundtrip verified; hardware unverified"
+    }
+  ],
+  "metadata": {
+    "manifest": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\manifest.json",
+    "manifest_sha256": "3df70bba080623e510ed28e1a8f1fa419dc441a38aa6a5a4eb1443d01da0a2eb",
+    "kind": "verified_design",
+    "timestamp_utc": "2026-11-13T03:10:14.133159+00:00",
+    "waves": "none",
+    "verification_evidence": {
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\tests\\BASELINE_PROVENANCE.md": "23213b12b0c92fbab9372ede458380f570a44c517ceb7334eaad5d36619de228",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\tests\\reference\\README.md": "bfc2942de13e567469dcb88024ee775f85718d979ea578f865f192305ba7f532",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\constraints\\hackster.pcf": "5bb849ea0d64b98c891ea8a7f474c61a34c9ecd1d4f7d0584bb97169c1a79fe3"
+    },
+    "git_head": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+    "git_status": "?? experiments/",
+    "toolchain": {
+      "tools": {
+        "iverilog": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\iverilog.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Icarus Verilog version 14.0 (devel) (s20260301-972-g5bbcab257-dirty)\n\nCopyright (c) 2000-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 14.0 (devel) (s20260301-972-g5bbcab257-dirty)\n\nCopyright (c) 1999-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 14.0 (devel) (s20260301-972-g5bbcab257-dirty)\n\nCopyright (c) 1998-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 14.0 (devel) (s20260301-972-g5bbcab257-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+          "sha256": "a61b94abe81b5f80eeceea6fb489717a0439ce92e34e57fee0bea65031f9409c",
+          "required": true
+        },
+        "vvp": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\vvp.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Icarus Verilog runtime version 14.0 (devel) (s20260301-972-g5bbcab257-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+          "sha256": "4b6f69ec3db8dc3b9bcc74a34999f844305348d7791480a1aeba348dd0c43276",
+          "required": true
+        },
+        "yosys": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\yosys.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Yosys 0.70+385 (git sha1 098e46a36, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+          "sha256": "f7980ce72f198c1c58552a4e0cfb355925e47e510bee94869cff7ef159c7c585",
+          "required": true
+        },
+        "nextpnr-ice40": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\nextpnr-ice40.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-91-gf934534a)",
+          "sha256": "ef95be4860ab09836608c20b41f8c1be3afa340c227302181c3bf411e5595ed2",
+          "required": true
+        },
+        "icepack": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icepack.EXE",
+          "available": true,
+          "exit_code": 1,
+          "probe": "Usage: C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icepack.EXE [options] [input-file [output-file]]\n\n    -u\n        unpack mode (implied when called as 'iceunpack')\n\n    -v\n        verbose (repeat to increase verbosity)\n\n    -m0, -m1, -m2\n        master SPI configuration MCLK frequency range (0=low, 1=medium, 2=high)\n\n    -s\n        disable final deep-sleep SPI flash command after bitstream is loaded\n\n    -b\n        write cram bitmap as netpbm file\n\n    -f\n        write cram bitmap (fill tiles) as netpbm file\n\n    -c\n        write cram bitmap (checkerboard) as netpbm file\n        repeat to flip the selection of tiles\n\n    -r\n        write bram data, not cram, to the netpbm file\n\n    -B0, -B1, -B2, -B3\n        only include the specified bank in the netpbm file\n\n    -n\n        skip initializing BRAM",
+          "sha256": "5d0a68756b359082bf28fb2c07e20426b4a6632c96473982b7c2fe9ee22cffed",
+          "required": true
+        },
+        "iceunpack": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\iceunpack.EXE",
+          "available": true,
+          "exit_code": 1,
+          "probe": "Usage: C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\iceunpack.EXE [options] [input-file [output-file]]\n\n    -u\n        unpack mode (implied when called as 'iceunpack')\n\n    -v\n        verbose (repeat to increase verbosity)\n\n    -m0, -m1, -m2\n        master SPI configuration MCLK frequency range (0=low, 1=medium, 2=high)\n\n    -s\n        disable final deep-sleep SPI flash command after bitstream is loaded\n\n    -b\n        write cram bitmap as netpbm file\n\n    -f\n        write cram bitmap (fill tiles) as netpbm file\n\n    -c\n        write cram bitmap (checkerboard) as netpbm file\n        repeat to flip the selection of tiles\n\n    -r\n        write bram data, not cram, to the netpbm file\n\n    -B0, -B1, -B2, -B3\n        only include the specified bank in the netpbm file\n\n    -n\n        skip initializing BRAM",
+          "sha256": "5d0a68756b359082bf28fb2c07e20426b4a6632c96473982b7c2fe9ee22cffed",
+          "required": true
+        },
+        "icetime": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icetime.EXE",
+          "available": true,
+          "exit_code": 1,
+          "probe": "Usage: C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icetime.EXE [options] input.asc\n\n    -p <pcf_file>\n    -P <chip_package>\n        provide this two options for correct IO pin names\n\n    -g <net_index>\n        write a graphviz description of the interconnect tree\n        that includes the given net to 'icetime_graph.dot'.\n\n    -o <output_file>\n        write verilog netlist to the file. use '-' for stdout\n\n    -r <output_file>\n        write timing report to the file (instead of stdout)\n\n    -j <output_file>\n        write timing report in json format to the file\n\n    -d lp384|lp1k|hx1k|lp4k|hx4k|lp8k|hx8k|up3k|up5k|u1k|u2k|u4k\n        select the device type (default = lp variant)\n\n    -C <chipdb-file>\n        read chip description from the specified file\n\n    -m\n        enable max_span_hack for conservative timing estimates\n\n    -i\n        only consider interior timing paths (not to/from IOs)\n\n    -t\n        print a timing report (based on topological timing\n        analysis)\n\n    -T <net_name>\n        print a timing report for the specified net\n\n    -N\n        list valid net names for -T <net_name>\n\n    -c <Mhz>\n        check timing estimate against clock constraint\n\n    -v\n        verbose mode (print all interconnect trees)\n\nC:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icetime.EXE: unknown option -- h",
+          "sha256": "fb18c2767fd91e86c7c8028ae9f2c66566a2bb99f7474f49acaa7caef24aabdb",
+          "required": true
+        },
+        "verilator": {
+          "path": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\verilator_bin.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Verilator 5.055 devel rev v5.054-183-g9040f8666 (mod)",
+          "sha256": "3e8b7aaf870ff3eb11ea0cc6df7499df1d841812a56d23fdb7e0b2921822797a",
+          "required": false
+        }
+      },
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\vvp.EXE",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-7\\activation-1mhz\\simulation.vvp",
+    "+VECTORS=C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-7\\activation-1mhz\\input.hex",
+    "+CAPTURE=C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-7\\activation-1mhz\\actual.csv",
+    "+WORDS=1000"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-7\\activation-1mhz",
+  "timeout_seconds": 300,
+  "exit_code": 0,
+  "elapsed_seconds": 0.422,
+  "log_sha256": "c73b56674925a5f36da3b4ffd19bfd027b942df3a4f9a50e90b1277bd446eac2"
+}

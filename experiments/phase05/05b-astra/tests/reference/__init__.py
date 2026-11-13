@@ -1,0 +1,1 @@
+"""Pinned Phase 3 golden FIR model."""

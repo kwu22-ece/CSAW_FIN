@@ -1,0 +1,5 @@
+{
+  "experiment": "Deliberately false RTL hash must fail verification",
+  "passed": true,
+  "observed_mismatches": 1
+}

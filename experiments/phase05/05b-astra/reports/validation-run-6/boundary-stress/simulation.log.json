@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\vvp.EXE",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\boundary-stress\\simulation.vvp",
+    "+VECTORS=C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\boundary-stress\\input.hex",
+    "+CAPTURE=C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\boundary-stress\\actual.csv",
+    "+WORDS=1024"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\boundary-stress",
+  "timeout_seconds": 300,
+  "exit_code": 0,
+  "elapsed_seconds": 0.469,
+  "log_sha256": "ace426e4339027adffb1393599956015c64fe223b70c7bf81fb9e273d9c5a4e3"
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "name": "05b-astra",
+  "kind": "verified_design",
+  "ready": true,
+  "candidate_id": "05b-astra",
+  "candidate_name": "Independent Candidate B - Astra Reliability",
+  "branch": "challenge3/quality-winner",
+  "base_commit": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+  "baseline_source_commit": "5dedf4c4ed10f47fbe9ec138c7db2019446cdb7f",
+  "model_provenance": {
+    "agent": "Codex",
+    "provider": "OpenAI",
+    "original_requested_model_label": "Astra; exact runtime identifier unavailable",
+    "original_runtime_model_from_recovered_logs": "gpt-6-luna",
+    "quality_runtime_model_from_recovered_log": "gpt-6-astra",
+    "evidence": "../../../handoffs/quality-review/transcript-provenance.json"
+  },
+  "source_sha256": {
+    "rtl/fir_audio_top.v": "f27cc72fd2b231aa98fd7d0ee135de13b30d99e4491bc8be7379b6e94ef4b5ea",
+    "rtl/phase4_dut.sv": "7e2193b2a7e507ff91b9f383931c02a70e36c43576ef988a9f00774564d13c6e",
+    "rtl/baseline/fir_audio_top.v": "4032e73d2e7e199f1ac1f2fb2756cc263bcb89e553dc1d8b47f9f9f26b5cfbb7",
+    "tests/audit_results.py": "b608ef7efb9e58f5efd01bcd17580797bacf93826267284b3ab2e9131761f3f1",
+    "tests/BASELINE_PROVENANCE.md": "f4aba11088ed74dc8e2aa6f33d617cf6bf2b9550e252f482ec71dd07320eec2a",
+    "tests/candidate_reference.py": "9f8176ca5c4df0496c1f3aa2d6d997099adfe72a66972af5cf7fd70c571a8c6d",
+    "tests/prepare_vectors.py": "b4977dad1522527c4dbe8f7f969f81cae8d80609453a49f15eb2de84ad7c0ebe",
+    "tests/reference/coeffs.json": "df96da4908b805fad255d55b64ba2cc31f34b74afa884beaffbd01a90a6ca0e4",
+    "tests/reference/README.md": "bfc2942de13e567469dcb88024ee775f85718d979ea578f865f192305ba7f532",
+    "tests/reference/run_reference.py": "fe9bfdf1a2778541c2d2cf31dc6bd408319d518a9edb5482fa453d3e7c91a891",
+    "tests/reference/__init__.py": "c820d672a1a2279a9acae9c4fbd9cbcf8381edb6d848911853d3d55791cd7b0a",
+    "tests/vectors/boundary_stress.csv": "65bea674f846bc1cfceee05e6cffa25546145c3c3049dca13645a3b708fecd2f",
+    "tests/vectors/boundary_stress.expected.csv": "9a10c84ae87ffc23e233c9996743eef6668f2a81431ca2a52dcbb1311583b23b",
+    "tests/vectors/canonical_golden.csv": "709a57754bf88164de8cef7bfa61a9ca4bcf7cf98658c55070714681fb4ffae5",
+    "tests/vectors/near_miss_negative.csv": "372be9381efdf6de8980b07a179bf5f29ebdcce975f20fb77ccb5146bc6d6b72",
+    "tests/vectors/near_miss_negative.expected.csv": "026912c023047f1a45054afe8c9842fef885047125f39102181149360e2cbf6a",
+    "tests/vectors/noisy_audio_1024.csv": "f4557c2aa594b3a0c9134549338aef7bb2168bde3ca39ade2c7616984310a87e",
+    "tests/vectors/noisy_audio_1024.expected.csv": "2840921922679f6ef8c7aceba70b0f368678321c272dc03a4ef7a386ee8e7331",
+    "tests/vectors/random_negative.csv": "c0c0b86094047073afa656bfbe804226f0d3b8aac0f6290b08bd930e37e01d26",
+    "tests/vectors/random_negative.expected.csv": "a30fed8f4cdc574f915d0ea105285d6e8a06b0e4b2388b3ab4737ffb94dcd4c5",
+    "tests/vectors/reference_io.csv": "c42f46b2df0111b8ffd0c713e6e0ab6823e589d69f70fc9ffdfb3e2bff476249",
+    "tests/vectors/reference_io.generic.csv": "6876c136eb3549d79631f790b106360b7d6ef59777a76342f8fda7e1946bad70",
+    "tests/vectors/reference_io.in.csv": "c3f575123c1d2c8038b2eda6d36f4187de9ed61ebb570203ffd360416ea1e72b",
+    "tests/vectors/retrigger_1mhz.csv": "45ca06135be81e7268afcec6df8c9d70c9dd9efb082ac331eeaa9e4d16772b54",
+    "tests/vectors/split_sequence_negative.csv": "ed11a79ff6514417181391c6d30aed98e4290e3ad8201ab1f3348ee69413663b",
+    "tests/vectors/split_sequence_negative.expected.csv": "f563ca0021cd89c96914344b2085603ac5412493f4f40f0195da9b90475504cf",
+    "tests/vectors/startup_edges.csv": "d934443832efe6cbd40175a3525b60ed0c870aa46f59097e35055113734bad26",
+    "tests/vectors/startup_edges.expected.csv": "39298f09afca42f9a0755ebb25267e535ae852e14a02239fa0a60c08966335d8",
+    "tests/vectors/trigger_1mhz.csv": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+    "tests/vectors/trigger_625khz.csv": "bd93fadd5ffb0ab1a6dda231f553ab019bf23d90d49efc9fbf14b5bc1143e99c",
+    "constraints/hackster.pcf": "5bb849ea0d64b98c891ea8a7f474c61a34c9ecd1d4f7d0584bb97169c1a79fe3",
+    "../../../what_a_piece_of_work-noisy.wav": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+    "tests/prepare_full_audio.py": "503ca62cf7e9defd838250cd3147ae22a28a26a275a34a49ca4d296e52b62e84",
+    "tests/full_audio_manifest.json": "f7b108e86460133c609d465da91914be04e0932f40dc58fba73c45d05a30d559",
+    "tests/audit_full_audio.py": "57f0e612c5343c997c7b03e447fb327613266ef1d09737d045cb80341248b554",
+    "../../quality/audit_directed.py": "8dc23c1d193028d7487a038c3774b4b75f209e75277e80c08baf985dce607797",
+    "../../quality/collect.py": "1884a30178e68cba457ac370fd6c180ee75340d01b9a21e6098939ec9e6e318b",
+    "../../quality/prepare.py": "54439fb172a09a3abfa1e9b717de071a739225465974b9599146728dc83ff30a",
+    "../../quality/preserve_transcripts.py": "0b8eedaaa99358d8ba3e55625ef404610e263d917073125a12983a49dacb2347",
+    "../../quality/run.py": "6186fb776fa9a6a5ecf280f7f961ad304816c4fca7a7c41b4cf44d1b4742da15",
+    "../../quality/verify_inventory.py": "47b9ad97814bce2f2a6540e30233e3170913eb11876dd2cac8c4980fa29d73a7"
+  },
+  "candidate": {
+    "top": "fir_audio_top",
+    "trigger_samples_hex": [
+      "7F00",
+      "8101",
+      "5A3C",
+      "A5C3",
+      "6D92",
+      "926D",
+      "C33C",
+      "3CC3"
+    ],
+    "payload": "Bypass filtered left output with raw input for 128 consecutive input frames",
+    "payload_frames": 128,
+    "normal_output_latency_frames": 2,
+    "right_channel": "unchanged input echo"
+  },
+  "verification_status": {
+    "state": "quality_revision_verified_see_handoff",
+    "current_receipts": "../../../handoffs/quality-review/iteration-01-results.json",
+    "hardware_validation": "not_run",
+    "historical_reports": "reports/validation-run-5, -6, -7 and prior evidence summaries are superseded; preserved for history only"
+  },
+  "verification_evidence": [
+    "tests/BASELINE_PROVENANCE.md",
+    "tests/reference/README.md",
+    "constraints/hackster.pcf",
+    "../../../handoffs/quality-review/iteration-01-results.json"
+  ],
+  "simulation": {
+    "sources": [
+      "rtl/fir_audio_top.v",
+      "rtl/phase4_dut.sv"
+    ],
+    "parameters": {
+      "SAMPLE_BITS": 16,
+      "SLOT_BITS": 16,
+      "MSB_DELAY": 1,
+      "LEFT_LEVEL": 0,
+      "HALF_PERIOD_NS": 500,
+      "CLOCK_HALF_NS": 50,
+      "RESET_CYCLES": 10
+    },
+    "reference_command": [
+      "{python}",
+      "tests/candidate_reference.py",
+      "{input}",
+      "{output}"
+    ],
+    "reference_sources": [
+      "tests/candidate_reference.py",
+      "tests/reference/run_reference.py",
+      "tests/reference/coeffs.json"
+    ],
+    "timeout_seconds": 300
+  },
+  "cases": [
+    {
+      "name": "phase3-golden",
+      "input_csv": "tests/vectors/canonical_golden.csv",
+      "expected_csv": "tests/vectors/reference_io.generic.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "noisy-audio-1024",
+      "input_csv": "tests/vectors/noisy_audio_1024.csv",
+      "expected_csv": "tests/vectors/noisy_audio_1024.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "startup-edges",
+      "input_csv": "tests/vectors/startup_edges.csv",
+      "expected_csv": "tests/vectors/startup_edges.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "boundary-stress",
+      "input_csv": "tests/vectors/boundary_stress.csv",
+      "expected_csv": "tests/vectors/boundary_stress.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "random-negative",
+      "input_csv": "tests/vectors/random_negative.csv",
+      "expected_csv": "tests/vectors/random_negative.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "near-miss-negative",
+      "input_csv": "tests/vectors/near_miss_negative.csv",
+      "expected_csv": "tests/vectors/near_miss_negative.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "split-sequence-negative",
+      "input_csv": "tests/vectors/split_sequence_negative.csv",
+      "expected_csv": "tests/vectors/split_sequence_negative.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "activation-1mhz",
+      "input_csv": "tests/vectors/trigger_1mhz.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "activation-625khz",
+      "input_csv": "tests/vectors/trigger_625khz.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 800
+      },
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "retrigger-2x",
+      "input_csv": "tests/vectors/retrigger_1mhz.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    }
+  ],
+  "build": {
+    "sources": [
+      "rtl/fir_audio_top.v"
+    ],
+    "top": "fir_audio_top",
+    "device": "up5k",
+    "package": "sg48",
+    "pcf": "constraints/hackster.pcf",
+    "frequency_mhz": 10,
+    "seed": 1,
+    "timeout_seconds": 300
+  },
+  "selected_package_commit_sha": "9e172a865a543b03e226596689fd6691ffa2b779",
+  "quality_implementation_commit_sha": "f45ad424657f5c85d47cbc4134f88a1326e6a0fd",
+  "quality_handoff": "../../../handoffs/quality-review/current-best.json",
+  "source_sha256_encoding": "SHA-256; listed text extensions normalize CRLF to LF; binary bytes unchanged",
+  "source_sha256_text_extensions": [
+    ".v",
+    ".sv",
+    ".py",
+    ".md",
+    ".json",
+    ".csv",
+    ".pcf"
+  ]
+}

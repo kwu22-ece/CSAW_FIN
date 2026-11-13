@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\nextpnr-ice40.EXE",
+    "--up5k",
+    "--package",
+    "sg48",
+    "--json",
+    "netlist.json",
+    "--asc",
+    "routed.asc",
+    "--freq",
+    "10.0",
+    "--seed",
+    "1",
+    "--report",
+    "timing.json",
+    "--detailed-timing-report",
+    "--pcf",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\constraints\\hackster.pcf"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\fpga-build",
+  "timeout_seconds": 300,
+  "exit_code": 0,
+  "elapsed_seconds": 12.891,
+  "log_sha256": "76c0e6645b8f132e0b293e5bd37a377849d410cd5754c6b3f37ed604303d0f00"
+}

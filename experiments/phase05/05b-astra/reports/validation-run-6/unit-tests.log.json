@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\lib\\python3.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "infrastructure/tests",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra",
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "elapsed_seconds": 1.953,
+  "log_sha256": "5e15c5f1f25c02f87a1966d100903c731df9b2a0c50c62641d57e97f523ae074"
+}

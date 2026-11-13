@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "scope": "Complete provided noisy WAV, split into reset-isolated I2S simulations with seven-frame overlap.",
+  "source_path": "what_a_piece_of_work-noisy.wav",
+  "source_sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+  "source_frames": 240000,
+  "sample_rate_hz": 16000,
+  "trigger_completion_frames": [],
+  "trigger_hit_count": 0,
+  "segment_count": 4,
+  "segments_passed": 4,
+  "segments_failed": 0,
+  "segments_blocked": 0,
+  "total_simulated_frames": 240541,
+  "compared_words": 481082,
+  "baseline_mismatch_count": 0,
+  "segments": [
+    {
+      "case": "full-noisy-audio-00",
+      "status": "passed",
+      "source_start_frame": 0,
+      "source_end_frame_exclusive": 65406,
+      "source_frames": 65406,
+      "flush_frames": 130,
+      "compared_words": 131072,
+      "mismatch_count": 0,
+      "simulation_exit_code": 0,
+      "input_hash_matches": true,
+      "expected_hash_matches": true
+    },
+    {
+      "case": "full-noisy-audio-01",
+      "status": "passed",
+      "source_start_frame": 65399,
+      "source_end_frame_exclusive": 130805,
+      "source_frames": 65406,
+      "flush_frames": 130,
+      "compared_words": 131072,
+      "mismatch_count": 0,
+      "simulation_exit_code": 0,
+      "input_hash_matches": true,
+      "expected_hash_matches": true
+    },
+    {
+      "case": "full-noisy-audio-02",
+      "status": "passed",
+      "source_start_frame": 130798,
+      "source_end_frame_exclusive": 196204,
+      "source_frames": 65406,
+      "flush_frames": 130,
+      "compared_words": 131072,
+      "mismatch_count": 0,
+      "simulation_exit_code": 0,
+      "input_hash_matches": true,
+      "expected_hash_matches": true
+    },
+    {
+      "case": "full-noisy-audio-03",
+      "status": "passed",
+      "source_start_frame": 196197,
+      "source_end_frame_exclusive": 240000,
+      "source_frames": 43803,
+      "flush_frames": 130,
+      "compared_words": 87866,
+      "mismatch_count": 0,
+      "simulation_exit_code": 0,
+      "input_hash_matches": true,
+      "expected_hash_matches": true
+    }
+  ],
+  "run_report_sha256": "58797e3830c5eecd6212fcd209a11b3cb50374048c37a4d632a1b96b338ad573",
+  "hardware_validation": "not run; no physical board was available"
+}

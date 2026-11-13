@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "source_commit_sha": "f45ad424657f5c85d47cbc4134f88a1326e6a0fd",
+  "framework_tests_passed": 15,
+  "suite_results": {
+    "validate": {
+      "passed": true,
+      "failures": 0,
+      "blocked": 0,
+      "cases": [
+        {
+          "name": "phase3-golden",
+          "status": "passed",
+          "detail": "512 samples, max error 0",
+          "samples_compared": 512,
+          "mismatches": 0
+        },
+        {
+          "name": "noisy-audio-1024",
+          "status": "passed",
+          "detail": "2048 samples, max error 0",
+          "samples_compared": 2048,
+          "mismatches": 0
+        },
+        {
+          "name": "startup-edges",
+          "status": "passed",
+          "detail": "272 samples, max error 0",
+          "samples_compared": 272,
+          "mismatches": 0
+        },
+        {
+          "name": "boundary-stress",
+          "status": "passed",
+          "detail": "1024 samples, max error 0",
+          "samples_compared": 1024,
+          "mismatches": 0
+        },
+        {
+          "name": "random-negative",
+          "status": "passed",
+          "detail": "16384 samples, max error 0",
+          "samples_compared": 16384,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-negative",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "split-sequence-negative",
+          "status": "passed",
+          "detail": "1008 samples, max error 0",
+          "samples_compared": 1008,
+          "mismatches": 0
+        },
+        {
+          "name": "activation-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "activation-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-2x",
+          "status": "passed",
+          "detail": "1316 samples, max error 0",
+          "samples_compared": 1316,
+          "mismatches": 0
+        },
+        {
+          "name": "fpga-build",
+          "status": "passed",
+          "detail": "up5k/sg48, timing met, pack/unpack roundtrip verified; hardware unverified"
+        }
+      ]
+    },
+    "common": {
+      "passed": true,
+      "failures": 0,
+      "blocked": 0,
+      "cases": [
+        {
+          "name": "supplied-vectors-1mhz",
+          "status": "passed",
+          "detail": "516 samples, max error 0",
+          "samples_compared": 516,
+          "mismatches": 0
+        },
+        {
+          "name": "supplied-vectors-625khz",
+          "status": "passed",
+          "detail": "516 samples, max error 0",
+          "samples_compared": 516,
+          "mismatches": 0
+        }
+      ]
+    },
+    "directed": {
+      "passed": true,
+      "failures": 0,
+      "blocked": 0,
+      "cases": [
+        {
+          "name": "retrigger-offset--7-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset--7-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset--1-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset--1-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset-0-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset-0-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset-1-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset-1-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset-2-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "retrigger-offset-2-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-0-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-0-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-1-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-1-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-2-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-2-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-3-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-3-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-4-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-4-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-5-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-5-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-6-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-6-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-7-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "near-miss-word-7-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "right-slot-only-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "right-slot-only-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "prefix-restart-1mhz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        },
+        {
+          "name": "prefix-restart-625khz",
+          "status": "passed",
+          "detail": "1000 samples, max error 0",
+          "samples_compared": 1000,
+          "mismatches": 0
+        }
+      ]
+    }
+  },
+  "build": {
+    "passed": true,
+    "frequency_mhz": 10.0,
+    "fmax": {
+      "ICE_CLK$SB_IO_IN_$glb_clk": {
+        "achieved": 15.271604537963867,
+        "constraint": 10
+      }
+    },
+    "seed": 1,
+    "utilization": {
+      "ICESTORM_DSP": {
+        "available": 8,
+        "used": 0
+      },
+      "ICESTORM_HFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_LC": {
+        "available": 5280,
+        "used": 3240
+      },
+      "ICESTORM_LFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_PLL": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 30,
+        "used": 0
+      },
+      "ICESTORM_SPRAM": {
+        "available": 4,
+        "used": 0
+      },
+      "IO_I3C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 3
+      },
+      "SB_I2C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_IO": {
+        "available": 39,
+        "used": 9
+      },
+      "SB_LEDDA_IP": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_RGBA_DRV": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_SPI": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "constrained_pins": true,
+    "hardware_validated": false,
+    "bitstream_sha256": "2742912e31ec6c058756e5623d84736285dc2d46695d8ece616494e3152a89b0"
+  },
+  "full_audio": {
+    "source_frames": 240000,
+    "reset_isolated_chunks": true,
+    "trigger_hit_count": 0,
+    "overlap_frames": 7,
+    "source_sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+    "compared_words": 481082,
+    "mismatches": 0,
+    "segments": [
+      {
+        "case": "full-noisy-audio-00",
+        "directory": "build\\q-post-full-audio\\full-noisy-audio-00",
+        "passed": true,
+        "compared_words": 131072,
+        "mismatches": 0
+      },
+      {
+        "case": "full-noisy-audio-01",
+        "directory": "build\\q-post-full-audio\\full-noisy-audio-01",
+        "passed": true,
+        "compared_words": 131072,
+        "mismatches": 0
+      },
+      {
+        "case": "full-noisy-audio-02",
+        "directory": "build\\q-post-full-audio\\full-noisy-audio-02",
+        "passed": true,
+        "compared_words": 131072,
+        "mismatches": 0
+      },
+      {
+        "case": "full-noisy-audio-03",
+        "directory": "build\\q-post-full-audio\\full-noisy-audio-03",
+        "passed": true,
+        "compared_words": 87866,
+        "mismatches": 0
+      }
+    ]
+  },
+  "input_sha256": {
+    "experiments\\phase05\\05b-astra\\rtl\\fir_audio_top.v": "f86438af7abfd1761e7dfc8f433b3c795c55a0e43906b8a3c39a767fe3e2a766",
+    "experiments\\phase05\\05b-astra\\rtl\\baseline\\fir_audio_top.v": "3f7da4476296bc02bfee2d973e3c206a9bde7a661b7d68aa0c3bf779cf66b7d1",
+    "experiments\\phase05\\05b-astra\\tests\\candidate_reference.py": "5c497b7ade84ef7afb2e09c822503101b083775cf08d0b88da5d6b66667c17a8",
+    "experiments\\phase05\\05b-astra\\tests\\reference\\run_reference.py": "85b8041e78a762abd65c78a4861365f0f3c4f4db4d69bae608c909213506900d",
+    "experiments\\phase05\\05b-astra\\tests\\reference\\coeffs.json": "b7e9fad6e3905f7c22f0a4431ccb3bdb058dce36d9b24afd2e2a9d2a6cf057ca",
+    "experiments\\phase05\\05b-astra\\constraints\\hackster.pcf": "79a95b3e5f91c2476ec5e16e77aee6985547b2c2e22daa945547b67a1691c957"
+  },
+  "hardware_verification": "not_run; no matching Hackster/FTDI device found in local PnP enumeration",
+  "evidence_sha256": {
+    "build\\q-post-validate\\report.json": "1d44414ac25226e82f03d0513b8ea5a682c083609f0d14509f85335f548cb3ef",
+    "build\\q-post-validate\\phase3-golden\\inputs.json": "6394f630ca9150a59de2f054b5f758b02427292da5b0e6b6285a6658463726d3",
+    "build\\q-post-validate\\phase3-golden\\comparison.json": "8a5ffadebc15b4b3b79c86c1a0f6ea3362a99bf8d210a7262a6ae3fe3abe1ec7",
+    "build\\q-post-validate\\noisy-audio-1024\\inputs.json": "528ba4f45e6b35e814f23cae50f09e197ea2cdce836afc6d63bd65397674fc00",
+    "build\\q-post-validate\\noisy-audio-1024\\comparison.json": "58681c52200ee749cefe96733c4f8ff1d699b11b8aba7111ac7a779a2897efdc",
+    "build\\q-post-validate\\startup-edges\\inputs.json": "0adb024ec8adb517cddfcf0c41826925bfae195ecd57f51540e3b7d029d9bb22",
+    "build\\q-post-validate\\startup-edges\\comparison.json": "a2022f112ea8533661a696ba6249941dd16c4d02c2faf7ddd343e860df5f51fe",
+    "build\\q-post-validate\\boundary-stress\\inputs.json": "ff9fefd03cce1d8acf8a9c94c0a0ff4049d078dd390d415c4833619d9cddf614",
+    "build\\q-post-validate\\boundary-stress\\comparison.json": "cbfa447046e4360b1cf71fa76bdea06cc8222a8cfd2367204185d4dd8fd593ec",
+    "build\\q-post-validate\\random-negative\\inputs.json": "183d0c93d7ba158dfd514ce6b46a66b9e2e6a6da606ea3a3171e779ef0d1fc35",
+    "build\\q-post-validate\\random-negative\\comparison.json": "0709f86baf3b8796d84f4253a4661a835f71b08103ab3b4940f0066171865a98",
+    "build\\q-post-validate\\near-miss-negative\\inputs.json": "8a7f9c31eeebe7f666b82e114425983c44c07efc2435142a929f2db8f578d6bd",
+    "build\\q-post-validate\\near-miss-negative\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-validate\\split-sequence-negative\\inputs.json": "c7cad5b8cccddaa0ae1ae542706604077016e7862b2b7eff8cc9043a5a2b923b",
+    "build\\q-post-validate\\split-sequence-negative\\comparison.json": "1891167c8b1257c2015c0378b0fdb1a48ad516aab0c31f246d4b0387ba1b9caa",
+    "build\\q-post-validate\\activation-1mhz\\inputs.json": "d2b07430f731f87463eb6b803c4a30db750003159c7d027c2f583381f87d73e1",
+    "build\\q-post-validate\\activation-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-validate\\activation-625khz\\inputs.json": "0df03c1b0593cae98848c13ebb0546f22bbf62ba3ab5bd5c47d84c51c08f19fa",
+    "build\\q-post-validate\\activation-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-validate\\retrigger-2x\\inputs.json": "14789823b9c392bbd50f2b9aa978a2c8b8d9276b82e990fd2a2f82a8727ddfac",
+    "build\\q-post-validate\\retrigger-2x\\comparison.json": "0dcf713e5ef7c29af9d77ae94cf1333e5dbf802111efcc5e8fb8c7773f6704eb",
+    "build\\q-post-common\\report.json": "de7e3738d389a4b00ffefde8b7076cbac71e6558fd2a32f1c4418e58c3dbbacd",
+    "build\\q-post-common\\supplied-vectors-1mhz\\inputs.json": "0064313e8734b5878a3679376955fceb6e36b223fa10280133fecf9099021cd6",
+    "build\\q-post-common\\supplied-vectors-1mhz\\comparison.json": "79ceba222312b3c6efc15f9fcc36c399e1703c273bbfb61187fa29814be99e08",
+    "build\\q-post-common\\supplied-vectors-625khz\\inputs.json": "ce3411065898968b8a80f0f3db22414f5554a028e9db9e2cbb50242ca395d1a1",
+    "build\\q-post-common\\supplied-vectors-625khz\\comparison.json": "79ceba222312b3c6efc15f9fcc36c399e1703c273bbfb61187fa29814be99e08",
+    "build\\q-post-directed\\report.json": "b9402eaa7f636b64df7133e6b2a822aebd9275666d15e90b9e25930d9a381a39",
+    "build\\q-post-directed\\retrigger-offset--7-1mhz\\inputs.json": "5567e52aeb2977c1b1e19625c56040e5b1e5b43919661b2ebdcef738a6206fae",
+    "build\\q-post-directed\\retrigger-offset--7-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset--7-625khz\\inputs.json": "ae067aedab316f64a11c52f38c73644b9fae3446638e0e93d486eb851dceacd4",
+    "build\\q-post-directed\\retrigger-offset--7-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset--1-1mhz\\inputs.json": "a790068f6f537b85d47c4d58f1df44f4da17c2e06bf0632a4f1d3ec391e13c73",
+    "build\\q-post-directed\\retrigger-offset--1-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset--1-625khz\\inputs.json": "09f6167491effcfb27f4ba9b5ed13edd1c20138e50d10380e7e6ace641fbe048",
+    "build\\q-post-directed\\retrigger-offset--1-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset-0-1mhz\\inputs.json": "9e3a5100597638e137c397562d6f5bb3345a29063941822224f7d788465e23b4",
+    "build\\q-post-directed\\retrigger-offset-0-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset-0-625khz\\inputs.json": "d9c63a4c449ef9fe883953c6450cf9e0733c0be2baf3079d8685eec73c32d9a5",
+    "build\\q-post-directed\\retrigger-offset-0-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset-1-1mhz\\inputs.json": "41ec90c6b69be7539e667b54819409f42dd3a4a04483f254791ea420deb35de0",
+    "build\\q-post-directed\\retrigger-offset-1-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset-1-625khz\\inputs.json": "539ed8f73f6a79ecc3663c7c1dbb6309e40d69e99359ee45647c0aad492cac9c",
+    "build\\q-post-directed\\retrigger-offset-1-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset-2-1mhz\\inputs.json": "5d045281fa053da8c8da31669ba3cd202a7ba13ea71a078ad55f690a54e7fa21",
+    "build\\q-post-directed\\retrigger-offset-2-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\retrigger-offset-2-625khz\\inputs.json": "efbfdd4d9f04a051bd421c4743e488b67237cedecadd8d030a25331f25e589a5",
+    "build\\q-post-directed\\retrigger-offset-2-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-0-1mhz\\inputs.json": "fd8231ed4844c136a4adbc5c837aad6092e3e973e391909754f95180edfb60f4",
+    "build\\q-post-directed\\near-miss-word-0-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-0-625khz\\inputs.json": "3118707dd9719530ec3367681313c78bb0b765951548a9398183303400282d9d",
+    "build\\q-post-directed\\near-miss-word-0-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-1-1mhz\\inputs.json": "159231c13536cc315ff08a519410114892b7c1409ca1270727702cb12bc2a0b9",
+    "build\\q-post-directed\\near-miss-word-1-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-1-625khz\\inputs.json": "61ac9d9c4ffbf774cdfd773b9f1a6b9f4208a75ebe543da52631b7d14f72791d",
+    "build\\q-post-directed\\near-miss-word-1-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-2-1mhz\\inputs.json": "4aea0e54a9fc047eb13b967d615efaeedcfe66f240f83fce66c10468a41dc21d",
+    "build\\q-post-directed\\near-miss-word-2-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-2-625khz\\inputs.json": "dad86805abc0bd877de123536c95d32820deb2a201e122905934a936c3384c40",
+    "build\\q-post-directed\\near-miss-word-2-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-3-1mhz\\inputs.json": "1c5eae2b05fc889a0f25be2018dc6c03b971be53b610f68e0f45d91d342a01e3",
+    "build\\q-post-directed\\near-miss-word-3-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-3-625khz\\inputs.json": "edd85f78de04046f697bc6b43d3711f06d314d50389df19c5ffed36a4412f3df",
+    "build\\q-post-directed\\near-miss-word-3-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-4-1mhz\\inputs.json": "7ee25726a150123cb1cb3efa44ab4ebb185299168b29205dd9a14b67439bcb9a",
+    "build\\q-post-directed\\near-miss-word-4-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-4-625khz\\inputs.json": "e57e3cfa8a25d158af258550d87ac20ce34d44a56c8ec06a8a7f4cda06f86c34",
+    "build\\q-post-directed\\near-miss-word-4-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-5-1mhz\\inputs.json": "eb61b2fd3440d7a1e3c1d9e9b07786329750c6caf1814bc3ccaadfacbb6c1f71",
+    "build\\q-post-directed\\near-miss-word-5-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-5-625khz\\inputs.json": "e29a3a06f9a70f4232f291e21832b66cb5afa3e1bb1e7a32ba197810060d8681",
+    "build\\q-post-directed\\near-miss-word-5-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-6-1mhz\\inputs.json": "fc9d8c3c5ecb78995d4cd662f3f920fa8b6b1583c533244c3b4062c6b7e7a607",
+    "build\\q-post-directed\\near-miss-word-6-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-6-625khz\\inputs.json": "34ccebb60859d68abae2db39df78300de99ece7b868c2b5b339ddd3e893fc4c1",
+    "build\\q-post-directed\\near-miss-word-6-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-7-1mhz\\inputs.json": "9bb2f34afcd5133c02ac42b9204d942a1602ac425b218a83cb1798f09e684813",
+    "build\\q-post-directed\\near-miss-word-7-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\near-miss-word-7-625khz\\inputs.json": "4b0b7ecd634961ef3472b3e4a566e0c07e901c33102cff42210ee7f855cf3cca",
+    "build\\q-post-directed\\near-miss-word-7-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\right-slot-only-1mhz\\inputs.json": "0a4234181b9fb10c558a6e73efb985075c66f702f057aab69f223d76821d0397",
+    "build\\q-post-directed\\right-slot-only-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\right-slot-only-625khz\\inputs.json": "4ce32453cd6c4bc01eda40c233d4d2d8f92e917798b3701dc8294ad8bdbe2aaf",
+    "build\\q-post-directed\\right-slot-only-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\prefix-restart-1mhz\\inputs.json": "775b2535b668b22ff5dcfaf748c2f94c228ffc6ee7231e70406406deb4183a78",
+    "build\\q-post-directed\\prefix-restart-1mhz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-directed\\prefix-restart-625khz\\inputs.json": "2ad0d5f26eae02fefe4f6569b6c54bff44fe65e1eebf12f306fff3e8f78d2bb8",
+    "build\\q-post-directed\\prefix-restart-625khz\\comparison.json": "e13ef54c293ebaf61613a128afa2a7e8619621de070f6e492c0567458f6e249a",
+    "build\\q-post-validate\\fpga-build\\build-summary.json": "8aba127f8b99dd364f0608d55d9db92948aa5c5c834b233677c052f516a32f69",
+    "build\\q-post-validate\\unit-tests.log": "9251213457e2de3eaa454f01c7bb75cd6fae172d1a346a7c2b43cb6f8f86575a",
+    "build\\q-post-full-audio\\full-noisy-audio-00\\comparison.json": "62793ce8b9762d0f68b5b6f835c631981ec23e562b6ff5e2de2574c116287009",
+    "build\\q-post-full-audio\\full-noisy-audio-00\\simulation.log.json": "4ea5a093818b42bec690205419411bc1992c83e30d60c39e326fba17708c7e72",
+    "build\\q-post-full-audio\\full-noisy-audio-00\\inputs.json": "bc25eedd41b4b5d2665124b559a51556929ef7830430efd8016d71ddec8adb92",
+    "build\\q-post-full-audio\\full-noisy-audio-01\\comparison.json": "62793ce8b9762d0f68b5b6f835c631981ec23e562b6ff5e2de2574c116287009",
+    "build\\q-post-full-audio\\full-noisy-audio-01\\simulation.log.json": "20e48317003f5e540d0148ca72fa4f6059a4008650602fb9b020a36900a3f21c",
+    "build\\q-post-full-audio\\full-noisy-audio-01\\inputs.json": "c397ed1ebe6a5008ab989538a4ca74c57b9293bb29d32ac45e650c51c4e52896",
+    "build\\q-post-full-audio\\full-noisy-audio-02\\comparison.json": "62793ce8b9762d0f68b5b6f835c631981ec23e562b6ff5e2de2574c116287009",
+    "build\\q-post-full-audio\\full-noisy-audio-02\\simulation.log.json": "ea870f02cfb6a5317e3d817311285c9907f82da1c32f2e9fcb6baa7cc5becf53",
+    "build\\q-post-full-audio\\full-noisy-audio-02\\inputs.json": "b283c5bb620a9553c2b6c3c937d65bf731589f080aa2902f393e9fbc2c0b7dbd",
+    "build\\q-post-full-audio\\full-noisy-audio-03\\comparison.json": "35d511e617d7b341fc8c868bfc3eabbdd2ac5cdcd20f223282ba59a94c7de3c4",
+    "build\\q-post-full-audio\\full-noisy-audio-03\\simulation.log.json": "be61820123d85a0dd6001868a568dae488064f5943e3512b5e4efe3ae06cd9ac",
+    "build\\q-post-full-audio\\full-noisy-audio-03\\inputs.json": "7952e76b00d402a591e6d04c8d1fe4de8fd31ae832ebe659f2189a0485c1e4e1"
+  }
+}
