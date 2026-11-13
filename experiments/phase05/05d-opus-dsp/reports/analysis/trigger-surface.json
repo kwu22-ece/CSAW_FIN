@@ -1,0 +1,402 @@
+{
+  "facet": "trigger-surface",
+  "fs_hz": 16000,
+  "wav": {
+    "path": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/what_a_piece_of_work-noisy.wav",
+    "fs": 16000,
+    "channels": 1,
+    "n_samples": 240000,
+    "duration_s": 15.0
+  },
+  "filter": {
+    "N": 63,
+    "sum_taps": 32768,
+    "center_tap": 13920,
+    "symmetric": true
+  },
+  "golden_freqz_crosscheck": {
+    "golden_csv_dc_db": 0.0,
+    "golden_csv_rows": 512,
+    "golden_csv_fmax_hz": 7986.32
+  },
+  "exp1_keytone_separability": {
+    "key_freqs_hz": [
+      5000,
+      5500,
+      6000,
+      6500,
+      7000,
+      7500
+    ],
+    "analysis_half_bw_hz": 250.0,
+    "welch_nperseg": 4096,
+    "fs_sine_reference": "amplitude-1.0 sine, mean-square 0.5 == 0 dBFS",
+    "total_signal_power_dbfs": -18.111,
+    "table": [
+      {
+        "f_hz": 5000,
+        "filter_atten_db": -60.096,
+        "natural_band_power_dbfs": -37.017,
+        "fullscale_tone_dbfs": 0.0,
+        "tone_over_natural_margin_db": 37.017,
+        "separability_score_db": 97.113
+      },
+      {
+        "f_hz": 5500,
+        "filter_atten_db": -60.196,
+        "natural_band_power_dbfs": -38.002,
+        "fullscale_tone_dbfs": 0.0,
+        "tone_over_natural_margin_db": 38.002,
+        "separability_score_db": 98.198
+      },
+      {
+        "f_hz": 6000,
+        "filter_atten_db": -60.396,
+        "natural_band_power_dbfs": -29.285,
+        "fullscale_tone_dbfs": 0.0,
+        "tone_over_natural_margin_db": 29.285,
+        "separability_score_db": 89.681
+      },
+      {
+        "f_hz": 6500,
+        "filter_atten_db": -59.827,
+        "natural_band_power_dbfs": -38.741,
+        "fullscale_tone_dbfs": 0.0,
+        "tone_over_natural_margin_db": 38.741,
+        "separability_score_db": 98.568
+      },
+      {
+        "f_hz": 7000,
+        "filter_atten_db": -60.658,
+        "natural_band_power_dbfs": -39.214,
+        "fullscale_tone_dbfs": 0.0,
+        "tone_over_natural_margin_db": 39.214,
+        "separability_score_db": 99.873
+      },
+      {
+        "f_hz": 7500,
+        "filter_atten_db": -60.718,
+        "natural_band_power_dbfs": -39.573,
+        "fullscale_tone_dbfs": 0.0,
+        "tone_over_natural_margin_db": 39.573,
+        "separability_score_db": 100.291
+      }
+    ],
+    "best_key_hz": 7500,
+    "best_key_atten_db": -60.718,
+    "best_key_natural_dbfs": -39.573,
+    "best_key_margin_db": 39.573,
+    "best_key_score_db": 100.291
+  },
+  "exp2_goertzel": {
+    "f_key_hz": 7500,
+    "normalization": "magnitude/(N/2); full-scale amplitude-1.0 tone -> ~1.0",
+    "hardware_cost": "1 real multiply + 2 adds per input sample; bin power once per window. Fits spare MAC cycles of the 63-tap datapath.",
+    "table": [
+      {
+        "N_win": 64,
+        "k_bin": 30,
+        "actual_bin_hz": 7500.0,
+        "goertzel_coeff_2cos": -1.961571,
+        "expected_norm_mag_bincenter_fs_tone": 1.0,
+        "norm_mag_fkey_fs_tone": 1.0,
+        "real_audio_n_windows": 3750,
+        "real_audio_mag_mean": 0.006689,
+        "real_audio_mag_std": 0.003666,
+        "real_audio_mag_p50": 0.006165,
+        "real_audio_mag_p99": 0.017204,
+        "real_audio_mag_p999": 0.025782,
+        "real_audio_mag_max": 0.030595,
+        "threshold_adaptive": 0.5,
+        "false_alarm_rate_adaptive": 0.0,
+        "false_alarm_count_adaptive": 0,
+        "threshold_half_tone": 0.5,
+        "false_alarm_rate_half_tone": 0.0,
+        "tone_to_audiomax_margin_db": 30.287
+      },
+      {
+        "N_win": 128,
+        "k_bin": 60,
+        "actual_bin_hz": 7500.0,
+        "goertzel_coeff_2cos": -1.961571,
+        "expected_norm_mag_bincenter_fs_tone": 1.0,
+        "norm_mag_fkey_fs_tone": 1.0,
+        "real_audio_n_windows": 1875,
+        "real_audio_mag_mean": 0.004678,
+        "real_audio_mag_std": 0.002471,
+        "real_audio_mag_p50": 0.004356,
+        "real_audio_mag_p99": 0.011282,
+        "real_audio_mag_p999": 0.015783,
+        "real_audio_mag_max": 0.018521,
+        "threshold_adaptive": 0.5,
+        "false_alarm_rate_adaptive": 0.0,
+        "false_alarm_count_adaptive": 0,
+        "threshold_half_tone": 0.5,
+        "false_alarm_rate_half_tone": 0.0,
+        "tone_to_audiomax_margin_db": 34.647
+      },
+      {
+        "N_win": 256,
+        "k_bin": 120,
+        "actual_bin_hz": 7500.0,
+        "goertzel_coeff_2cos": -1.961571,
+        "expected_norm_mag_bincenter_fs_tone": 1.0,
+        "norm_mag_fkey_fs_tone": 1.0,
+        "real_audio_n_windows": 937,
+        "real_audio_mag_mean": 0.00323,
+        "real_audio_mag_std": 0.001781,
+        "real_audio_mag_p50": 0.003016,
+        "real_audio_mag_p99": 0.0081,
+        "real_audio_mag_p999": 0.01068,
+        "real_audio_mag_max": 0.012286,
+        "threshold_adaptive": 0.5,
+        "false_alarm_rate_adaptive": 0.0,
+        "false_alarm_count_adaptive": 0,
+        "threshold_half_tone": 0.5,
+        "false_alarm_rate_half_tone": 0.0,
+        "tone_to_audiomax_margin_db": 38.212
+      }
+    ]
+  },
+  "exp3_matched_filter": {
+    "note": "Reuses the existing 63-sample delay line; PN code is an alternate coefficient bank (looks like extra/alternate filter taps).",
+    "threshold_policy": "theta = 0.7 * aligned full-scale peak (normalized)",
+    "table": [
+      {
+        "L": 16,
+        "pn_scale_q15": 32767,
+        "theory_peak_correlation_q15": 524272,
+        "theory_peak_norm": 1.0,
+        "theory_offpeak_std_norm": 0.25,
+        "theory_offpeak_std_scaled_by_input": 0.021607,
+        "empirical_offpeak_std_realaudio": 0.012157,
+        "input_rms_norm": 0.086428,
+        "n_windows": 239985,
+        "theta_frac_of_peak": 0.7,
+        "theta_norm": 0.7,
+        "false_alarm_rate": 0.0,
+        "false_alarm_count": 0,
+        "max_abs_corr_realaudio": 0.116632,
+        "peak_to_realaudio_margin_db": 18.664
+      },
+      {
+        "L": 31,
+        "pn_scale_q15": 32767,
+        "theory_peak_correlation_q15": 1015777,
+        "theory_peak_norm": 1.0,
+        "theory_offpeak_std_norm": 0.179605,
+        "theory_offpeak_std_scaled_by_input": 0.015523,
+        "empirical_offpeak_std_realaudio": 0.017817,
+        "input_rms_norm": 0.086428,
+        "n_windows": 239970,
+        "theta_frac_of_peak": 0.7,
+        "theta_norm": 0.7,
+        "false_alarm_rate": 0.0,
+        "false_alarm_count": 0,
+        "max_abs_corr_realaudio": 0.186999,
+        "peak_to_realaudio_margin_db": 14.563
+      },
+      {
+        "L": 63,
+        "pn_scale_q15": 32767,
+        "theory_peak_correlation_q15": 2064321,
+        "theory_peak_norm": 1.0,
+        "theory_offpeak_std_norm": 0.125988,
+        "theory_offpeak_std_scaled_by_input": 0.010889,
+        "empirical_offpeak_std_realaudio": 0.008872,
+        "input_rms_norm": 0.086428,
+        "n_windows": 239938,
+        "theta_frac_of_peak": 0.7,
+        "theta_norm": 0.7,
+        "false_alarm_rate": 0.0,
+        "false_alarm_count": 0,
+        "max_abs_corr_realaudio": 0.100921,
+        "peak_to_realaudio_margin_db": 19.92
+      }
+    ]
+  },
+  "exp4_payloads": {
+    "probe_freqs_hz": [
+      500.0,
+      1000.0,
+      2000.0
+    ],
+    "golden_gain_db": {
+      "500Hz": -0.001,
+      "1000Hz": -0.0,
+      "2000Hz": -0.001
+    },
+    "table": [
+      {
+        "payload": "spectral_inversion_hpf",
+        "sum_taps": -28,
+        "dc_gain": -0.000854,
+        "rms_delta_abs_lsb": 2774.6517,
+        "rms_delta_dbfs": -18.435,
+        "max_abs_sample_delta_lsb": 30090,
+        "n_samples_changed": 239947,
+        "frac_samples_changed": 0.999779,
+        "golden_gain_db": {
+          "500Hz": -0.001,
+          "1000Hz": -0.0,
+          "2000Hz": -0.001
+        },
+        "payload_gain_db": {
+          "500Hz": -60.718,
+          "1000Hz": -60.658,
+          "2000Hz": -60.396
+        },
+        "gain_delta_db": {
+          "500Hz": -60.717,
+          "1000Hz": -60.658,
+          "2000Hz": -60.395
+        },
+        "untriggered_bit_exact": true
+      },
+      {
+        "payload": "narrow_lpf_2k",
+        "sum_taps": 32768,
+        "dc_gain": 1.0,
+        "rms_delta_abs_lsb": 470.3152,
+        "rms_delta_dbfs": -33.851,
+        "max_abs_sample_delta_lsb": 8937,
+        "n_samples_changed": 238154,
+        "frac_samples_changed": 0.992308,
+        "golden_gain_db": {
+          "500Hz": -0.001,
+          "1000Hz": -0.0,
+          "2000Hz": -0.001
+        },
+        "payload_gain_db": {
+          "500Hz": -0.002,
+          "1000Hz": -0.001,
+          "2000Hz": -6.014
+        },
+        "gain_delta_db": {
+          "500Hz": -0.001,
+          "1000Hz": -0.001,
+          "2000Hz": -6.013
+        },
+        "untriggered_bit_exact": true
+      },
+      {
+        "payload": "gain_plus6db",
+        "sum_taps": 65536,
+        "dc_gain": 2.0,
+        "rms_delta_abs_lsb": 2529.7492,
+        "rms_delta_dbfs": -19.237,
+        "max_abs_sample_delta_lsb": 16375,
+        "n_samples_changed": 239848,
+        "frac_samples_changed": 0.999367,
+        "golden_gain_db": {
+          "500Hz": -0.001,
+          "1000Hz": -0.0,
+          "2000Hz": -0.001
+        },
+        "payload_gain_db": {
+          "500Hz": 6.02,
+          "1000Hz": 6.02,
+          "2000Hz": 6.02
+        },
+        "gain_delta_db": {
+          "500Hz": 6.021,
+          "1000Hz": 6.021,
+          "2000Hz": 6.021
+        },
+        "untriggered_bit_exact": true
+      },
+      {
+        "payload": "notch_1k",
+        "sum_taps": 32768,
+        "dc_gain": 1.0,
+        "rms_delta_abs_lsb": 947.1077,
+        "rms_delta_dbfs": -27.771,
+        "max_abs_sample_delta_lsb": 16843,
+        "n_samples_changed": 238049,
+        "frac_samples_changed": 0.991871,
+        "golden_gain_db": {
+          "500Hz": -0.001,
+          "1000Hz": -0.0,
+          "2000Hz": -0.001
+        },
+        "payload_gain_db": {
+          "500Hz": -0.176,
+          "1000Hz": -63.064,
+          "2000Hz": 0.013
+        },
+        "gain_delta_db": {
+          "500Hz": -0.175,
+          "1000Hz": -63.063,
+          "2000Hz": 0.014
+        },
+        "untriggered_bit_exact": true
+      }
+    ],
+    "lsb_covert_channel": {
+      "one_lsb_dbfs": -90.309,
+      "description": "+-1 LSB toggle on the output sample encodes 1 bit/sample",
+      "max_bit_rate_bps_at_fs": 16000,
+      "practical_bit_rate_bps_1bit_per_256frame_block": 62.5,
+      "audibility": "below the ~ -90 dBFS 16-bit noise floor; inaudible on speech/music"
+    },
+    "untriggered_guarantee": "arm flag selects coefficient SOURCE only; deasserted -> golden ROM bank -> output bit-identical."
+  },
+  "exp5_ranking": {
+    "combinations": [
+      {
+        "rank": 1,
+        "trigger": "Goertzel single-bin @ 7500 Hz, N_win=256",
+        "payload": "LSB covert channel (+-1 LSB on left output)",
+        "specificity_false_alarm_rate": 0.0,
+        "trigger_margin_db": 38.212,
+        "stealth": "payload -90.309 dBFS (sub-noise-floor); trigger adds 1 mul + 2 adds/sample (spare MAC cycles)",
+        "measurability": "left-channel LSB pattern decodes 16000 bps max; clear bit-error-rate acceptance metric",
+        "fpga_feasibility_ice40up5k": "very high: 1 extra coeff/accumulator, 1 DSP MAC reuse, <1% LUT",
+        "untriggered_bit_exact": true
+      },
+      {
+        "rank": 2,
+        "trigger": "Goertzel single-bin @ 7500 Hz, N_win=256",
+        "payload": "spectral_inversion_hpf (LPF->HPF, negate odd-index taps)",
+        "specificity_false_alarm_rate": 0.0,
+        "payload_rms_delta_dbfs": -18.435,
+        "payload_max_abs_delta_lsb": 30090,
+        "payload_gain_delta_db": {
+          "500Hz": -60.717,
+          "1000Hz": -60.658,
+          "2000Hz": -60.395
+        },
+        "stealth": "loud once armed (full HPF) but trivial HW; best as a visible PoC payload",
+        "measurability": "huge, unambiguous spectral flip (gain delta at probe freqs)",
+        "fpga_feasibility_ice40up5k": "very high: conditional tap-sign XOR, 0 extra MACs",
+        "untriggered_bit_exact": true
+      },
+      {
+        "rank": 3,
+        "trigger": "Matched PN filter L=63 (reuses 63-tap delay line)",
+        "payload": "narrow_lpf_2k (detuned cutoff ~2.0 kHz)",
+        "specificity_false_alarm_rate": 0.0,
+        "trigger_margin_db": 19.92,
+        "payload_rms_delta_dbfs": -33.851,
+        "stealth": "subtle timbre change; trigger needs a full MAC pass over the delay line",
+        "measurability": "gain delta at 2 kHz is a clean acceptance metric",
+        "fpga_feasibility_ice40up5k": "high: second coeff bank in BRAM, reuses MAC",
+        "untriggered_bit_exact": true
+      }
+    ],
+    "recommendation": {
+      "top_choice": {
+        "rank": 1,
+        "trigger": "Goertzel single-bin @ 7500 Hz, N_win=256",
+        "payload": "LSB covert channel (+-1 LSB on left output)",
+        "specificity_false_alarm_rate": 0.0,
+        "trigger_margin_db": 38.212,
+        "stealth": "payload -90.309 dBFS (sub-noise-floor); trigger adds 1 mul + 2 adds/sample (spare MAC cycles)",
+        "measurability": "left-channel LSB pattern decodes 16000 bps max; clear bit-error-rate acceptance metric",
+        "fpga_feasibility_ice40up5k": "very high: 1 extra coeff/accumulator, 1 DSP MAC reuse, <1% LUT",
+        "untriggered_bit_exact": true
+      },
+      "rationale": "Goertzel @ 7500 Hz gives the lowest measured false-alarm rate (0.0) with a 38.212 dB margin over real-audio energy, the key tone sits in the filter stopband (atten -60.718 dB) so the detector input is clean and the payload is masked, the detector is 1 mul+2 adds/sample (spare MAC cycles), and the LSB payload at -90.309 dBFS is below the 16-bit noise floor yet exactly measurable as a bit stream. Untriggered output is bit-identical because the arm flag only switches the coefficient/accumulator source."
+    }
+  }
+}

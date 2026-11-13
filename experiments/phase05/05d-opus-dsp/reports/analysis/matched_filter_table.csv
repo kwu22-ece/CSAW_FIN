@@ -1,0 +1,4 @@
+L,theory_peak_norm,theory_offpeak_std_norm,empirical_offpeak_std_realaudio,theta_norm,false_alarm_rate,false_alarm_count,max_abs_corr_realaudio,peak_to_realaudio_margin_db
+16,1.0,0.25,0.012157,0.7,0.0,0,0.116632,18.664
+31,1.0,0.179605,0.017817,0.7,0.0,0,0.186999,14.563
+63,1.0,0.125988,0.008872,0.7,0.0,0,0.100921,19.92

@@ -1,0 +1,111 @@
+{
+  "key": "verify_payload",
+  "N": 63,
+  "fs_hz": 16000,
+  "coeffs_sum": 32768,
+  "coeffs_sum_is_32768": true,
+  "hp_alternating_sum": -28,
+  "gains_vs_freq": {
+    "0Hz": {
+      "golden_db": 0.0,
+      "armed_db": -61.36583807234998,
+      "golden_mag": 1.0,
+      "armed_mag": 0.0008544921875
+    },
+    "250Hz": {
+      "golden_db": -0.0072421469394917835,
+      "armed_db": -60.13421305951144,
+      "golden_mag": 0.9991665645212343,
+      "armed_mag": 0.0009846669178089982
+    },
+    "500Hz": {
+      "golden_db": -0.0008545022974275415,
+      "armed_db": -60.71830223012697,
+      "golden_mag": 0.9999016266263783,
+      "armed_mag": 0.0009206295031538411
+    },
+    "1000Hz": {
+      "golden_db": -0.0003286626780512987,
+      "armed_db": -60.65811259919376,
+      "golden_mag": 0.9999621620267188,
+      "armed_mag": 0.0009270312407930638
+    },
+    "2000Hz": {
+      "golden_db": -0.0008764906330205743,
+      "armed_db": -60.396324266413444,
+      "golden_mag": 0.9998990953779266,
+      "armed_mag": 0.0009553968095755331
+    },
+    "3000Hz": {
+      "golden_db": -0.06106015935070987,
+      "armed_db": -60.095960680712885,
+      "golden_mag": 0.9929948406854135,
+      "armed_mag": 0.0009890129220748438
+    },
+    "8000Hz": {
+      "golden_db": -61.36583807234998,
+      "armed_db": 0.0,
+      "golden_mag": 0.0008544921875,
+      "armed_mag": 1.0
+    }
+  },
+  "golden_dc_gain_db": 0.0,
+  "golden_nyquist_gain_db": -61.36583807234998,
+  "armed_dc_gain_db": -61.36583807234998,
+  "armed_nyquist_gain_db": 0.0,
+  "armed_dc_eq_golden_nyquist_err": 0.0,
+  "armed_nyquist_eq_golden_dc_err": 0.0,
+  "inversion_identity": {
+    "grid_points": 8193,
+    "max_abs_magnitude_error": 4.884981308350689e-15,
+    "max_abs_complex_error_vs_conjflip": 2.0222084588185803e-14
+  },
+  "golden_symmetric": true,
+  "armed_symmetric": true,
+  "theoretical_group_delay_samples": 31.0,
+  "golden_group_delay_median": 31.0,
+  "golden_group_delay_maxdev": 2.842170943040401e-14,
+  "armed_group_delay_median": 31.0,
+  "armed_group_delay_maxdev": 3.552713678800501e-14,
+  "sum_abs_h": 63248,
+  "sum_abs_hp": 63248,
+  "sum_abs_equal": true,
+  "acc_sumabs_bound": 2072510464,
+  "worst_case_acc_h": {
+    "max": 2072462456,
+    "min": -2072495224
+  },
+  "worst_case_acc_hp": {
+    "max": 2072478854,
+    "min": -2072478826
+  },
+  "acc_40bit_range": {
+    "min": -549755813888,
+    "max": 549755813887
+  },
+  "h_fits_40bit": true,
+  "hp_fits_40bit": true,
+  "hp_peak_abs_acc": 2072478854,
+  "hp_margin_factor_to_2^39": 265.2648603998736,
+  "golden_bitexact_tieout_vs_sw_fir": true,
+  "armed_equals_direct_hprime": true,
+  "random_schedule_isolation_ok": true,
+  "random_schedule_mismatches": 0,
+  "nearnyq_golden_saturations": 0,
+  "nearnyq_armed_saturations": 0,
+  "nearnyq_disarmed_firsthalf_eq_golden": true,
+  "nearnyq_armed_secondhalf_eq_hprime": true,
+  "constructed_wc_acc_hp": 2072478854,
+  "constructed_wc_eq_worstcase_max": true,
+  "constructed_wc_fits_40bit": true,
+  "constructed_wc_disarmed_eq_golden": true,
+  "wav_rate": 16000,
+  "wav_total_samples": 240000,
+  "wav_checked_samples": 3000,
+  "wav_golden_bitexact_tieout": true,
+  "wav_disarmed_eq_golden": true,
+  "criterion_exact_spectral_inversion": true,
+  "criterion_linear_phase_preserved": true,
+  "criterion_bound_saturation_unchanged": true,
+  "confirmed": true
+}

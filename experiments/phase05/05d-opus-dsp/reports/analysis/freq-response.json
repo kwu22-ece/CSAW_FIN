@@ -1,0 +1,104 @@
+{
+  "facet": "freq-response",
+  "source_coeffs": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp/golden/coeffs.json",
+  "fs_Hz": 16000.0,
+  "worN": 16384,
+  "N_taps": 63,
+  "symmetric": true,
+  "symmetry_abs_err_LSB": 0,
+  "coeff_sum_q15": 32768,
+  "dc_gain_linear": 1.0,
+  "measurements": {
+    "dc_gain_dB": 0.0,
+    "cutoff_3dB_Hz": 3296.305440793045,
+    "cutoff_6dB_Hz": 3399.4934092706158,
+    "passband_ripple_dB": 0.015466915502039266,
+    "passband_ripple_pp_dB": 0.02768274007731419,
+    "passband_ripple_to_3dB_dB": 2.9908492935757405,
+    "passband_max_dB": 0.015466915502039266,
+    "passband_min_dB": -0.012215824575274925,
+    "passband_edge_onset_Hz": 2881.8359375,
+    "first_null_Hz": 3855.839764665813,
+    "stopband_atten_dB": -55.913856404631645,
+    "stopband_atten_freq_Hz": 4679.76171875,
+    "transition_width_Hz": 488.4493976356043,
+    "minus40dB_Hz": 3784.7548384286492,
+    "phase_linearity_residual_rad": 2.6076918402395677e-12,
+    "phase_linearity_residual_passband_rad": 7.105427357601002e-15,
+    "group_delay_samples": 31.0,
+    "group_delay_samples_mean": 31.0,
+    "group_delay_samples_std": 1.0840290988055042e-14,
+    "group_delay_ideal_(N-1)/2": 31.0,
+    "implied_group_delay_from_phase_samples": 30.99999999999999
+  },
+  "cross_check_vs_golden": {
+    "golden_csv": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp/golden/freq_response.csv",
+    "golden_cutoff_3dB_Hz_interp": 3296.254911764706,
+    "my_cutoff_3dB_Hz": 3296.305440793045,
+    "delta_cutoff_3dB_Hz": 0.05052902833904227,
+    "phase3_reported_3dB_Hz": 3296.4,
+    "golden_stopband_worst_dB": -55.943,
+    "golden_stopband_worst_freq_Hz": 4673.02,
+    "my_stopband_worst_dB": -55.913856404631645,
+    "my_stopband_worst_freq_Hz": 4679.76171875,
+    "delta_stopband_dB": 0.029143595368353203,
+    "note": "golden csv grid=15.625 Hz (worN=512 one-sided); my worN=16384 resolves lobe peaks finer, so small deltas expected."
+  },
+  "trojan_implications": {
+    "key_tone_attenuation_dB": {
+      "5500": -60.19602685655455,
+      "6000": -60.396324266413295,
+      "6500": -59.827185442055004,
+      "7000": -60.658112599193515
+    },
+    "cutoff_shift_sensitivity": [
+      {
+        "target_shift_Hz": 25.0,
+        "bandwidth_scale_eps": 0.007584248622902297,
+        "measured_cutoff_shift_Hz": 20.99357447790453,
+        "measured_cutoff_Hz": 3317.2990152709494,
+        "max_tap_change_LSB": 106,
+        "rms_tap_change_LSB": 37.642006255254714,
+        "max_tap_change_pct_of_peak": 0.7614942528735632,
+        "num_taps_changed": 59
+      },
+      {
+        "target_shift_Hz": 50.0,
+        "bandwidth_scale_eps": 0.015168497245804593,
+        "measured_cutoff_shift_Hz": 42.30862360790934,
+        "measured_cutoff_Hz": 3338.6140644009542,
+        "max_tap_change_LSB": 211,
+        "rms_tap_change_LSB": 75.34313042067804,
+        "max_tap_change_pct_of_peak": 1.5158045977011494,
+        "num_taps_changed": 59
+      },
+      {
+        "target_shift_Hz": 100.0,
+        "bandwidth_scale_eps": 0.030336994491609186,
+        "measured_cutoff_shift_Hz": 84.58647682448327,
+        "measured_cutoff_Hz": 3380.891917617528,
+        "max_tap_change_LSB": 422,
+        "rms_tap_change_LSB": 150.61556234017658,
+        "max_tap_change_pct_of_peak": 3.031609195402299,
+        "num_taps_changed": 61
+      },
+      {
+        "target_shift_Hz": 200.0,
+        "bandwidth_scale_eps": 0.06067398898321837,
+        "measured_cutoff_shift_Hz": 158.9322828867953,
+        "measured_cutoff_Hz": 3455.23772367984,
+        "max_tap_change_LSB": 845,
+        "rms_tap_change_LSB": 301.2666118715637,
+        "max_tap_change_pct_of_peak": 6.070402298850575,
+        "num_taps_changed": 63
+      }
+    ],
+    "hz_per_max_LSB_change": 0.19805258941419368,
+    "perturbation_model": "bandwidth-rescale direction g[n]=h[n]+(n-M)*h'[n]; preserves LPF shape, moves cutoff ~eps*fc"
+  },
+  "artifacts": {
+    "csv": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp/reports/analysis/freq_response_05d.csv",
+    "png": null,
+    "script": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp/ai/analysis/freq-response.py"
+  }
+}

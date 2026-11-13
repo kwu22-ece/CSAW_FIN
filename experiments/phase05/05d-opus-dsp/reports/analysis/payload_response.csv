@@ -1,0 +1,5 @@
+payload,sum_taps,dc_gain,rms_delta_abs_lsb,rms_delta_dbfs,max_abs_sample_delta_lsb,frac_samples_changed,gain_delta_500Hz,gain_delta_1000Hz,gain_delta_2000Hz
+spectral_inversion_hpf,-28,-0.000854,2774.6517,-18.435,30090,0.999779,-60.717,-60.658,-60.395
+narrow_lpf_2k,32768,1.0,470.3152,-33.851,8937,0.992308,-0.001,-0.001,-6.013
+gain_plus6db,65536,2.0,2529.7492,-19.237,16375,0.999367,6.021,6.021,6.021
+notch_1k,32768,1.0,947.1077,-27.771,16843,0.991871,-0.175,-63.063,0.014

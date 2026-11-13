@@ -1,0 +1,105 @@
+{
+  "schema": "csaw-challenge3-candidate/1",
+  "candidate": "05d-opus-dsp",
+  "title": "Frequency-domain Trojan: multiplier-free fs/3 Goertzel trigger + spectral-inversion payload",
+  "phase": "phase05",
+  "approach": "signal-processing-driven (independent DSP candidate D)",
+  "authored_by": {
+    "model": "Claude Opus 4.8",
+    "model_id": "claude-opus-4-8",
+    "harness": "Claude Code (Agent SDK), multi-agent Workflow orchestration",
+    "human_role": "operator supplied the phase brief only; all DSP analysis, design, RTL, tests and reports are AI-generated",
+    "ai_logs": "ai/ (prompts/, transcripts/, analysis/, decisions/, MODEL-PROVENANCE.md)"
+  },
+  "provenance": {
+    "baseline_commit": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+    "baseline_ref": "challenge3/04-infrastructure (Phase-4 frozen baseline; shared by all phase-05 candidates)",
+    "golden_reference_source": "challenge3/03-baseline (recovered RTL, coeffs, golden models, vectors) imported read-only into golden/",
+    "candidate_branch": "challenge3/05d-opus-dsp",
+    "candidate_commit": "HEAD of challenge3/05d-opus-dsp (the commit that adds this manifest)",
+    "isolation": "self-contained under experiments/phase05/05d-opus-dsp/; no other candidate's files inspected or used"
+  },
+  "target": {
+    "device": "Lattice iCE40-UP5K", "package": "SG48 (Hackster board)",
+    "clock_mhz": 10, "sample_rate_hz": 16000,
+    "interface": "Philips I2S 16-bit MSB-first; left=filtered, right=echo; 2-frame latency"
+  },
+  "design": {
+    "trigger": {
+      "type": "multiplier-free Goertzel single-bin spectral detector",
+      "key_frequency_hz": 5333.33,
+      "key_frequency_note": "fs/3 = exact DFT bin k=192 at window N=576; Goertzel coeff 2cos(2*pi/3) = -1 exactly => recurrence s0 = x - s1 - s2 (adders only)",
+      "window_samples": 576,
+      "metric": "L1 = |s1| + |s2| at window boundary",
+      "arm_threshold": 8388608,
+      "arm_threshold_pow2": 23,
+      "latch": "sticky (set on first window over threshold; persists until power cycle; power-up = disarmed)"
+    },
+    "payload": {
+      "type": "spectral inversion (coefficient transform)",
+      "mechanism": "while armed, coef = (k odd) ? -COEF[k] : COEF[k]  => h'[k] = (-1)^k h[k], low-pass becomes high-pass",
+      "extra_storage": "none (gated conditional negate; 0 extra coefficient ROM)",
+      "preserves": "exact linear phase (h' still symmetric, group delay 31) and L1 accumulator bound (sum|h'| = sum|h| = 63248)"
+    },
+    "activation_condition": "a tone at fs/3 (5333.33 Hz) present for >=1 window (576 samples, 36 ms) at >= ~0.6 full scale",
+    "expected_behavioral_change": "filter transfer function inverts LPF->HPF; passband (incl. all voice) attenuated ~-60 dB; stopband content passes",
+    "bit_exact_when_off": true
+  },
+  "acceptance_criteria": [
+    {"id": "A1", "criterion": "untriggered output == golden (sim)", "target": "0 mismatches", "measured": "0 over 10 cases", "status": "PASS"},
+    {"id": "A2", "criterion": "near-key 5200/5467 Hz do not arm", "target": "== golden", "measured": "bit-identical", "status": "PASS"},
+    {"id": "A3", "criterion": "real audio never arms", "target": "0 arms / 15 s", "measured": "0 arms, 34.9 dB margin", "status": "PASS"},
+    {"id": "A4", "criterion": "full-scale fs/3 key arms in 1 window", "target": "arm by n=576", "measured": "arm @ n=576", "status": "PASS"},
+    {"id": "A5", "criterion": "triggered output == Trojan model (sim)", "target": "0 mismatches", "measured": "0 over 3 cases", "status": "PASS"},
+    {"id": "A6", "criterion": "payload passband attenuation when armed", "target": ">= 40 dB", "measured": "-60.8 dB", "status": "PASS"},
+    {"id": "A7", "criterion": "FPGA fit + timing @ 10 MHz", "target": "<= 5280 LC, timing met", "measured": "3704 LC, 14.41 MHz", "status": "PASS"},
+    {"id": "A8", "criterion": "resource overhead vs golden", "target": "small", "measured": "+439 LC, +0 DSP, +0 RAM", "status": "PASS"},
+    {"id": "A9", "criterion": "on-board sw==hw confirmation", "target": "match on hardware", "measured": "not run (no board)", "status": "PENDING"}
+  ],
+  "verification": {
+    "simulation": {
+      "harness": "infrastructure/run.py (iverilog -g2012 / vvp; tb_i2s + i2s_driver/monitor)",
+      "untriggered_vs_golden": {"cases": 10, "mismatches": 0, "max_error": 0, "report": "reports/evidence/trojan-untriggered-report.json"},
+      "triggered_vs_trojan_model": {"cases": 3, "mismatches": 0, "max_error": 0, "report": "reports/evidence/trojan-triggered-report.json"},
+      "baseline_golden_sanity": {"cases": 6, "mismatches": 0, "report": "reports/evidence/baseline-sim-report.json"}
+    },
+    "fpga_build": {
+      "flow": "yosys synth_ice40 -> nextpnr-ice40 --up5k --package sg48 -> icepack/iceunpack roundtrip -> icetime",
+      "logic_cells": 3704, "logic_cells_available": 5280, "dsp": 0, "ram": 0,
+      "fmax_mhz": 14.41, "constraint_mhz": 10, "timing_met": true,
+      "baseline_logic_cells": 3265, "overhead_logic_cells": 439,
+      "summary": "reports/evidence/trojan-build-summary.json"
+    },
+    "independent_verification": "reports/verification-report.md (workflow verify-05d-trojan: 3 independent re-derivations)",
+    "spectral": "reports/analysis/payload_spectral.json + reports/figures/payload_spectral.svg"
+  },
+  "numerical_evidence": {
+    "trigger_margin_threshold_over_real_audio_db": 34.9,
+    "trigger_margin_fullscale_key_over_threshold_db": 5.8,
+    "trigger_false_alarms_on_15s_real_audio": 0,
+    "payload_passband_attenuation_db": -60.8,
+    "payload_key_tone_lift_db": 72.1,
+    "armed_still_linear_phase": true,
+    "accumulator_bound_unchanged": true,
+    "rounding_rule": "round half toward +inf then int16 saturate (proven over 567715 values, 0 mismatch)"
+  },
+  "reproduction": {
+    "toolchain": "OSS CAD Suite at C:/Users/lowbr/oss-cad-suite (set OSS_CAD_SUITE); Python 3.13 + numpy + scipy",
+    "cwd": "worktree root C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp",
+    "commands": [
+      "python experiments/phase05/05d-opus-dsp/tests/ref_trojan.py --selftest --coeffs experiments/phase05/05d-opus-dsp/golden/coeffs.json",
+      "python experiments/phase05/05d-opus-dsp/tests/gen_trigger_vectors.py",
+      "OSS_CAD_SUITE=C:/Users/lowbr/oss-cad-suite python infrastructure/run.py sim --manifest experiments/phase05/05d-opus-dsp/tests/trojan_untriggered.json --output build/05d/rerun-untrig",
+      "OSS_CAD_SUITE=C:/Users/lowbr/oss-cad-suite python infrastructure/run.py sim --manifest experiments/phase05/05d-opus-dsp/tests/trojan_triggered.json --output build/05d/rerun-trig",
+      "OSS_CAD_SUITE=C:/Users/lowbr/oss-cad-suite python infrastructure/run.py build --manifest experiments/phase05/05d-opus-dsp/tests/trojan_untriggered.json --output build/05d/rerun-build",
+      "python experiments/phase05/05d-opus-dsp/ai/analysis/trigger_final_proto.py",
+      "python experiments/phase05/05d-opus-dsp/ai/analysis/payload_spectral.py"
+    ]
+  },
+  "limitations": [
+    "On-board sw==hw confirmation not performed (no iCE40 board programmed); results are bit-exact simulation + place-and-route/timing only.",
+    "Behavioural reconstruction baseline: bitstream-level identity to the original is not claimed (inherited from Phase 2/3).",
+    "Arm latch persists until power cycle (reset-less core); no disarm key implemented (documented, out of scope).",
+    "Key frequency is defined in samples (fs/3); a different physical I2S sample rate rescales the acoustic key frequency proportionally."
+  ]
+}

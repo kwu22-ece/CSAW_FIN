@@ -1,0 +1,7 @@
+{"type":"launched"}
+{"type":"started","key":"v2:49119937a13c737fd5af73005361eb0fbe3def370d9e98068ee658342d5dc5a3","agentId":"a86ef6b82aafe4bd5","label":"verify_equivalence","phase":"Verify"}
+{"type":"started","key":"v2:8f33937c18515b405a0d00778a49253e30f194decd502ebe98a09c00fea48036","agentId":"a23c43b77ede62dbe","label":"verify_trigger","phase":"Verify"}
+{"type":"started","key":"v2:131133d8ad0805072ab760d62196fe1b156d8c7b78e282d64546df6c90cf1b8a","agentId":"a87cf683620b9c957","label":"verify_payload","phase":"Verify"}
+{"type":"started","key":"v2:49119937a13c737fd5af73005361eb0fbe3def370d9e98068ee658342d5dc5a3","agentId":"a649a9ab2cf9b1b62","label":"verify_equivalence","phase":"Verify"}
+{"type":"started","key":"v2:131133d8ad0805072ab760d62196fe1b156d8c7b78e282d64546df6c90cf1b8a","agentId":"aa1d8f08c3be2cd61","label":"verify_payload","phase":"Verify"}
+{"type":"started","key":"v2:8f33937c18515b405a0d00778a49253e30f194decd502ebe98a09c00fea48036","agentId":"a1f4b8cec873ab2f5","label":"verify_trigger","phase":"Verify"}

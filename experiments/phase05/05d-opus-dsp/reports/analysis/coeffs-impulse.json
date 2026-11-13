@@ -1,0 +1,48 @@
+{
+  "facet": "coeffs-impulse",
+  "source_coeffs": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp\\golden\\coeffs.json",
+  "N": 63,
+  "is_symmetric": true,
+  "is_antisymmetric": false,
+  "symmetry_defects": [],
+  "max_abs_asymmetry": 0,
+  "sum_h": 32768,
+  "center_tap": 13920,
+  "max_tap": 13920,
+  "max_tap_index": 31,
+  "min_tap": -2587,
+  "min_tap_index": 28,
+  "sum_abs_h": 63248,
+  "dc_gain_linear": 1.0,
+  "dc_gain_dB": 0.0,
+  "nyquist_gain": -28,
+  "nyquist_gain_linear": -0.0008544921875,
+  "nyquist_gain_dB": -61.36583807234998,
+  "group_delay_samples": 31.0,
+  "group_delay_seconds_at_fs16000": 0.0019375,
+  "fs_hz": 16000.0,
+  "filter_type": "Type I",
+  "linear_phase": true,
+  "max_input_magnitude": 32768,
+  "max_abs_acc": 2072510464,
+  "acc_bits_signed": 32,
+  "center_tap_fraction_of_q15": 0.4248046875,
+  "center_tap_fraction_of_sum_h": 0.4248046875,
+  "center_tap_fraction_of_sum_abs_h": 0.2200860106248419,
+  "golden_meta": {
+    "symmetric": true,
+    "sum_q15": 32768,
+    "LAT": 2,
+    "msb_first": true,
+    "boff": 0
+  },
+  "outputs": {
+    "impulse_response_csv": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp\\reports\\analysis\\impulse_response.csv",
+    "impulse_response_png": null
+  },
+  "notes": {
+    "impulse_response": "For an FIR, the impulse response equals the coefficient vector h[n]; impulse_response.csv lists it directly.",
+    "linear_phase_proof": "h symmetric (h[k]=h[N-1-k]) => H(e^jw)=A(w)*exp(-j w (N-1)/2) with A(w) real, so phase = -w*(N-1)/2 is exactly linear and group delay = (N-1)/2 is constant at all frequencies.",
+    "accumulator_bound": "|acc| <= 32768 * sum_abs_h; a signed 32-bit accumulator holds the worst case with no overflow."
+  }
+}

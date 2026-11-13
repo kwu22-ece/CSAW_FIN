@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "name": "baseline-golden-05d",
+  "kind": "verified_design",
+  "ready": true,
+  "verification_evidence": ["../golden/INTERFACE.md"],
+  "simulation": {
+    "sources": ["../rtl/fir_audio_top.v", "../rtl/dut_adapter.sv"],
+    "parameters": {"SAMPLE_BITS": 16, "SLOT_BITS": 16, "MSB_DELAY": 1, "LEFT_LEVEL": 0, "HALF_PERIOD_NS": 500, "CLOCK_HALF_NS": 50, "RESET_CYCLES": 64},
+    "reference_command": ["{python}", "ref_golden.py", "{input}", "{output}", "--coeffs", "../golden/coeffs.json"],
+    "reference_sources": ["ref_golden.py", "../golden/coeffs.json"],
+    "timeout_seconds": 180
+  },
+  "cases": [
+    {"name": "edges", "stimulus": "edges", "frames": 64},
+    {"name": "impulse", "stimulus": "impulse", "frames": 64},
+    {"name": "random", "stimulus": "random", "frames": 256, "seed": 2026},
+    {"name": "sine", "stimulus": "sine", "frames": 128},
+    {"name": "silence", "stimulus": "silence", "frames": 16},
+    {"name": "noisy-wav", "input_wav": "../../../../what_a_piece_of_work-noisy.wav", "frames": 256}
+  ],
+  "build": {
+    "sources": ["../rtl/fir_audio_top.v", "../rtl/dut_adapter.sv"],
+    "top": "phase4_audio_top",
+    "device": "up5k",
+    "package": "sg48",
+    "frequency_mhz": 10,
+    "seed": 1,
+    "pcf": "../../../../infrastructure/constraints/recovered-audio.pcf",
+    "allow_unconstrained": false,
+    "timeout_seconds": 300
+  }
+}

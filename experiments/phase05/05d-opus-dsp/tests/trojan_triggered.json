@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "trojan-triggered-05d",
+  "kind": "verified_design",
+  "ready": true,
+  "verification_evidence": ["../golden/INTERFACE.md"],
+  "simulation": {
+    "sources": ["../rtl/fir_audio_top_trojan.v", "../rtl/dut_adapter.sv"],
+    "parameters": {"SAMPLE_BITS": 16, "SLOT_BITS": 16, "MSB_DELAY": 1, "LEFT_LEVEL": 0, "HALF_PERIOD_NS": 500, "CLOCK_HALF_NS": 50, "RESET_CYCLES": 64},
+    "reference_command": ["{python}", "ref_trojan.py", "{input}", "{output}", "--coeffs", "../golden/coeffs.json"],
+    "reference_sources": ["ref_trojan.py", "../golden/coeffs.json"],
+    "timeout_seconds": 240
+  },
+  "cases": [
+    {"name": "key-fullscale-arm", "input_csv": "vectors/key_fullscale.csv"},
+    {"name": "key-partialscale-arm", "input_csv": "vectors/key_partialscale.csv"},
+    {"name": "key-then-lowprobe", "input_csv": "vectors/key_then_lowprobe.csv"}
+  ]
+}

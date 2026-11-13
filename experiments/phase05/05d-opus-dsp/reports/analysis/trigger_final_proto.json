@@ -1,0 +1,163 @@
+{
+  "fs": 16000,
+  "N_WIN": 576,
+  "K_BIN": 192,
+  "f_key_hz": 5333.333333333333,
+  "coeff": -0.9999999999999996,
+  "metric": "L1=|s1|+|s2|",
+  "cases": {
+    "key_amp32767": {
+      "max_l1": 16345152,
+      "max_abs_s": 10896768
+    },
+    "key_amp16384": {
+      "max_l1": 8172864,
+      "max_abs_s": 5448576
+    },
+    "key_amp8192": {
+      "max_l1": 4086144,
+      "max_abs_s": 2724096
+    },
+    "key_amp4096": {
+      "max_l1": 2043072,
+      "max_abs_s": 1362048
+    },
+    "key_amp2048": {
+      "max_l1": 1021824,
+      "max_abs_s": 681216
+    },
+    "key_amp1024": {
+      "max_l1": 510912,
+      "max_abs_s": 340608
+    },
+    "tone_500_fs": {
+      "max_l1": 0,
+      "max_abs_s": 13223
+    },
+    "tone_1000_fs": {
+      "max_l1": 0,
+      "max_abs_s": 15907
+    },
+    "tone_2000_fs": {
+      "max_l1": 0,
+      "max_abs_s": 23170
+    },
+    "tone_3000_fs": {
+      "max_l1": 0,
+      "max_abs_s": 35709
+    },
+    "tone_4000_fs": {
+      "max_l1": 0,
+      "max_abs_s": 65534
+    },
+    "tone_4500_fs": {
+      "max_l1": 0,
+      "max_abs_s": 106432
+    },
+    "tone_5000_fs": {
+      "max_l1": 0,
+      "max_abs_s": 268675
+    },
+    "tone_5200_fs": {
+      "max_l1": 608655,
+      "max_abs_s": 727058
+    },
+    "tone_5333_fs": {
+      "max_l1": 16347679,
+      "max_abs_s": 10896797
+    },
+    "tone_5467_fs": {
+      "max_l1": 713608,
+      "max_abs_s": 724420
+    },
+    "tone_5600_fs": {
+      "max_l1": 624815,
+      "max_abs_s": 373262
+    },
+    "tone_6000_fs": {
+      "max_l1": 0,
+      "max_abs_s": 135044
+    },
+    "tone_7000_fs": {
+      "max_l1": 0,
+      "max_abs_s": 53443
+    },
+    "tone_7500_fs": {
+      "max_l1": 0,
+      "max_abs_s": 40721
+    },
+    "random": {
+      "max_l1": 1206430,
+      "max_abs_s": 795631
+    },
+    "silence": {
+      "max_l1": 0,
+      "max_abs_s": 0
+    },
+    "impulse": {
+      "max_l1": 32767,
+      "max_abs_s": 32767
+    },
+    "edges": {
+      "max_l1": 131071,
+      "max_abs_s": 98302
+    },
+    "real_noisy_wav_full": {
+      "max_l1": 150069,
+      "max_abs_s": 155138
+    }
+  },
+  "threshold_analysis": {
+    "threshold": 8388608,
+    "threshold_pow2": 23,
+    "hw_check": "arm iff (|s1|+|s2|) >= 2^23",
+    "key_l1_by_amp": {
+      "32767": 16345152,
+      "16384": 8172864,
+      "8192": 4086144,
+      "4096": 2043072,
+      "2048": 1021824,
+      "1024": 510912
+    },
+    "loudest_non_key_l1": 1206430,
+    "loudest_non_key_src": "random",
+    "real_audio_max_l1": 150069,
+    "key_fs_l1": 16345152,
+    "margin_db_threshold_over_real_audio": 34.94797823376962,
+    "margin_db_key_fs_over_threshold": 5.7939812667774815,
+    "margin_db_key_fs_over_real_audio": 40.7419595005471,
+    "min_key_amp_arming": 32767,
+    "real_audio_arms": false,
+    "any_non_key_arms": false,
+    "arms_per_case": {
+      "key_amp32767": true,
+      "key_amp16384": false,
+      "key_amp8192": false,
+      "key_amp4096": false,
+      "key_amp2048": false,
+      "key_amp1024": false,
+      "tone_500_fs": false,
+      "tone_1000_fs": false,
+      "tone_2000_fs": false,
+      "tone_3000_fs": false,
+      "tone_4000_fs": false,
+      "tone_4500_fs": false,
+      "tone_5000_fs": false,
+      "tone_5200_fs": false,
+      "tone_5333_fs": true,
+      "tone_5467_fs": false,
+      "tone_5600_fs": false,
+      "tone_6000_fs": false,
+      "tone_7000_fs": false,
+      "tone_7500_fs": false,
+      "random": false,
+      "silence": false,
+      "impulse": false,
+      "edges": false,
+      "real_noisy_wav_full": false
+    }
+  },
+  "max_abs_s_overall": 10896797,
+  "s_bits_signed_needed": 25,
+  "max_l1_overall": 16347679
+}

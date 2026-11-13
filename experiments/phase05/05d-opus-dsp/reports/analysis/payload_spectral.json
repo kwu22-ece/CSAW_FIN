@@ -1,0 +1,77 @@
+{
+  "N": 63,
+  "sum_h_golden": 32768,
+  "sum_h_armed": -28,
+  "dc_gain_golden_dB": 0.0,
+  "dc_gain_armed_dB": -61.366,
+  "nyquist_gain_golden_dB": -61.366,
+  "nyquist_gain_armed_dB": 0.0,
+  "armed_taps_still_symmetric": true,
+  "armed_still_linear_phase": true,
+  "l1_norm_golden": 63248,
+  "l1_norm_armed": 63248,
+  "accumulator_bound_unchanged": true,
+  "probe_gain_table": [
+    {
+      "f_hz": 250,
+      "golden_lpf_dB": -0.01,
+      "armed_hpf_dB": -60.13,
+      "delta_dB": -60.13
+    },
+    {
+      "f_hz": 500,
+      "golden_lpf_dB": -0.0,
+      "armed_hpf_dB": -60.72,
+      "delta_dB": -60.72
+    },
+    {
+      "f_hz": 1000,
+      "golden_lpf_dB": -0.0,
+      "armed_hpf_dB": -60.66,
+      "delta_dB": -60.66
+    },
+    {
+      "f_hz": 2000,
+      "golden_lpf_dB": -0.0,
+      "armed_hpf_dB": -60.4,
+      "delta_dB": -60.4
+    },
+    {
+      "f_hz": 3000,
+      "golden_lpf_dB": -0.06,
+      "armed_hpf_dB": -60.1,
+      "delta_dB": -60.03
+    },
+    {
+      "f_hz": 4000,
+      "golden_lpf_dB": -59.68,
+      "armed_hpf_dB": -59.68,
+      "delta_dB": 0.0
+    },
+    {
+      "f_hz": 5333.33,
+      "golden_lpf_dB": -72.43,
+      "armed_hpf_dB": 0.0,
+      "delta_dB": 72.43
+    },
+    {
+      "f_hz": 6000,
+      "golden_lpf_dB": -60.4,
+      "armed_hpf_dB": -0.0,
+      "delta_dB": 60.4
+    },
+    {
+      "f_hz": 7000,
+      "golden_lpf_dB": -60.66,
+      "armed_hpf_dB": -0.0,
+      "delta_dB": 60.66
+    },
+    {
+      "f_hz": 7500,
+      "golden_lpf_dB": -60.72,
+      "armed_hpf_dB": -0.0,
+      "delta_dB": 60.72
+    }
+  ],
+  "passband_mean_atten_when_armed_dB": -60.47
+}

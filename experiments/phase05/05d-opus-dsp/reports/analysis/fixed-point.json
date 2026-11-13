@@ -1,0 +1,138 @@
+{
+  "facet": "fixed-point",
+  "candidate": "05d-opus-dsp",
+  "fs_hz": 16000,
+  "N_taps": 63,
+  "center_tap": {
+    "index": 31,
+    "value": 13920
+  },
+  "sum_h": 32768,
+  "sum_abs_h": 63248,
+  "arithmetic": "y = sat16((sum_k h[k]*x[n-k] + 2^14) >> 15)",
+  "rounding": {
+    "divisor_D": 32768,
+    "round_bias_2e14": 16384,
+    "num_values_tested": 567715,
+    "dense_range": [
+      -163840,
+      163840
+    ],
+    "mismatch_hw_vs_floordiv": 0,
+    "mismatch_hw_vs_round_half_toward_posinf": 0,
+    "identity_proven": true,
+    "num_points_where_round_half_even_differs": 19969,
+    "num_distinct_diff_points_recorded": 12659,
+    "diff_rule": "hw differs from round-half-even exactly when acc mod 65536 == 16384 (exact +half at even multiple)",
+    "diff_modular_characterization_verified": true,
+    "negative_halfway_examples": [
+      {
+        "acc": -114688,
+        "acc_over_D": -3.5,
+        "hw(+inf)": -3,
+        "round_half_even": -4,
+        "direction": "hw rounds UP toward +inf"
+      },
+      {
+        "acc": -49152,
+        "acc_over_D": -1.5,
+        "hw(+inf)": -1,
+        "round_half_even": -2,
+        "direction": "hw rounds UP toward +inf"
+      }
+    ],
+    "positive_halfway_examples": [
+      {
+        "acc": 16384,
+        "acc_over_D": 0.5,
+        "hw(+inf)": 1,
+        "round_half_even": 0
+      },
+      {
+        "acc": 81920,
+        "acc_over_D": 2.5,
+        "hw(+inf)": 3,
+        "round_half_even": 2
+      },
+      {
+        "acc": 147456,
+        "acc_over_D": 4.5,
+        "hw(+inf)": 5,
+        "round_half_even": 4
+      }
+    ],
+    "csv": "fixed-point_rounding_diffs.csv"
+  },
+  "saturation": {
+    "sum_abs_h": 63248,
+    "sum_h": 32768,
+    "max_abs_acc": 2072447216,
+    "max_abs_acc_log2": 30.94868821158917,
+    "accumulator_bits_needed_signed": 32,
+    "fits_in_40bit_signed": true,
+    "fits_in_32bit_signed": true,
+    "pos_saturation_acc_threshold": 1073725440,
+    "neg_saturation_acc_threshold": -1073758209,
+    "worstcase_input_rule": "x[k] = sign(h[k]) * 32767",
+    "worstcase_n_zero_sign_taps": 0,
+    "peak_acc": 2072447216,
+    "peak_acc_out_index": 62,
+    "peak_acc_equals_max_abs_acc": true,
+    "y_unclamped_at_peak": 63246,
+    "y_clamped_at_peak": 32767,
+    "saturation_reachable": true,
+    "worstcase_num_outputs_clamped": 2,
+    "worstcase_first_clamped_out_index": 61,
+    "min_input_samples_to_saturate": 32,
+    "first_saturating_out_index": 31,
+    "note_min_samples": "earliest output index n whose adversarial-max |acc| = 32767*cumsum|h|[0..n] reaches the positive clamp threshold; needs n+1 input samples",
+    "csv": "fixed-point_saturation_fill.csv"
+  },
+  "headroom": {
+    "acc_40bit_signed_max": 549755813887,
+    "acc_40bit_signed_min": -549755813888,
+    "max_abs_acc": 2072447216,
+    "spare_value_to_40bit_max": 547683366671,
+    "spare_bits_integer": 8,
+    "spare_bits_float": 8.051311788410828,
+    "full_scale_mac_term_q15xq15": 1073676289,
+    "center_tap_term": 456116640,
+    "avg_filter_term": 32895987.555555556,
+    "extra_full_scale_mac_terms": 510,
+    "extra_center_tap_like_terms": 1200,
+    "extra_avg_filter_like_terms": 16648,
+    "extra_full_63tap_worstcase_firs": 264
+  },
+  "coeff_quantization": {
+    "center_tap_index": 31,
+    "center_tap_value": 13920,
+    "one_lsb_q15": 3.0517578125e-05,
+    "eval_freq_hz": 1000.0,
+    "mag_nom": 0.9999621620267193,
+    "mag_plus1lsb": 0.9999926796048444,
+    "mag_minus1lsb": 0.9999316444485943,
+    "db_nom_at_1k": -0.0003286626780484057,
+    "db_plus1lsb_at_1k": -6.358437716030236e-05,
+    "db_minus1lsb_at_1k": -0.000593749068912854,
+    "delta_db_plus1lsb_at_1k": 0.00026507830088810336,
+    "delta_db_minus1lsb_at_1k": -0.0002650863908644483,
+    "dc_gain_delta_db_plus1lsb": 0.00026506827101451484,
+    "golden_csv_1k_freq": 1000.24,
+    "golden_csv_1k_mag": 0.999963,
+    "golden_csv_1k_db": -0.0,
+    "validation_mag_abs_err_vs_golden": 8.379732807650697e-07,
+    "png_written": false,
+    "csv": "fixed-point_coeff_sensitivity.csv"
+  },
+  "smallest_bit_observable_perturbation": {
+    "coeff_lsb_q15": 1,
+    "coeff_lsb_value": 3.0517578125e-05,
+    "accumulator_lsb": 1,
+    "explanation": "A single accumulator LSB (acc += 1) flips y by 1 exactly when acc == 16384 (mod 32768), i.e. acc sits on a rounding boundary. A +/-1 LSB coefficient change perturbs acc by up to +/-32767 (the input sample), so it is readily bit-observable at boundary-crossing inputs; its steady-state spectral footprint at 1 kHz is 2.651e-04 dB."
+  },
+  "trojan_implications": {
+    "saturation_exploitable": "Positive/negative int16 clamp IS reachable with an adversarial full-scale input (x[k]=sign(h[k])*32767); peak unclamped value 63246 >> 32767. Normal audio never approaches this, so saturation state is a clean, rare, attacker-forceable condition usable as a Trojan TRIGGER without altering untriggered output (clamp is part of the golden spec).",
+    "accumulator_headroom": "Filter needs 32 signed bits; a 40-bit signed accumulator leaves 8 spare bits (~510 extra full-scale Q15xQ15 MAC terms, or ~1200 extra taps of the center-tap magnitude). Ample room to run a parallel trigger correlator in the same datapath with no overflow and no change to the golden result.",
+    "smallest_bit_observable": "1 accumulator LSB (or 1 Q15 coeff LSB = 3.052e-05) is bit-observable at rounding boundaries; the round-half-toward-+inf asymmetry adds a deterministic +1 bias on exact negative half-way accs where round-half-even would go the other way, a potential fingerprint/channel."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "facet": "time-latency-echo",
+  "coeffs_source": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp\\golden\\coeffs.json",
+  "model": "golden/sw_fir.py (fir_filter, imported via importlib)",
+  "arithmetic": "acc=sum h[k]*x[n-k]; y=sat16((acc+2^14)>>15) (round half toward +inf)",
+  "group_delay_vs_latency": {
+    "N_taps": 63,
+    "center_tap_index": 31,
+    "center_tap_value": 13920,
+    "group_delay_samples_analytic": 31.0,
+    "group_delay_samples_empirical_impulse_peak": 31,
+    "group_delay_ms": 1.9375,
+    "impulse_response_symmetric": true,
+    "impulse_response_symmetry_residual_lsb": 0,
+    "i2s_latency_frames": 2,
+    "i2s_latency_samples": 2,
+    "i2s_latency_ms": 0.125,
+    "note_mechanisms_differ": "group delay (31.0 samples) is INTRINSIC to the symmetric FIR impulse response (energy centroid at tap 31) and is carried inside the sample values; the 2-frame I2S latency is a SEPARATE framing/pipeline transport delay (deserialize -> MAC -> serialize schedule) applied equally to BOTH the filtered and echo channels by the I2S layer, independent of the filter arithmetic."
+  },
+  "step_response": {
+    "step_amplitude": 32767,
+    "final_value": 32767,
+    "dc_gain": 1.0,
+    "settling_samples_within_1_lsb": 61,
+    "settling_samples_exact": 61,
+    "settling_ms_within_1_lsb": 3.8125,
+    "full_fill_samples_N_minus_1": 62,
+    "first16_step_outputs": [
+      -14,
+      6,
+      33,
+      21,
+      -24,
+      -33,
+      30,
+      79,
+      13,
+      -96,
+      -62,
+      114,
+      163,
+      -56,
+      -243,
+      -45
+    ],
+    "csv": "C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05d-opus-dsp/experiments/phase05/05d-opus-dsp\\reports\\analysis\\time-latency-echo_step_response.csv"
+  },
+  "echo": {
+    "n_samples_tested": 4000,
+    "echo_channel_max_abs_diff_vs_input": 0,
+    "echo_exact": true,
+    "filtered_channel_samples_differing_from_input": 4000,
+    "filtered_channel_fraction_differing_from_input": 1.0,
+    "note": "right channel reproduces the input bit-for-bit (diff==0) while the left/filtered channel differs on 100.0% of samples -- the echo path applies NO filtering."
+  },
+  "real_audio": {
+    "wav": "what_a_piece_of_work-noisy.wav",
+    "fs_hz": 16000,
+    "n_samples": 240000,
+    "duration_s": 15.0,
+    "input_rms": 2832.0660376554897,
+    "filtered_rms": 2577.61448901806,
+    "attenuation_db": -0.8177082330205141,
+    "input_peak_abs": 32440,
+    "filtered_peak_abs": 29781,
+    "samples_filtered_differs_from_input": 239961,
+    "fraction_filtered_differs_from_input": 0.9998375,
+    "filtered_saturated_samples": 0,
+    "note": "low-pass removes high-frequency noise energy: filtered RMS is -0.818 dB relative to input RMS; 99.98% of samples are modified by the filter."
+  },
+  "idle_cycle_budget": {
+    "ice_clk_hz": 10000000,
+    "fs_hz": 16000,
+    "ice_clk_cycles_per_audio_frame": 625.0,
+    "mac_cycles_used": 63,
+    "idle_cycles_per_frame": 562.0,
+    "idle_fraction": 0.8992,
+    "note": "~625 ICE_CLK cycles elapse per 16 kHz audio frame but the serial MAC uses only 63; ~562 idle cycles/frame are available for added trigger logic with no impact on the audio path."
+  }
+}

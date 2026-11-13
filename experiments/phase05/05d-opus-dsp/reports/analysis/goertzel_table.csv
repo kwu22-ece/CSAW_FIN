@@ -1,0 +1,4 @@
+N_win,k_bin,actual_bin_hz,goertzel_coeff_2cos,norm_mag_fkey_fs_tone,real_audio_mag_max,threshold_adaptive,false_alarm_rate_adaptive,false_alarm_count_adaptive,tone_to_audiomax_margin_db
+64,30,7500.0,-1.961571,1.0,0.030595,0.5,0.0,0,30.287
+128,60,7500.0,-1.961571,1.0,0.018521,0.5,0.0,0,34.647
+256,120,7500.0,-1.961571,1.0,0.012286,0.5,0.0,0,38.212

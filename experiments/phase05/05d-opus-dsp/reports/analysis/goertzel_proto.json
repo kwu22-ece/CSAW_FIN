@@ -1,0 +1,154 @@
+{
+  "fs": 16000,
+  "N_WIN": 256,
+  "K_BIN": 120,
+  "COEFF_Q14": -32138,
+  "coeff_float": -1.9615705608064609,
+  "cases": {
+    "key7500_amp32767": {
+      "max_energy": 907235463453613,
+      "max_abs_s": 21488397
+    },
+    "key7500_amp16384": {
+      "max_energy": 226820612226105,
+      "max_abs_s": 10744476
+    },
+    "key7500_amp8192": {
+      "max_energy": 56705158715200,
+      "max_abs_s": 5372240
+    },
+    "key7500_amp4096": {
+      "max_energy": 14175586758034,
+      "max_abs_s": 2686053
+    },
+    "key7500_amp2048": {
+      "max_energy": 3544620625768,
+      "max_abs_s": 1343158
+    },
+    "key7500_amp1024": {
+      "max_energy": 885714682165,
+      "max_abs_s": 671418
+    },
+    "tone500_fs": {
+      "max_energy": 113296,
+      "max_abs_s": 16706
+    },
+    "tone1000_fs": {
+      "max_energy": 130561,
+      "max_abs_s": 22077
+    },
+    "tone2000_fs": {
+      "max_energy": 621653,
+      "max_abs_s": 42403
+    },
+    "tone3000_fs": {
+      "max_energy": 1475860,
+      "max_abs_s": 67045
+    },
+    "tone4000_fs": {
+      "max_energy": 3117817,
+      "max_abs_s": 100883
+    },
+    "tone6000_fs": {
+      "max_energy": 20385517,
+      "max_abs_s": 261357
+    },
+    "tone7000_fs": {
+      "max_energy": 138456050,
+      "max_abs_s": 739998
+    },
+    "tone7250_fs": {
+      "max_energy": 455936746,
+      "max_abs_s": 1624063
+    },
+    "tone7400_fs": {
+      "max_energy": 26960642035857,
+      "max_abs_s": 4237035
+    },
+    "tone7500_fs": {
+      "max_energy": 907235463453613,
+      "max_abs_s": 21488397
+    },
+    "tone7600_fs": {
+      "max_energy": 40006824761124,
+      "max_abs_s": 4709805
+    },
+    "tone7750_fs": {
+      "max_energy": 142749890,
+      "max_abs_s": 1481359
+    },
+    "random": {
+      "max_energy": 10063831068545,
+      "max_abs_s": 3071824
+    },
+    "silence": {
+      "max_energy": 0,
+      "max_abs_s": 0
+    },
+    "impulse": {
+      "max_energy": 925912098,
+      "max_abs_s": 167923
+    },
+    "edges": {
+      "max_energy": 79596620450,
+      "max_abs_s": 580584
+    },
+    "real_noisy_wav_full": {
+      "max_energy": 137891759981,
+      "max_abs_s": 263290,
+      "n_samples": 240000
+    }
+  },
+  "threshold_analysis": {
+    "threshold": 70368744177664,
+    "threshold_pow2": 46,
+    "hw_check": "arm iff energy >= 2^46  (i.e. any energy bit >= 46 set)",
+    "key_energy_by_amp": {
+      "32767": 907235463453613,
+      "16384": 226820612226105,
+      "8192": 56705158715200,
+      "4096": 14175586758034,
+      "2048": 3544620625768,
+      "1024": 885714682165
+    },
+    "loudest_non_key_energy": 40006824761124,
+    "loudest_non_key_source": "tone7600_fs",
+    "real_audio_max_energy": 137891759981,
+    "key_fs_energy": 907235463453613,
+    "margin_db_threshold_over_real_audio": 27.078414857937076,
+    "margin_db_key_fs_over_threshold": 11.103402177265835,
+    "margin_db_key_fs_over_real_audio": 38.18181703520291,
+    "min_key_amp_arming": 16384,
+    "arms_per_case": {
+      "key7500_amp32767": true,
+      "key7500_amp16384": true,
+      "key7500_amp8192": false,
+      "key7500_amp4096": false,
+      "key7500_amp2048": false,
+      "key7500_amp1024": false,
+      "tone500_fs": false,
+      "tone1000_fs": false,
+      "tone2000_fs": false,
+      "tone3000_fs": false,
+      "tone4000_fs": false,
+      "tone6000_fs": false,
+      "tone7000_fs": false,
+      "tone7250_fs": false,
+      "tone7400_fs": false,
+      "tone7500_fs": true,
+      "tone7600_fs": false,
+      "tone7750_fs": false,
+      "random": false,
+      "silence": false,
+      "impulse": false,
+      "edges": false,
+      "real_noisy_wav_full": false
+    },
+    "any_non_key_arms": false,
+    "real_audio_arms": false
+  },
+  "max_abs_s_overall": 21488397,
+  "s_bits_signed_needed": 26,
+  "max_energy_overall": 907235463453613,
+  "energy_bits_needed": 51
+}
