@@ -1,0 +1,5 @@
+// Reading input .asc file..
+// Reading 5k chipdb file..
+// Creating timing netlist..
+// Timing estimate: 67.47 ns (14.82 MHz)
+// Checking 100.00 ns (10.00 MHz) clock constraint: PASSED.

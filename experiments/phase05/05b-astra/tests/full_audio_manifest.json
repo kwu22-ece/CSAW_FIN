@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "name": "05b-astra-full-noisy-audio",
+  "kind": "verified_design",
+  "ready": true,
+  "verification_evidence": [
+    "prepare_full_audio.py",
+    "../reports/full-audio-vectors/source-summary.json"
+  ],
+  "simulation": {
+    "sources": [
+      "../rtl/fir_audio_top.v",
+      "../rtl/phase4_dut.sv"
+    ],
+    "parameters": {
+      "SAMPLE_BITS": 16,
+      "SLOT_BITS": 16,
+      "MSB_DELAY": 1,
+      "LEFT_LEVEL": 0,
+      "HALF_PERIOD_NS": 500,
+      "CLOCK_HALF_NS": 50,
+      "RESET_CYCLES": 10
+    },
+    "timeout_seconds": 300
+  },
+  "cases": [
+    {
+      "name": "full-noisy-audio-00",
+      "input_csv": "../reports/full-audio-vectors/full-noisy-audio-00.csv",
+      "expected_csv": "../reports/full-audio-vectors/full-noisy-audio-00.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "full-noisy-audio-01",
+      "input_csv": "../reports/full-audio-vectors/full-noisy-audio-01.csv",
+      "expected_csv": "../reports/full-audio-vectors/full-noisy-audio-01.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "full-noisy-audio-02",
+      "input_csv": "../reports/full-audio-vectors/full-noisy-audio-02.csv",
+      "expected_csv": "../reports/full-audio-vectors/full-noisy-audio-02.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    },
+    {
+      "name": "full-noisy-audio-03",
+      "input_csv": "../reports/full-audio-vectors/full-noisy-audio-03.csv",
+      "expected_csv": "../reports/full-audio-vectors/full-noisy-audio-03.expected.csv",
+      "tolerance": 0,
+      "latency_words": 0
+    }
+  ]
+}

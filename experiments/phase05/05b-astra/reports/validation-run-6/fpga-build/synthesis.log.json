@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\yosys.EXE",
+    "-s",
+    "synthesis.ys"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\fpga-build",
+  "timeout_seconds": 300,
+  "exit_code": 0,
+  "elapsed_seconds": 6.625,
+  "log_sha256": "c09adbce4e5b3e299a9d146c5aa9c71c2a41596faa652351eecaf8baa61d1968"
+}

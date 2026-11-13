@@ -1,0 +1,10 @@
+{
+  "release": "2026-11-12",
+  "upstream": "https://github.com/YosysHQ/oss-cad-suite-build",
+  "platforms": {
+    "windows-x64": {
+      "url": "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-11-12/oss-cad-suite-windows-x64-20261112.tgz",
+      "sha256": "9be0e1d8f13f9db5c9792d32b0f8390827b84740882522a23f7df3928e0ff399"
+    }
+  }
+}

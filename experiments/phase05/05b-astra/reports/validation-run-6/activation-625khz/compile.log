@@ -1,0 +1,2 @@
+C:\Users\lowbr\Documents\College\AI\CSAW_FIN_worktrees\05b-astra\experiments\phase05\05b-astra\rtl\fir_audio_top.v:31: warning: timescale for fir_audio_top inherited from another file.
+C:\Users\lowbr\Documents\College\AI\CSAW_FIN_worktrees\05b-astra\infrastructure\hdl\tb_i2s.sv:1: ...: The inherited timescale is here.

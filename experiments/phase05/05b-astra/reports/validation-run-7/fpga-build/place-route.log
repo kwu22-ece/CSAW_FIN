@@ -1,0 +1,468 @@
+Info: constrained 'ICE_CLK' to bel 'X13/Y31/io0'
+Info: constrained 'I2S_BCLK' to bel 'X9/Y31/io1'
+Info: constrained 'I2S_WS' to bel 'X13/Y31/io1'
+Info: constrained 'I2S_SD_IN' to bel 'X16/Y31/io0'
+Info: constrained 'I2S_SD_OUT' to bel 'X16/Y31/io1'
+Info: constrained 'ICE_LED' to bel 'X8/Y31/io1'
+Info: constrained 'RGB_R' to bel 'X4/Y31/io0'
+Info: constrained 'RGB_G' to bel 'X5/Y31/io0'
+Info: constrained 'RGB_B' to bel 'X6/Y31/io0'
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:     2450 LCs used as LUT4 only
+Info:      124 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:     1068 LCs used as DFF only
+Info: Packing carries..
+Info:       11 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        0 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting ICE_CLK$SB_IO_IN (fanout 1192)
+Info: promoting new_sample [reset] (fanout 48)
+Info: promoting busy_SB_LUT4_I3_O [cen] (fanout 47)
+Info: Constraining chains...
+Info:        6 LCs used to legalise carry chains.
+Info: Checksum: 0xf79ce28a
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    3662/   5280    69%
+Info: 	        ICESTORM_RAM:       0/     30     0%
+Info: 	               SB_IO:       9/     39    23%
+Info: 	               SB_GB:       3/      8    37%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       0/      8     0%
+Info: 	      ICESTORM_HFOSC:       0/      1     0%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       0/      4     0%
+Info: 	      SB_FILTER_50NS:       0/      2     0%
+
+Info: Placed 9 cells based on constraints.
+Info: Creating initial analytic placement for 3580 cells, random placement wirelen = 92433.
+Info:     at initial placer iter 0, wirelen = 151
+Info:     at initial placer iter 1, wirelen = 172
+Info:     at initial placer iter 2, wirelen = 186
+Info:     at initial placer iter 3, wirelen = 178
+Info: Running main analytical placer, max placement attempts per cell = 1687284.
+Info:     at iteration #1, type ALL: wirelen solved = 186, spread = 18445, legal = 18682; time = 0.05s
+Info:     at iteration #2, type ALL: wirelen solved = 719, spread = 16953, legal = 17311; time = 0.05s
+Info:     at iteration #3, type ALL: wirelen solved = 1271, spread = 16224, legal = 16618; time = 0.05s
+Info:     at iteration #4, type ALL: wirelen solved = 1837, spread = 15697, legal = 16076; time = 0.05s
+Info:     at iteration #5, type ALL: wirelen solved = 2600, spread = 15334, legal = 15691; time = 0.04s
+Info:     at iteration #6, type ALL: wirelen solved = 2657, spread = 13490, legal = 14024; time = 0.05s
+Info:     at iteration #7, type ALL: wirelen solved = 2992, spread = 13243, legal = 13813; time = 0.04s
+Info:     at iteration #8, type ALL: wirelen solved = 3394, spread = 13347, legal = 13688; time = 0.04s
+Info:     at iteration #9, type ALL: wirelen solved = 3598, spread = 12565, legal = 13008; time = 0.04s
+Info:     at iteration #10, type ALL: wirelen solved = 4056, spread = 12189, legal = 12705; time = 0.04s
+Info:     at iteration #11, type ALL: wirelen solved = 4116, spread = 11952, legal = 12529; time = 0.04s
+Info:     at iteration #12, type ALL: wirelen solved = 4343, spread = 11736, legal = 12419; time = 0.04s
+Info:     at iteration #13, type ALL: wirelen solved = 4624, spread = 11515, legal = 11970; time = 0.04s
+Info:     at iteration #14, type ALL: wirelen solved = 4693, spread = 11492, legal = 12127; time = 0.04s
+Info:     at iteration #15, type ALL: wirelen solved = 4772, spread = 11628, legal = 12116; time = 0.04s
+Info:     at iteration #16, type ALL: wirelen solved = 4997, spread = 11490, legal = 11932; time = 0.04s
+Info:     at iteration #17, type ALL: wirelen solved = 5414, spread = 11616, legal = 11922; time = 0.04s
+Info:     at iteration #18, type ALL: wirelen solved = 5711, spread = 11429, legal = 11819; time = 0.04s
+Info:     at iteration #19, type ALL: wirelen solved = 5902, spread = 11086, legal = 11427; time = 0.04s
+Info:     at iteration #20, type ALL: wirelen solved = 5731, spread = 11277, legal = 11650; time = 0.04s
+Info:     at iteration #21, type ALL: wirelen solved = 6085, spread = 10948, legal = 11620; time = 0.03s
+Info:     at iteration #22, type ALL: wirelen solved = 6159, spread = 10963, legal = 11719; time = 0.03s
+Info:     at iteration #23, type ALL: wirelen solved = 6417, spread = 11107, legal = 11682; time = 0.04s
+Info:     at iteration #24, type ALL: wirelen solved = 6496, spread = 10842, legal = 11372; time = 0.04s
+Info:     at iteration #25, type ALL: wirelen solved = 6729, spread = 10687, legal = 11072; time = 0.03s
+Info:     at iteration #26, type ALL: wirelen solved = 6639, spread = 10506, legal = 10943; time = 0.03s
+Info:     at iteration #27, type ALL: wirelen solved = 6612, spread = 10512, legal = 11035; time = 0.03s
+Info:     at iteration #28, type ALL: wirelen solved = 6742, spread = 10406, legal = 10877; time = 0.03s
+Info:     at iteration #29, type ALL: wirelen solved = 6780, spread = 10393, legal = 10966; time = 0.03s
+Info:     at iteration #30, type ALL: wirelen solved = 6861, spread = 10309, legal = 10736; time = 0.04s
+Info:     at iteration #31, type ALL: wirelen solved = 7025, spread = 10242, legal = 10683; time = 0.03s
+Info:     at iteration #32, type ALL: wirelen solved = 7050, spread = 10047, legal = 10596; time = 0.04s
+Info:     at iteration #33, type ALL: wirelen solved = 7100, spread = 10108, legal = 10568; time = 0.03s
+Info:     at iteration #34, type ALL: wirelen solved = 7213, spread = 10181, legal = 10624; time = 0.03s
+Info:     at iteration #35, type ALL: wirelen solved = 7314, spread = 10085, legal = 10516; time = 0.04s
+Info:     at iteration #36, type ALL: wirelen solved = 7270, spread = 10077, legal = 10475; time = 0.03s
+Info:     at iteration #37, type ALL: wirelen solved = 7417, spread = 10087, legal = 10344; time = 0.03s
+Info:     at iteration #38, type ALL: wirelen solved = 7386, spread = 10060, legal = 10471; time = 0.04s
+Info:     at iteration #39, type ALL: wirelen solved = 7346, spread = 9934, legal = 10291; time = 0.04s
+Info:     at iteration #40, type ALL: wirelen solved = 7574, spread = 9911, legal = 10412; time = 0.04s
+Info:     at iteration #41, type ALL: wirelen solved = 7651, spread = 9958, legal = 10270; time = 0.04s
+Info:     at iteration #42, type ALL: wirelen solved = 7625, spread = 9955, legal = 10399; time = 0.04s
+Info:     at iteration #43, type ALL: wirelen solved = 7773, spread = 9954, legal = 10360; time = 0.03s
+Info:     at iteration #44, type ALL: wirelen solved = 7735, spread = 9993, legal = 10396; time = 0.03s
+Info:     at iteration #45, type ALL: wirelen solved = 7806, spread = 9920, legal = 10457; time = 0.04s
+Info:     at iteration #46, type ALL: wirelen solved = 7825, spread = 10002, legal = 10408; time = 0.04s
+Info: HeAP Placer Time: 2.40s
+Info:   of which solving equations: 1.59s
+Info:   of which spreading cells: 0.18s
+Info:   of which strict legalisation: 0.07s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 7281, wirelen = 10270
+Info:   at iteration #5: temp = 0.000000, timing cost = 8540, wirelen = 9143
+Info:   at iteration #10: temp = 0.000000, timing cost = 7733, wirelen = 8836
+Info:   at iteration #15: temp = 0.000000, timing cost = 7821, wirelen = 8638
+Info:   at iteration #20: temp = 0.000000, timing cost = 7886, wirelen = 8556
+Info:   at iteration #25: temp = 0.000000, timing cost = 7777, wirelen = 8535
+Info:   at iteration #30: temp = 0.000000, timing cost = 7842, wirelen = 8515
+Info:   at iteration #32: temp = 0.000000, timing cost = 7867, wirelen = 8513 
+Info: SA placement time 3.19s
+
+Info: Max frequency for clock 'ICE_CLK$SB_IO_IN_$glb_clk': 15.02 MHz (PASS at 10.00 MHz)
+
+Info: Max delay <async>                           -> posedge ICE_CLK$SB_IO_IN_$glb_clk: 4.14 ns
+Info: Max delay posedge ICE_CLK$SB_IO_IN_$glb_clk -> <async>                          : 7.72 ns
+
+Info: Slack histogram:
+Info:  legend: times are in ps
+Info:          * represents 36 endpoint(s)
+Info:          + represents [1,36) endpoint(s)
+Info: [ 33412,  36592) |*+
+Info: [ 36592,  39772) |+
+Info: [ 39772,  42952) |+
+Info: [ 42952,  46132) |+
+Info: [ 46132,  49312) |+
+Info: [ 49312,  52492) |+
+Info: [ 52492,  55672) | 
+Info: [ 55672,  58852) |+
+Info: [ 58852,  62032) |+
+Info: [ 62032,  65212) |+
+Info: [ 65212,  68392) |+
+Info: [ 68392,  71572) |+
+Info: [ 71572,  74752) |+
+Info: [ 74752,  77932) |+
+Info: [ 77932,  81112) |+
+Info: [ 81112,  84292) |+
+Info: [ 84292,  87472) |*+
+Info: [ 87472,  90652) |**+
+Info: [ 90652,  93832) |***+
+Info: [ 93832,  97012) |************************************************************ 
+Info: Checksum: 0x4eb20d3b
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 10556 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      103        896 |  103   896 |      9697|       0.40       0.40|
+Info:       2000 |      292       1707 |  189   811 |      9073|       0.22       0.63|
+Info:       3000 |      487       2512 |  195   805 |      8402|       0.16       0.79|
+Info:       4000 |      801       3198 |  314   686 |      8046|       0.20       0.98|
+Info:       5000 |      970       4029 |  169   831 |      7711|       0.18       1.16|
+Info:       6000 |     1215       4784 |  245   755 |      7222|       0.22       1.38|
+Info:       7000 |     1504       5481 |  289   697 |      6722|       0.19       1.57|
+Info:       8000 |     1707       6268 |  203   787 |      5945|       0.06       1.63|
+Info:       9000 |     2138       6836 |  431   568 |      5456|       0.09       1.72|
+Info:      10000 |     2359       7613 |  221   777 |      4744|       0.08       1.80|
+Info:      11000 |     2717       8254 |  358   641 |      4193|       0.09       1.89|
+Info:      12000 |     3177       8794 |  460   540 |      3714|       0.09       1.98|
+Info:      13000 |     3584       9387 |  407   593 |      3299|       0.10       2.08|
+Info:      14000 |     4096       9875 |  512   488 |      2913|       0.11       2.20|
+Info:      15000 |     4557      10414 |  461   539 |      2731|       0.20       2.40|
+Info:      16000 |     5065      10906 |  508   492 |      2434|       0.22       2.62|
+Info:      17000 |     5408      11534 |  343   628 |      1979|       0.29       2.90|
+Info:      18000 |     5859      12083 |  451   549 |      1671|       0.53       3.44|
+Info:      19000 |     6286      12650 |  427   567 |      1301|       0.30       3.73|
+Info:      20000 |     6672      13257 |  386   607 |       780|       0.22       3.95|
+Info:      20946 |     6816      14059 |  144   802 |         0|       0.24       4.19|
+Info: Routing complete.
+Info: Router1 time 4.19s
+Info: Checksum: 0xf287904c
+
+Info: Critical path report for clock 'ICE_CLK$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source k_SB_DFFESR_Q_1_D_SB_LUT4_O_LC.O
+Info:    routing  4.14  5.53 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_3_I3_SB_LUT4_O_I3_SB_LUT4_O_2_I3[2] (4,15) -> (8,7)
+Info:                          Sink k_SB_DFFESR_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_1_I1_SB_LUT4_O_2_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  6.41 Source k_SB_DFFESR_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_1_I1_SB_LUT4_O_2_LC.O
+Info:    routing  4.25  10.65 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I2[2] (8,7) -> (4,16)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_1_O_SB_LUT4_O_2_I3_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  11.86 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_1_O_SB_LUT4_O_2_I3_SB_LUT4_O_LC.O
+Info:    routing  4.90  16.76 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_1_I2_SB_LUT4_I3_1_O_SB_LUT4_I3_O_SB_LUT4_O_2_I3[2] (4,16) -> (7,29)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  17.96 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:    routing  1.76  19.72 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2[1] (7,29) -> (7,29)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_I3_LC.I2
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  20.93 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_I3_LC.O
+Info:    routing  2.41  23.34 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_I3_O[2] (7,29) -> (8,27)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I3_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  24.21 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I3_LC.O
+Info:    routing  1.76  25.97 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I3_O[2] (8,27) -> (8,27)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I2
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  27.18 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:    routing  1.76  28.94 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3[3] (8,27) -> (9,26)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  29.81 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_LC.O
+Info:    routing  4.25  34.06 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O[3] (9,26) -> (12,17)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  34.93 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_1_LC.O
+Info:    routing  2.95  37.88 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I2_O[3] (12,17) -> (12,14)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  38.76 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.O
+Info:    routing  2.95  41.71 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O[1] (12,14) -> (14,12)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I1_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  42.58 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I1_LC.O
+Info:    routing  2.41  44.99 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I1_O[2] (14,12) -> (14,14)
+Info:                          Sink acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_2_LC.I2
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  46.20 Source acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_2_LC.O
+Info:    routing  1.76  47.96 Net acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O[2] (14,14) -> (14,15)
+Info:                          Sink acc_SB_DFFESR_Q_26_D_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  49.17 Source acc_SB_DFFESR_Q_26_D_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  50.93 Net acc_SB_DFFESR_Q_26_D_SB_LUT4_O_I2_SB_LUT4_O_I3[3] (14,15) -> (15,15)
+Info:                          Sink acc_SB_DFFESR_Q_26_D_SB_LUT4_O_I2_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  51.80 Source acc_SB_DFFESR_Q_26_D_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:    routing  2.95  54.75 Net acc_SB_DFFESR_Q_26_D_SB_LUT4_O_I2[1] (15,15) -> (14,17)
+Info:                          Sink acc_SB_DFFESR_Q_26_D_SB_LUT4_O_LC.I1
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.68  55.43 Source acc_SB_DFFESR_Q_26_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  55.98 Net acc_SB_DFFESR_Q_25_D_SB_LUT4_O_I3 (14,17) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_25_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  56.26 Source acc_SB_DFFESR_Q_25_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  56.26 Net acc_SB_DFFESR_Q_24_D_SB_LUT4_O_I2[3] (14,18) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_24_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  56.54 Source acc_SB_DFFESR_Q_24_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  56.54 Net acc_SB_DFFESR_Q_23_D_SB_LUT4_O_I2[3] (14,18) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_23_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  56.82 Source acc_SB_DFFESR_Q_23_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  56.82 Net acc_SB_DFFESR_Q_22_D_SB_LUT4_O_I2[3] (14,18) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_22_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  57.10 Source acc_SB_DFFESR_Q_22_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  57.10 Net acc_SB_DFFESR_Q_21_D_SB_LUT4_O_I2[3] (14,18) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_21_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  57.37 Source acc_SB_DFFESR_Q_21_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  57.37 Net acc_SB_DFFESR_Q_20_D_SB_LUT4_O_I2[3] (14,18) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_20_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  57.65 Source acc_SB_DFFESR_Q_20_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  57.65 Net acc_SB_DFFESR_Q_19_D_SB_LUT4_O_I2[3] (14,18) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_19_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  57.93 Source acc_SB_DFFESR_Q_19_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  57.93 Net acc_SB_DFFESR_Q_18_D_SB_LUT4_O_I2[3] (14,18) -> (14,18)
+Info:                          Sink acc_SB_DFFESR_Q_18_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  58.21 Source acc_SB_DFFESR_Q_18_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  58.76 Net acc_SB_DFFESR_Q_17_D_SB_LUT4_O_I2[3] (14,18) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_17_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  59.04 Source acc_SB_DFFESR_Q_17_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  59.04 Net acc_SB_DFFESR_Q_16_D_SB_LUT4_O_I2[3] (14,19) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_16_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  59.32 Source acc_SB_DFFESR_Q_16_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  59.32 Net acc_SB_DFFESR_Q_15_D_SB_LUT4_O_I2[3] (14,19) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_15_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  59.60 Source acc_SB_DFFESR_Q_15_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  59.60 Net acc_SB_DFFESR_Q_14_D_SB_LUT4_O_I2[3] (14,19) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_14_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  59.88 Source acc_SB_DFFESR_Q_14_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  59.88 Net acc_SB_DFFESR_Q_13_D_SB_LUT4_O_I2[3] (14,19) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_13_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  60.15 Source acc_SB_DFFESR_Q_13_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  60.15 Net acc_SB_DFFESR_Q_12_D_SB_LUT4_O_I2[3] (14,19) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_12_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  60.43 Source acc_SB_DFFESR_Q_12_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  60.43 Net acc_SB_DFFESR_Q_11_D_SB_LUT4_O_I2[3] (14,19) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_11_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  60.71 Source acc_SB_DFFESR_Q_11_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  60.71 Net acc_SB_DFFESR_Q_10_D_SB_LUT4_O_I2[3] (14,19) -> (14,19)
+Info:                          Sink acc_SB_DFFESR_Q_10_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  60.99 Source acc_SB_DFFESR_Q_10_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  61.54 Net acc_SB_DFFESR_Q_9_D_SB_LUT4_O_I2[3] (14,19) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_9_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  61.82 Source acc_SB_DFFESR_Q_9_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  61.82 Net acc_SB_DFFESR_Q_8_D_SB_LUT4_O_I2[3] (14,20) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_8_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  62.10 Source acc_SB_DFFESR_Q_8_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  62.10 Net acc_SB_DFFESR_Q_7_D_SB_LUT4_O_I2[3] (14,20) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_7_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  62.38 Source acc_SB_DFFESR_Q_7_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  62.38 Net acc_SB_DFFESR_Q_6_D_SB_LUT4_O_I2[3] (14,20) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_6_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  62.65 Source acc_SB_DFFESR_Q_6_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  62.65 Net acc_SB_DFFESR_Q_5_D_SB_LUT4_O_I2[3] (14,20) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_5_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  62.93 Source acc_SB_DFFESR_Q_5_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  62.93 Net acc_SB_DFFESR_Q_4_D_SB_LUT4_O_I2[3] (14,20) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_4_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  63.21 Source acc_SB_DFFESR_Q_4_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  63.21 Net acc_SB_DFFESR_Q_3_D_SB_LUT4_O_I2[3] (14,20) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_3_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  63.49 Source acc_SB_DFFESR_Q_3_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  63.49 Net acc_SB_DFFESR_Q_2_D_SB_LUT4_O_I2[3] (14,20) -> (14,20)
+Info:                          Sink acc_SB_DFFESR_Q_2_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  63.77 Source acc_SB_DFFESR_Q_2_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  64.32 Net acc_SB_DFFESR_Q_1_D_SB_LUT4_O_I2[3] (14,20) -> (14,21)
+Info:                          Sink acc_SB_DFFESR_Q_1_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  64.60 Source acc_SB_DFFESR_Q_1_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.66  65.26 Net acc_SB_DFFESR_Q_D_SB_LUT4_O_I2[3] (14,21) -> (14,21)
+Info:                          Sink acc_SB_DFFESR_Q_D_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               C:\Users\lowbr\Documents\College\AI\CSAW_FIN\.worktrees\phase-04\.tools\oss-cad-suite\bin\../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      setup  0.82  66.09 Source acc_SB_DFFESR_Q_D_SB_LUT4_O_LC.I3
+Info: 23.19 ns logic, 42.90 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge ICE_CLK$SB_IO_IN_$glb_clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source I2S_WS$sb_io.D_IN_0
+Info:    routing  2.95  2.95 Net I2S_WS$SB_IO_IN (13,31) -> (10,30)
+Info:                          Sink ws_s0_SB_DFF_Q_DFFLC.I0
+Info:                          Defined in:
+Info:                               C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05b-astra/experiments/phase05/05b-astra/rtl/fir_audio_top.v:34.17-34.23
+Info:      setup  1.23  4.19 Source ws_s0_SB_DFF_Q_DFFLC.I0
+Info: 1.23 ns logic, 2.95 ns routing
+
+Info: Critical path report for cross-domain path 'posedge ICE_CLK$SB_IO_IN_$glb_clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source loaded_SB_DFFE_Q_DFFLC.O
+Info:    routing  3.39  4.78 Net RGB_B$SB_IO_OUT (15,30) -> (5,30)
+Info:                          Sink RGB_G_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05b-astra/experiments/phase05/05b-astra/rtl/fir_audio_top.v:235.16-235.22
+Info:      logic  0.87  5.65 Source RGB_G_SB_LUT4_O_LC.O
+Info:    routing  1.76  7.41 Net RGB_G$SB_IO_OUT (5,30) -> (5,31)
+Info:                          Sink RGB_G$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               C:/Users/lowbr/Documents/College/AI/CSAW_FIN_worktrees/05b-astra/experiments/phase05/05b-astra/rtl/fir_audio_top.v:39.17-39.22
+Info: 2.26 ns logic, 5.15 ns routing
+
+Info: Max frequency for clock 'ICE_CLK$SB_IO_IN_$glb_clk': 15.13 MHz (PASS at 10.00 MHz)
+
+Info: Max delay <async>                           -> posedge ICE_CLK$SB_IO_IN_$glb_clk: 4.19 ns
+Info: Max delay posedge ICE_CLK$SB_IO_IN_$glb_clk -> <async>                          : 7.41 ns
+
+Info: Slack histogram:
+Info:  legend: times are in ps
+Info:          * represents 28 endpoint(s)
+Info:          + represents [1,28) endpoint(s)
+Info: [ 33913,  37030) |*+
+Info: [ 37030,  40147) |+
+Info: [ 40147,  43264) |+
+Info: [ 43264,  46381) |+
+Info: [ 46381,  49498) |+
+Info: [ 49498,  52615) |+
+Info: [ 52615,  55732) | 
+Info: [ 55732,  58849) |+
+Info: [ 58849,  61966) |+
+Info: [ 61966,  65083) |+
+Info: [ 65083,  68200) |+
+Info: [ 68200,  71317) |+
+Info: [ 71317,  74434) |+
+Info: [ 74434,  77551) |*+
+Info: [ 77551,  80668) |+
+Info: [ 80668,  83785) |+
+Info: [ 83785,  86902) |+
+Info: [ 86902,  90019) |**+
+Info: [ 90019,  93136) |***********************+
+Info: [ 93136,  96253) |************************************************************ 
+
+Info: Program finished normally.

@@ -1,0 +1,203 @@
+{
+  "run_directory": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-5",
+  "regression_report_passed": true,
+  "regression_cases": {
+    "passed": 11,
+    "failed": 0,
+    "blocked": 0
+  },
+  "framework_unit_test_summary": "Ran 15 tests in 1.441s",
+  "baseline_mismatch_count": 0,
+  "normal_cases": {
+    "phase3-golden": {
+      "status": "passed",
+      "samples_compared": 512,
+      "mismatch_count": 0
+    },
+    "noisy-audio-1024": {
+      "status": "passed",
+      "samples_compared": 2048,
+      "mismatch_count": 0
+    },
+    "startup-edges": {
+      "status": "passed",
+      "samples_compared": 272,
+      "mismatch_count": 0
+    },
+    "boundary-stress": {
+      "status": "passed",
+      "samples_compared": 1024,
+      "mismatch_count": 0
+    },
+    "random-negative": {
+      "status": "passed",
+      "samples_compared": 16384,
+      "mismatch_count": 0
+    },
+    "near-miss-negative": {
+      "status": "passed",
+      "samples_compared": 1000,
+      "mismatch_count": 0
+    },
+    "split-sequence-negative": {
+      "status": "passed",
+      "samples_compared": 1008,
+      "mismatch_count": 0
+    }
+  },
+  "negative_test_count": 7,
+  "negative_test_pass_count": 7,
+  "right_echo_mismatch_count": 0,
+  "startup_zero_frames_verified": 2,
+  "activation_events_tested": 4,
+  "activation_events_succeeded": 4,
+  "activation_success_rate": 1.0,
+  "activation_events": [
+    {
+      "case": "activation-1mhz",
+      "trigger_completion_input_frame": 19,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    },
+    {
+      "case": "activation-625khz",
+      "trigger_completion_input_frame": 19,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    },
+    {
+      "case": "retrigger-2x",
+      "trigger_completion_input_frame": 19,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    },
+    {
+      "case": "retrigger-2x",
+      "trigger_completion_input_frame": 177,
+      "expected_bypass_frames": 128,
+      "observed_raw_pass_through_frames": 128,
+      "success": true
+    }
+  ],
+  "raw_pass_through_mismatch_count": 0,
+  "payload_frequency_metrics": [
+    {
+      "case": "activation-1mhz",
+      "stable_tone_frames": 63,
+      "input_rms": 8532.817752281528,
+      "baseline_filtered_rms": 8.149398653440535,
+      "bypass_output_rms": 8532.817752281528,
+      "baseline_attenuation_db": -60.39933813348164,
+      "bypass_vs_input_max_abs_error": 0
+    },
+    {
+      "case": "activation-625khz",
+      "stable_tone_frames": 63,
+      "input_rms": 8532.817752281528,
+      "baseline_filtered_rms": 8.149398653440535,
+      "bypass_output_rms": 8532.817752281528,
+      "baseline_attenuation_db": -60.39933813348164,
+      "bypass_vs_input_max_abs_error": 0
+    },
+    {
+      "case": "retrigger-2x",
+      "stable_tone_frames": 63,
+      "input_rms": 8532.817752281528,
+      "baseline_filtered_rms": 8.149398653440535,
+      "bypass_output_rms": 8532.817752281528,
+      "baseline_attenuation_db": -60.39933813348164,
+      "bypass_vs_input_max_abs_error": 0
+    }
+  ],
+  "fpga_build": {
+    "passed": true,
+    "frequency_mhz": 10.0,
+    "fmax": {
+      "ICE_CLK$SB_IO_IN_$glb_clk": {
+        "achieved": 15.131569862365723,
+        "constraint": 10
+      }
+    },
+    "seed": 1,
+    "utilization": {
+      "ICESTORM_DSP": {
+        "available": 8,
+        "used": 0
+      },
+      "ICESTORM_HFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_LC": {
+        "available": 5280,
+        "used": 3662
+      },
+      "ICESTORM_LFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_PLL": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 30,
+        "used": 0
+      },
+      "ICESTORM_SPRAM": {
+        "available": 4,
+        "used": 0
+      },
+      "IO_I3C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_FILTER_50NS": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 3
+      },
+      "SB_I2C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_IO": {
+        "available": 39,
+        "used": 9
+      },
+      "SB_LEDDA_IP": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_RGBA_DRV": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_SPI": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "constrained_pins": true,
+    "hardware_validated": false,
+    "bitstream_sha256": "49e24471d676518619d57df5855c533b5eae166feef662cd47fd10d989efb02b"
+  },
+  "reproducibility": {
+    "repeated_run": true,
+    "run1_bitstream_sha256": "49e24471d676518619d57df5855c533b5eae166feef662cd47fd10d989efb02b",
+    "run2_bitstream_sha256": "49e24471d676518619d57df5855c533b5eae166feef662cd47fd10d989efb02b",
+    "bitstream_identical": true,
+    "input_contents_identical": true
+  },
+  "hardware_validation": "not run; no Hackster board attached to this environment"
+}

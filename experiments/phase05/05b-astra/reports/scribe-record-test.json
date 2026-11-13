@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "source": "Project Scribe local preview evidence; only selected test-runner records are copied here",
+  "preview": {
+    "captured_at": "2026-11-13T04:30:25.382Z",
+    "events_total": 90,
+    "pending_after_batch": 0,
+    "cursor_before": 0,
+    "cursor_after_preview": 90,
+    "checkpoint_cursor_after_status": 0,
+    "checkpoint_advanced": false,
+    "temporary_max_evidence_chars": 1000000,
+    "model_synthesis_invoked": false,
+    "google_published": false
+  },
+  "test_records": [
+    {
+      "label": "standard-reproducibility-run",
+      "event_key": "5bbd3789-0fd2-4dc4-95b5-2ec27569b097",
+      "session_id": "phase05b-astra-repro-20261112",
+      "recorded_at": "2026-11-13T03:42:21.033Z",
+      "root": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra",
+      "head": "15a8a6525e225ad82d931b3bc75399f744638b2e",
+      "command": [
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite/lib/python3.exe",
+        "infrastructure/run.py",
+        "--suite",
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite",
+        "validate",
+        "--manifest",
+        "experiments/phase05/05b-astra/manifest.json",
+        "--output",
+        "experiments/phase05/05b-astra/reports/scribe-validation-1"
+      ],
+      "exit_code": 0,
+      "tracked_state_stable": true,
+      "output_sha256": "d3b5c90744b3bb108233b69da816218ddd179a6711cc90eb92644e8056721854"
+    },
+    {
+      "label": "full-audio-initial-timeout",
+      "event_key": "4b43aa0e-2878-4b57-8639-0e5ac246d9ae",
+      "session_id": "phase05b-full-noisy-audio-20261112",
+      "recorded_at": "2026-11-13T04:05:50.408Z",
+      "root": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra",
+      "head": "be3a5e1ddc777fbb7911809ba68d7b588074b71e",
+      "command": [
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite/lib/python3.exe",
+        "infrastructure/run.py",
+        "--suite",
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite",
+        "sim",
+        "--manifest",
+        "experiments/phase05/05b-astra/tests/full_audio_manifest.json",
+        "--output",
+        "experiments/phase05/05b-astra/reports/full-audio-validation-1"
+      ],
+      "exit_code": null,
+      "tracked_state_stable": true,
+      "output_sha256": "a48172a075ea99ca5c40731a7c7c2c4d2b4a18a8585c5187ef1b41a4e29a68f6"
+    },
+    {
+      "label": "full-audio-simulation-retry",
+      "event_key": "cf0ebdac-eb31-4ec4-994d-39050a1cbbc2",
+      "session_id": "phase05b-full-noisy-audio-retry-20261112",
+      "recorded_at": "2026-11-13T04:13:01.607Z",
+      "root": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra",
+      "head": "be3a5e1ddc777fbb7911809ba68d7b588074b71e",
+      "command": [
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite/lib/python3.exe",
+        "infrastructure/run.py",
+        "--suite",
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite",
+        "sim",
+        "--manifest",
+        "experiments/phase05/05b-astra/tests/full_audio_manifest.json",
+        "--output",
+        "experiments/phase05/05b-astra/reports/full-audio-validation-2"
+      ],
+      "exit_code": 0,
+      "tracked_state_stable": true,
+      "output_sha256": "d77671f709ad04d83feeda85dad12a747687307f893bb3ffc31bb3bbcd31d415"
+    },
+    {
+      "label": "final-standard-validation",
+      "event_key": "abddb320-df31-4ceb-90d6-18d89bae2a73",
+      "session_id": "phase05b-astra-final-standard-20261113",
+      "recorded_at": "2026-11-13T04:23:27.594Z",
+      "root": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra",
+      "head": "dbca7054b0f7610442a3f43463d4a9670b43b511",
+      "command": [
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite/lib/python3.exe",
+        "infrastructure/run.py",
+        "--suite",
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite",
+        "validate",
+        "--manifest",
+        "experiments/phase05/05b-astra/manifest.json",
+        "--output",
+        "experiments/phase05/05b-astra/reports/final-validation-run"
+      ],
+      "exit_code": 0,
+      "tracked_state_stable": true,
+      "output_sha256": "012806d004d7d739612da1e6e0fd6c4232d5e97c64b5172371458b7cd9773cb8"
+    },
+    {
+      "label": "full-audio-capture-audit",
+      "event_key": "4c211ec8-df0e-44b8-a7a4-f53cf8cf6ad7",
+      "session_id": "phase05b-full-noisy-audio-audit-20261113",
+      "recorded_at": "2026-11-13T04:27:37.729Z",
+      "root": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra",
+      "head": "dbca7054b0f7610442a3f43463d4a9670b43b511",
+      "command": [
+        "C:/Users/lowbr/Documents/College/AI/CSAW_FIN/.worktrees/phase-04/.tools/oss-cad-suite/lib/python3.exe",
+        "experiments/phase05/05b-astra/tests/audit_full_audio.py",
+        "--run",
+        "experiments/phase05/05b-astra/reports/full-audio-validation-2",
+        "--summary",
+        "experiments/phase05/05b-astra/reports/full-audio-vectors/source-summary.json",
+        "--output",
+        "experiments/phase05/05b-astra/reports/full-audio-validation-2/audit-scribe.json"
+      ],
+      "exit_code": 0,
+      "tracked_state_stable": true,
+      "output_sha256": "26ceb1d68cfd92d7a1475a49e38eda19a2c9fcadf09cea073b662648a296ec39"
+    }
+  ]
+}

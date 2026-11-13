@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\iverilog.EXE",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "tb_i2s",
+    "-o",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\retrigger-2x\\simulation.vvp",
+    "-Ptb_i2s.SAMPLE_BITS=16",
+    "-Ptb_i2s.SLOT_BITS=16",
+    "-Ptb_i2s.MSB_DELAY=1",
+    "-Ptb_i2s.LEFT_LEVEL=0",
+    "-Ptb_i2s.HALF_PERIOD_NS=500",
+    "-Ptb_i2s.CLOCK_HALF_NS=50",
+    "-Ptb_i2s.RESET_CYCLES=10",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\infrastructure\\hdl\\i2s_driver.sv",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\infrastructure\\hdl\\i2s_monitor.sv",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\infrastructure\\hdl\\tb_i2s.sv",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\rtl\\fir_audio_top.v",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\rtl\\phase4_dut.sv"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\retrigger-2x",
+  "timeout_seconds": 300,
+  "exit_code": 0,
+  "elapsed_seconds": 0.063,
+  "log_sha256": "280735f03ec2271c7483d4a3efc3f7a935ba0dea28f3b4f4ae044a87c91e00dc"
+}

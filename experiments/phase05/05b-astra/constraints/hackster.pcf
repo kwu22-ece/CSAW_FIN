@@ -1,0 +1,28 @@
+# =============================================================================
+# fir_audio_top_hackster.pcf  -  iCE40-UP5K (SG48) pin constraints
+#
+# Target: Lattice iCE40-UP5K, SG48 package, Hackster board (Challenge 3).
+# Top module: fir_audio_top (recovered/rtl/fir_audio_top.v).
+#
+# Pin assignments are the Phase 2 VERIFIED I/O map (phase2 report §2): package
+# pin numbers from the icebox SG48 pinloc DB, cross-validated against the
+# challenge bridge firmware (tools/audio_bridge.py) GPIO comments. The five
+# audio data-path pins are verified; the LED/RGB pins are TENTATIVE (the
+# individual LED-vs-R/G/B role among pins 38-41 was not separated in Phase 2 and
+# is not on the audio data path, so any assignment within that set is harmless).
+#
+# Use with nextpnr-ice40 --up5k --package sg48 --pcf this_file.
+# =============================================================================
+
+# ---- Audio data path  [VERIFIED] ----
+set_io ICE_CLK     37     # ~10 MHz free-running system clock
+set_io I2S_BCLK    36     # I2S bit clock (oversampled)
+set_io I2S_WS      34     # I2S word select (0=left, 1=right)
+set_io I2S_SD_IN   32     # I2S serial data in  (sample to filter, MSB first)
+set_io I2S_SD_OUT  31     # I2S serial data out (left=filtered, right=echo)
+
+# ---- Status LEDs  [TENTATIVE: pin set {38,39,40,41} known, roles unseparated] ----
+set_io ICE_LED     38     # activity LED
+set_io RGB_R       39     # RGB red   (active-low)
+set_io RGB_G       40     # RGB green (active-low)
+set_io RGB_B       41     # RGB blue  (active-low)

@@ -1,0 +1,30 @@
+{
+  "sha256": {
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\tests\\vectors\\random_negative.csv": "c433acd030e31671b27a6e94bf2c371b80c48baee670bb6a8fcad5cc3b0019a4",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\tests\\vectors\\random_negative.expected.csv": "d1940d92c197545dcb4ff19e30508b0fad86015410d955ab10e7c22a170a1942",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\infrastructure\\hdl\\i2s_driver.sv": "87d9d21d4985f01992df92d1f48c30aeec1b3bbc3164e675d457aac5d8bd243e",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\infrastructure\\hdl\\i2s_monitor.sv": "4202d551092f4825b02b95b143775ec4a0ef45b6ca24d79c88ed57d85ccce12d",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\infrastructure\\hdl\\tb_i2s.sv": "65812d1698aaa644f759e59bdb962043626a1ba91d7d0e3598aef2618f0f793a",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\rtl\\fir_audio_top.v": "2c868b30d4140f40dc5cb419bbd611d9c848aa6578d902ab509b6c4e666518e4",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\rtl\\phase4_dut.sv": "1d53da1d936deea3e491c1f35e38d48ff4f9408b80311badb1d7a898b9eed28c",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\tests\\candidate_reference.py": "f63f386044529c1e2bed8db12b73dfd10e9c1596e3576fb6f99fb1c31ca6e298",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\tests\\reference\\run_reference.py": "fe9bfdf1a2778541c2d2cf31dc6bd408319d518a9edb5482fa453d3e7c91a891",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\tests\\reference\\coeffs.json": "b7e9fad6e3905f7c22f0a4431ccb3bdb058dce36d9b24afd2e2a9d2a6cf057ca"
+  },
+  "parameters": {
+    "SAMPLE_BITS": 16,
+    "SLOT_BITS": 16,
+    "MSB_DELAY": 1,
+    "LEFT_LEVEL": 0,
+    "HALF_PERIOD_NS": 500,
+    "CLOCK_HALF_NS": 50,
+    "RESET_CYCLES": 10
+  },
+  "case": {
+    "name": "random-negative",
+    "input_csv": "tests/vectors/random_negative.csv",
+    "expected_csv": "tests/vectors/random_negative.expected.csv",
+    "tolerance": 0,
+    "latency_words": 0
+  }
+}

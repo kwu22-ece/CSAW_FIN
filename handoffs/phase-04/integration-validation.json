@@ -1,0 +1,216 @@
+{
+  "scope": "Reconstructed Phase 2 RTL; audio-only build; hardware unverified",
+  "implementation_commit": "8fd929a7a1dea31a22fa13acac7969c06c668a0b",
+  "source_snapshot": {
+    "source_commit": "1befb30e99a506698c45d4ca9394a3c7ec95c966",
+    "sha256": {
+      "recovered/rtl/fir_audio_top.v": "4032e73d2e7e199f1ac1f2fb2756cc263bcb89e553dc1d8b47f9f9f26b5cfbb7",
+      "recovered/coeffs.json": "df96da4908b805fad255d55b64ba2cc31f34b74afa884beaffbd01a90a6ca0e4",
+      "scripts/sw_fir.py": "d3562707bdabc339b626cb3fd21d5e9f770ebd32eb58a56038ef1e8c9b8e207c",
+      "handoffs/phase-02/codex-interface-handoff.v1.md": "a37eb5c4a002768998cdff9dee646098251b42d4e05964d1a2752659d0f9f48e",
+      "handoffs/phase-02/codex-interface-handoff.v2.md": "dd4321ccc45a10a7dae13d93485d34ca50040e0e4e4dd7e75be6f491fda99649",
+      "handoffs/phase-02/reference_vectors.csv": "75141996aabea2a43cc012361d498788ddcb8a8e7e030a3df1077a8c07527b62",
+      "input_wav_sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0"
+    },
+    "scope": "Phase 2 reconstruction and model, read-only committed snapshot; audio-only synthesis"
+  },
+  "framework_tests": {
+    "passed": 15,
+    "failed": 0,
+    "skipped": 0
+  },
+  "simulation_cases": 8,
+  "output_words_compared": 8224,
+  "comparisons": {
+    "model-edges": {
+      "passed": true,
+      "samples_compared": 1028,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    },
+    "model-impulse": {
+      "passed": true,
+      "samples_compared": 1028,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    },
+    "model-provided-audio": {
+      "passed": true,
+      "samples_compared": 2052,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    },
+    "model-random": {
+      "passed": true,
+      "samples_compared": 1028,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    },
+    "model-silence": {
+      "passed": true,
+      "samples_compared": 1028,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    },
+    "model-sine": {
+      "passed": true,
+      "samples_compared": 1028,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    },
+    "supplied-vectors-1mhz": {
+      "passed": true,
+      "samples_compared": 516,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    },
+    "supplied-vectors-625khz": {
+      "passed": true,
+      "samples_compared": 516,
+      "mismatch_count": 0,
+      "max_abs_error": 0,
+      "rmse": 0.0,
+      "tolerance": 0,
+      "latency_words": 0,
+      "sample_bits": 16,
+      "first_mismatches": []
+    }
+  },
+  "build": {
+    "passed": true,
+    "frequency_mhz": 10.0,
+    "fmax": {
+      "ICE_CLK$SB_IO_IN_$glb_clk": {
+        "achieved": 14.016006469726562,
+        "constraint": 10
+      }
+    },
+    "seed": 1,
+    "utilization": {
+      "ICESTORM_DSP": {
+        "available": 8,
+        "used": 0
+      },
+      "ICESTORM_HFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_LC": {
+        "available": 5280,
+        "used": 3179
+      },
+      "ICESTORM_LFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_PLL": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 30,
+        "used": 0
+      },
+      "ICESTORM_SPRAM": {
+        "available": 4,
+        "used": 0
+      },
+      "IO_I3C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_FILTER_50NS": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 3
+      },
+      "SB_I2C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_IO": {
+        "available": 39,
+        "used": 5
+      },
+      "SB_LEDDA_IP": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_RGBA_DRV": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_SPI": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "constrained_pins": true,
+    "hardware_validated": false,
+    "bitstream_sha256": "5eba9279b177b8859ceea0bd5c685c9ac442a50414906792711626c1b2a38fda"
+  },
+  "repeat_bitstream_identical": true,
+  "artifacts_directory": "build/recovered-final-validation",
+  "artifact_sha256": {
+    "report.json": "26a05d1cce01631163fa8166521154133b1131bed38b1a634e731ac508206dd5",
+    "junit.xml": "7ff11b17f92e22707f2dcc8c732098a243498ace5cec781369106c5a4228e9e2",
+    "unit-tests.log": "674d64d43ad0592774e2f48dfe1b22f1cf80436fe33285a1c9ff2464d1b612e6",
+    "fpga-build/build-summary.json": "e5568c3274e09b997ed5789a10814e6abc9ddc7211c3566b736af1c0f06590cb",
+    "fpga-build/utilization.json": "c77684e813ea0ff15789b489d1dcd953fe3de1f1b7a0ef35a3beb12bfe81b333",
+    "fpga-build/timing.json": "9dc2822e2ad0826f658fdeee584233b50a32c8563601e5e77d7189166bb8408a",
+    "fpga-build/icetime.txt": "bc1ab53209ef5f54a9dbe2d4c5ec1a02759494cd57f7b560f1a9424eec5ae58e",
+    "fpga-build/bitstream.bin": "5eba9279b177b8859ceea0bd5c685c9ac442a50414906792711626c1b2a38fda"
+  },
+  "scribe": {
+    "session": "phase04-recovered-integration",
+    "exit_code": 0,
+    "tracked_state_stable": true
+  },
+  "limitations": [
+    "LED/RGB roles provisional, excluded from synthesis wrapper",
+    "No physical hardware verification",
+    "No completed Phase 3 handoff consumed"
+  ]
+}

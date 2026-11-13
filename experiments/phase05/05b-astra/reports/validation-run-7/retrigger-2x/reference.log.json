@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\lib\\python3.exe",
+    "tests/candidate_reference.py",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-7\\retrigger-2x\\input.csv",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-7\\retrigger-2x\\expected.csv"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra",
+  "timeout_seconds": 300,
+  "exit_code": 0,
+  "elapsed_seconds": 0.062,
+  "log_sha256": "04e3d5274484c56562260c82caeeb8fe0eeddd4f4993dd2494bee42dc0785635"
+}

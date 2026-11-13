@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icetime.EXE",
+    "-d",
+    "up5k",
+    "-c",
+    "10.0",
+    "-t",
+    "-r",
+    "icetime.txt",
+    "routed.asc"
+  ],
+  "cwd": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05b-astra\\experiments\\phase05\\05b-astra\\reports\\validation-run-6\\fpga-build",
+  "timeout_seconds": 300,
+  "exit_code": 0,
+  "elapsed_seconds": 1.797,
+  "log_sha256": "cadc0a1b84cdd8339bef2a5c2e447ed226035a73fd471f6cb903cfa1bc9ec014"
+}

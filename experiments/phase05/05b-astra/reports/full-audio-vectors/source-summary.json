@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "source_path": "what_a_piece_of_work-noisy.wav",
+  "source_sha256": "403bab7faa0d0a898385a49d5c942b19890a5f166045fe9ba18c0a0cf919abb0",
+  "channels": 1,
+  "sample_rate_hz": 16000,
+  "sample_width_bytes": 2,
+  "frames": 240000,
+  "source_frames_covered": 240000,
+  "trigger_samples_hex": [
+    "7F00",
+    "8101",
+    "5A3C",
+    "A5C3",
+    "6D92",
+    "926D",
+    "C33C",
+    "3CC3"
+  ],
+  "trigger_completion_frames": [],
+  "chunk_overlap_frames": 7,
+  "flush_frames_per_chunk": 130,
+  "max_case_frames": 65536,
+  "total_simulated_frames": 240541,
+  "total_compared_words": 481082,
+  "segments": [
+    {
+      "case": "full-noisy-audio-00",
+      "source_start_frame": 0,
+      "source_end_frame_exclusive": 65406,
+      "source_frames": 65406,
+      "flush_frames": 130,
+      "total_input_frames": 65536,
+      "compared_words": 131072,
+      "input_path": "reports/full-audio-vectors/full-noisy-audio-00.csv",
+      "expected_path": "reports/full-audio-vectors/full-noisy-audio-00.expected.csv",
+      "input_sha256": "f4b253407f1241b8b11491c21bd07e13505fdf674c75aff25079af9197736d79",
+      "expected_sha256": "a8b5ff45b3a69e1ba44adf246410c6545390b3e2a1c6df9a615c469c555028b4"
+    },
+    {
+      "case": "full-noisy-audio-01",
+      "source_start_frame": 65399,
+      "source_end_frame_exclusive": 130805,
+      "source_frames": 65406,
+      "flush_frames": 130,
+      "total_input_frames": 65536,
+      "compared_words": 131072,
+      "input_path": "reports/full-audio-vectors/full-noisy-audio-01.csv",
+      "expected_path": "reports/full-audio-vectors/full-noisy-audio-01.expected.csv",
+      "input_sha256": "4d9ba8ef682591b6bb368bac611e7ce0053fe36da1dd4c3676dded8904cf5e17",
+      "expected_sha256": "2bb45f37dea89da9d7b524ead223bddd9741f5ea45fe41bf08592d94774dddbc"
+    },
+    {
+      "case": "full-noisy-audio-02",
+      "source_start_frame": 130798,
+      "source_end_frame_exclusive": 196204,
+      "source_frames": 65406,
+      "flush_frames": 130,
+      "total_input_frames": 65536,
+      "compared_words": 131072,
+      "input_path": "reports/full-audio-vectors/full-noisy-audio-02.csv",
+      "expected_path": "reports/full-audio-vectors/full-noisy-audio-02.expected.csv",
+      "input_sha256": "2e7228c924a76eee2bd57aaa4b32f54b02087b2746e6faf1bd94fcbe557cbb67",
+      "expected_sha256": "2ad075be81ed47db6080c9c873b0a50f5bdb8c2f2c84e079c2c58e7b82b56d62"
+    },
+    {
+      "case": "full-noisy-audio-03",
+      "source_start_frame": 196197,
+      "source_end_frame_exclusive": 240000,
+      "source_frames": 43803,
+      "flush_frames": 130,
+      "total_input_frames": 43933,
+      "compared_words": 87866,
+      "input_path": "reports/full-audio-vectors/full-noisy-audio-03.csv",
+      "expected_path": "reports/full-audio-vectors/full-noisy-audio-03.expected.csv",
+      "input_sha256": "feb6b9fde113c0df8c5057def1aaa5f61a58eb641b15e26b94746d22c5ce8e28",
+      "expected_sha256": "c29c60a24aca902e22bdf377d33c669c35db1e09e97c6db514b93fcba70f8df8"
+    }
+  ]
+}

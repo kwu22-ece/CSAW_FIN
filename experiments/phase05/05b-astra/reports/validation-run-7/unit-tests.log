@@ -1,0 +1,22 @@
+FAILED: mismatch: 8 numerical/channel mismatches; see C:\Users\lowbr\AppData\Local\Temp\phase04-8sdl_nev\results\mismatch\comparison.json
+Report: C:\Users\lowbr\AppData\Local\Temp\phase04-8sdl_nev\results\report.json
+test_literal_wire_protocol (test_integration.HDLTests.test_literal_wire_protocol) ... ok
+test_reference_command_and_fst_capture (test_integration.HDLTests.test_reference_command_and_fst_capture) ... ok
+test_rtl_mismatch_fails_and_retains_artifacts (test_integration.HDLTests.test_rtl_mismatch_fails_and_retains_artifacts) ... ok
+test_unknown_early_and_missing_lr_are_rejected (test_integration.HDLTests.test_unknown_early_and_missing_lr_are_rejected) ... ok
+test_bad_indices_channels_and_rows_fail (test_results.ComparisonTests.test_bad_indices_channels_and_rows_fail) ... ok
+test_channel_swap_fails_even_for_silence (test_results.ComparisonTests.test_channel_swap_fails_even_for_silence) ... ok
+test_exact_signed_extremes (test_results.ComparisonTests.test_exact_signed_extremes) ... ok
+test_failed_and_blocked_are_not_success (test_results.ComparisonTests.test_failed_and_blocked_are_not_success) ... ok
+test_invalid_tolerance_cannot_hide_mismatch (test_results.ComparisonTests.test_invalid_tolerance_cannot_hide_mismatch) ... ok
+test_latency_is_explicit_and_preserves_length (test_results.ComparisonTests.test_latency_is_explicit_and_preserves_length) ... ok
+test_numerical_mismatch_and_tolerance (test_results.ComparisonTests.test_numerical_mismatch_and_tolerance) ... ok
+test_out_of_range_is_not_wrapped (test_results.ComparisonTests.test_out_of_range_is_not_wrapped) ... ok
+test_stimulus_is_deterministic_and_signed (test_results.ComparisonTests.test_stimulus_is_deterministic_and_signed) ... ok
+test_truncated_and_extra_output_fail (test_results.ComparisonTests.test_truncated_and_extra_output_fail) ... ok
+test_unknown_and_empty_output_fail (test_results.ComparisonTests.test_unknown_and_empty_output_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.423s
+
+OK

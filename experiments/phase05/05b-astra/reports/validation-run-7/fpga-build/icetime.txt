@@ -1,0 +1,179 @@
+
+icetime topological timing analysis report
+==========================================
+
+Report for critical path:
+-------------------------
+
+        lc40_4_15_7 (LogicCell40) [clk] -> lcout: 1.491 ns
+     1.491 ns net_16830 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_3_I3_SB_LUT4_O_I3_SB_LUT4_O_2_I3[2])
+        odrv_4_15_16830_16963 (Odrv4) I -> O: 0.649 ns
+        t3980 (Span4Mux_v4) I -> O: 0.649 ns
+        t3979 (Span4Mux_v4) I -> O: 0.649 ns
+        t3986 (Span4Mux_h1) I -> O: 0.305 ns
+        t3985 (LocalMux) I -> O: 1.099 ns
+        inmux_8_7_34419_34451 (InMux) I -> O: 0.662 ns
+        t844 (CascadeMux) I -> O: 0.000 ns
+        lc40_8_7_2 (LogicCell40) in2 -> lcout: 1.205 ns
+     6.709 ns net_30534 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I2[2])
+        odrv_8_7_30534_30678 (Odrv4) I -> O: 0.649 ns
+        t7343 (Span4Mux_v4) I -> O: 0.649 ns
+        t7342 (Span4Mux_v4) I -> O: 0.649 ns
+        t7341 (Span4Mux_h4) I -> O: 0.543 ns
+        t7340 (Span4Mux_v4) I -> O: 0.649 ns
+        t7339 (LocalMux) I -> O: 1.099 ns
+        inmux_3_19_17362_17413 (InMux) I -> O: 0.662 ns
+        lc40_3_19_4 (LogicCell40) in0 -> lcout: 1.285 ns
+    12.894 ns net_13488 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_1_I3_SB_LUT4_I3_2_O_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_LUT4_O_2_I3[1])
+        odrv_3_19_13488_17467 (Odrv4) I -> O: 0.649 ns
+        t3458 (Span4Mux_v4) I -> O: 0.649 ns
+        t3457 (Span4Mux_v3) I -> O: 0.583 ns
+        t3456 (LocalMux) I -> O: 1.099 ns
+        inmux_3_29_18607_18651 (InMux) I -> O: 0.662 ns
+        t369 (CascadeMux) I -> O: 0.000 ns
+        lc40_3_29_5 (LogicCell40) in2 -> lcout: 1.205 ns
+    17.742 ns net_14719 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_LUT4_I3_1_O[0])
+        odrv_3_29_14719_14503 (Odrv4) I -> O: 0.649 ns
+        t3627 (LocalMux) I -> O: 1.099 ns
+        inmux_3_26_18240_18287 (InMux) I -> O: 0.662 ns
+        lc40_3_26_6 (LogicCell40) in1 -> lcout: 1.232 ns
+    21.384 ns net_14351 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I3_O_SB_LUT4_O_I3[3])
+        t3589 (LocalMux) I -> O: 1.099 ns
+        inmux_3_26_18247_18277 (InMux) I -> O: 0.662 ns
+        lc40_3_26_4 (LogicCell40) in3 -> lcout: 0.874 ns
+    24.020 ns net_14349 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I3_O[0])
+        odrv_3_26_14349_14132 (Odrv4) I -> O: 0.649 ns
+        t3594 (LocalMux) I -> O: 1.099 ns
+        inmux_3_24_17995_18034 (InMux) I -> O: 0.662 ns
+        lc40_3_24_5 (LogicCell40) in0 -> lcout: 1.285 ns
+    27.715 ns net_14104 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3[1])
+        odrv_3_24_14104_17956 (Odrv4) I -> O: 0.649 ns
+        t3574 (Span4Mux_h4) I -> O: 0.543 ns
+        t3573 (Span4Mux_h2) I -> O: 0.344 ns
+        t3572 (LocalMux) I -> O: 1.099 ns
+        inmux_10_22_43927_43987 (InMux) I -> O: 0.662 ns
+        lc40_10_22_7 (LogicCell40) in1 -> lcout: 1.232 ns
+    32.245 ns net_40046 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O[2])
+        odrv_10_22_40046_43774 (Odrv4) I -> O: 0.649 ns
+        t10002 (Span4Mux_v3) I -> O: 0.583 ns
+        t10001 (LocalMux) I -> O: 1.099 ns
+        inmux_10_26_44427_44449 (InMux) I -> O: 0.662 ns
+        lc40_10_26_2 (LogicCell40) in1 -> lcout: 1.232 ns
+    36.470 ns net_40533 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_I3_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3[1])
+        t10061 (LocalMux) I -> O: 1.099 ns
+        inmux_10_26_44421_44460 (InMux) I -> O: 0.662 ns
+        lc40_10_26_4 (LogicCell40) in0 -> lcout: 1.285 ns
+    39.516 ns net_40535 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_I3_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O[2])
+        odrv_10_26_40535_44507 (Odrv4) I -> O: 0.649 ns
+        t10070 (LocalMux) I -> O: 1.099 ns
+        inmux_12_26_52089_52130 (InMux) I -> O: 0.662 ns
+        t1512 (CascadeMux) I -> O: 0.000 ns
+        lc40_12_26_5 (LogicCell40) in2 -> lcout: 1.205 ns
+    43.132 ns net_48198 (acc_SB_DFFESR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I3_1_O_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[0])
+        t11671 (LocalMux) I -> O: 1.099 ns
+        inmux_12_25_51947_52007 (InMux) I -> O: 0.662 ns
+        t1504 (CascadeMux) I -> O: 0.000 ns
+        lc40_12_25_5 (LogicCell40) in2 -> lcout: 1.205 ns
+    46.098 ns net_48075 (acc_SB_DFFESR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I3_1_O_SB_LUT4_O_I2_SB_LUT4_I3_O[2])
+        odrv_12_25_48075_52038 (Odrv4) I -> O: 0.649 ns
+        t11664 (LocalMux) I -> O: 1.099 ns
+        inmux_14_25_59629_59661 (InMux) I -> O: 0.662 ns
+        lc40_14_25_4 (LogicCell40) in1 -> lcout: 1.232 ns
+    49.741 ns net_55736 (acc_SB_DFFESR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I3_1_O_SB_LUT4_I3_O_SB_LUT4_O_I2[2])
+        odrv_14_25_55736_55519 (Odrv4) I -> O: 0.649 ns
+        t12724 (LocalMux) I -> O: 1.099 ns
+        inmux_13_23_55530_55604 (InMux) I -> O: 0.662 ns
+        t1664 (CascadeMux) I -> O: 0.000 ns
+        lc40_13_23_7 (LogicCell40) in2 -> lcout: 1.205 ns
+    53.356 ns net_51662 (acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O[3])
+        t12165 (LocalMux) I -> O: 1.099 ns
+        inmux_13_23_55550_55578 (InMux) I -> O: 0.662 ns
+        lc40_13_23_3 (LogicCell40) in0 -> lcout: 1.285 ns
+    56.403 ns net_51658 (acc_SB_DFFESR_Q_18_D_SB_LUT4_O_I2[1])
+        odrv_13_23_51658_55270 (Odrv4) I -> O: 0.649 ns
+        t12167 (Span4Mux_v1) I -> O: 0.344 ns
+        t12166 (LocalMux) I -> O: 1.099 ns
+        inmux_14_18_58744_58818 (InMux) I -> O: 0.662 ns
+        lc40_14_18_7 (LogicCell40) in1 -> carryout: 0.675 ns
+    59.833 ns net_58816 (acc_SB_DFFESR_Q_17_D_SB_LUT4_O_I2[3])
+        t1633 (ICE_CARRY_IN_MUX) carryinitin -> carryinitout: 0.556 ns
+        lc40_14_19_0 (LogicCell40) carryin -> carryout: 0.278 ns
+    60.667 ns net_58897 (acc_SB_DFFESR_Q_16_D_SB_LUT4_O_I2[3])
+        lc40_14_19_1 (LogicCell40) carryin -> carryout: 0.278 ns
+    60.945 ns net_58903 (acc_SB_DFFESR_Q_15_D_SB_LUT4_O_I2[3])
+        lc40_14_19_2 (LogicCell40) carryin -> carryout: 0.278 ns
+    61.224 ns net_58909 (acc_SB_DFFESR_Q_14_D_SB_LUT4_O_I2[3])
+        lc40_14_19_3 (LogicCell40) carryin -> carryout: 0.278 ns
+    61.502 ns net_58915 (acc_SB_DFFESR_Q_13_D_SB_LUT4_O_I2[3])
+        lc40_14_19_4 (LogicCell40) carryin -> carryout: 0.278 ns
+    61.780 ns net_58921 (acc_SB_DFFESR_Q_12_D_SB_LUT4_O_I2[3])
+        lc40_14_19_5 (LogicCell40) carryin -> carryout: 0.278 ns
+    62.058 ns net_58927 (acc_SB_DFFESR_Q_11_D_SB_LUT4_O_I2[3])
+        lc40_14_19_6 (LogicCell40) carryin -> carryout: 0.278 ns
+    62.336 ns net_58933 (acc_SB_DFFESR_Q_10_D_SB_LUT4_O_I2[3])
+        lc40_14_19_7 (LogicCell40) carryin -> carryout: 0.278 ns
+    62.614 ns net_58939 (acc_SB_DFFESR_Q_9_D_SB_LUT4_O_I2[3])
+        t1639 (ICE_CARRY_IN_MUX) carryinitin -> carryinitout: 0.556 ns
+        lc40_14_20_0 (LogicCell40) carryin -> carryout: 0.278 ns
+    63.449 ns net_59020 (acc_SB_DFFESR_Q_8_D_SB_LUT4_O_I2[3])
+        lc40_14_20_1 (LogicCell40) carryin -> carryout: 0.278 ns
+    63.727 ns net_59026 (acc_SB_DFFESR_Q_7_D_SB_LUT4_O_I2[3])
+        lc40_14_20_2 (LogicCell40) carryin -> carryout: 0.278 ns
+    64.005 ns net_59032 (acc_SB_DFFESR_Q_6_D_SB_LUT4_O_I2[3])
+        lc40_14_20_3 (LogicCell40) carryin -> carryout: 0.278 ns
+    64.283 ns net_59038 (acc_SB_DFFESR_Q_5_D_SB_LUT4_O_I2[3])
+        lc40_14_20_4 (LogicCell40) carryin -> carryout: 0.278 ns
+    64.561 ns net_59044 (acc_SB_DFFESR_Q_4_D_SB_LUT4_O_I2[3])
+        lc40_14_20_5 (LogicCell40) carryin -> carryout: 0.278 ns
+    64.839 ns net_59050 (acc_SB_DFFESR_Q_3_D_SB_LUT4_O_I2[3])
+        lc40_14_20_6 (LogicCell40) carryin -> carryout: 0.278 ns
+    65.117 ns net_59056 (acc_SB_DFFESR_Q_2_D_SB_LUT4_O_I2[3])
+        lc40_14_20_7 (LogicCell40) carryin -> carryout: 0.278 ns
+    65.396 ns net_59062 (acc_SB_DFFESR_Q_1_D_SB_LUT4_O_I2[3])
+        t1646 (ICE_CARRY_IN_MUX) carryinitin -> carryinitout: 0.556 ns
+        lc40_14_21_0 (LogicCell40) carryin -> carryout: 0.278 ns
+    66.230 ns net_59143 (acc_SB_DFFESR_Q_D_SB_LUT4_O_I2[3])
+        inmux_14_21_59143_59153 (InMux) I -> O: 0.662 ns
+    66.892 ns net_59153 (acc_SB_DFFESR_Q_D_SB_LUT4_O_I2[3])
+        lc40_14_21_1 (LogicCell40) in3 [setup]: 0.583 ns
+    67.475 ns net_55241 (acc[39])
+
+Resolvable net names on path:
+     1.491 ns ..  5.504 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_3_I3_SB_LUT4_O_I3_SB_LUT4_O_2_I3[2]
+     6.709 ns .. 11.609 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I2[2]
+    12.894 ns .. 16.536 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_O_SB_LUT4_O_1_I3_SB_LUT4_I3_2_O_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_LUT4_O_2_I3[1]
+    17.742 ns .. 20.152 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_3_O_SB_LUT4_I2_I3_SB_LUT4_O_I2_SB_LUT4_I3_1_O[0]
+    21.384 ns .. 23.145 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I3_O_SB_LUT4_O_I3[3]
+    24.020 ns .. 26.430 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I3_O[0]
+    27.715 ns .. 31.013 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3[1]
+    32.245 ns .. 35.238 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O[2]
+    36.470 ns .. 38.231 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_I3_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3[1]
+    39.516 ns .. 41.926 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_I3_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O[2]
+    43.132 ns .. 44.893 ns acc_SB_DFFESR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I3_1_O_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_I3_O[0]
+    46.098 ns .. 48.509 ns acc_SB_DFFESR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I3_1_O_SB_LUT4_O_I2_SB_LUT4_I3_O[2]
+    49.741 ns .. 52.151 ns acc_SB_DFFESR_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_I1_SB_LUT4_I3_1_O_SB_LUT4_I3_O_SB_LUT4_O_I2[2]
+    53.356 ns .. 55.118 ns acc_SB_DFFESR_Q_38_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O[3]
+    56.403 ns .. 59.157 ns acc_SB_DFFESR_Q_18_D_SB_LUT4_O_I2[1]
+    59.833 ns .. 60.389 ns acc_SB_DFFESR_Q_17_D_SB_LUT4_O_I2[3]
+    60.667 ns .. 60.667 ns acc_SB_DFFESR_Q_16_D_SB_LUT4_O_I2[3]
+    60.945 ns .. 60.945 ns acc_SB_DFFESR_Q_15_D_SB_LUT4_O_I2[3]
+    61.224 ns .. 61.224 ns acc_SB_DFFESR_Q_14_D_SB_LUT4_O_I2[3]
+    61.502 ns .. 61.502 ns acc_SB_DFFESR_Q_13_D_SB_LUT4_O_I2[3]
+    61.780 ns .. 61.780 ns acc_SB_DFFESR_Q_12_D_SB_LUT4_O_I2[3]
+    62.058 ns .. 62.058 ns acc_SB_DFFESR_Q_11_D_SB_LUT4_O_I2[3]
+    62.336 ns .. 62.336 ns acc_SB_DFFESR_Q_10_D_SB_LUT4_O_I2[3]
+    62.614 ns .. 63.170 ns acc_SB_DFFESR_Q_9_D_SB_LUT4_O_I2[3]
+    63.449 ns .. 63.449 ns acc_SB_DFFESR_Q_8_D_SB_LUT4_O_I2[3]
+    63.727 ns .. 63.727 ns acc_SB_DFFESR_Q_7_D_SB_LUT4_O_I2[3]
+    64.005 ns .. 64.005 ns acc_SB_DFFESR_Q_6_D_SB_LUT4_O_I2[3]
+    64.283 ns .. 64.283 ns acc_SB_DFFESR_Q_5_D_SB_LUT4_O_I2[3]
+    64.561 ns .. 64.561 ns acc_SB_DFFESR_Q_4_D_SB_LUT4_O_I2[3]
+    64.839 ns .. 64.839 ns acc_SB_DFFESR_Q_3_D_SB_LUT4_O_I2[3]
+    65.117 ns .. 65.117 ns acc_SB_DFFESR_Q_2_D_SB_LUT4_O_I2[3]
+    65.396 ns .. 65.952 ns acc_SB_DFFESR_Q_1_D_SB_LUT4_O_I2[3]
+    66.230 ns .. 66.892 ns acc_SB_DFFESR_Q_D_SB_LUT4_O_I2[3]
+                  lcout -> acc[39]
+
+Total number of logic levels: 33
+Total path delay: 67.47 ns (14.82 MHz)
+
