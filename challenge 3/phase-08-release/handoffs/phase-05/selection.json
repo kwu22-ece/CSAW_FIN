@@ -1,0 +1,562 @@
+{
+  "backlog": "improvement-backlog.json",
+  "best_results": {
+    "all_standard_and_full_audio_captures_byte_identical_to_original": true,
+    "baseline_normal_mismatches": 0,
+    "baseline_normal_words": 22248,
+    "bitstream_repeat_identical": true,
+    "build": {
+      "bitstream_sha256": "2742912e31ec6c058756e5623d84736285dc2d46695d8ece616494e3152a89b0",
+      "constrained_pins": true,
+      "fmax": {
+        "ICE_CLK$SB_IO_IN_$glb_clk": {
+          "achieved": 15.271604537963867,
+          "constraint": 10
+        }
+      },
+      "frequency_mhz": 10.0,
+      "hardware_validated": false,
+      "passed": true,
+      "seed": 1,
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 0
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 3240
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 0
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 0
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 3
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 9
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      }
+    },
+    "common_vector_simulations_passed": 2,
+    "continuous_audio_mismatches": 0,
+    "continuous_audio_simulations_passed": 1,
+    "continuous_audio_words": 480260,
+    "directed_simulations_passed": 30,
+    "framework_tests_passed": 15,
+    "full_audio_mismatches": 0,
+    "full_audio_simulations_passed": 4,
+    "full_audio_words": 481082,
+    "hardware_status": "not_run",
+    "independent_phase8_reproduction": {
+      "framework_tests": 15,
+      "new_hdl_runs_this_cycle": 0,
+      "output_hashes_verified": 1032,
+      "receipt": "cycles/05S-004/phase08-review.json",
+      "retained_simulations": 47,
+      "source_sha": "39a424d84a38562adfe8a9e4251b741b899ee93c"
+    },
+    "phase_drift_mismatches": 0,
+    "phase_drift_simulations_passed": 51,
+    "phase_drift_window_checks_passed": 45,
+    "phase_drift_words": 48888,
+    "regression_status": "passed_all_available_checks",
+    "reproduced_from_clean_archive": "fd0ca7f6bce1d30bb1b1e6ce43603b4c7d51e5b6",
+    "retained_quality_simulations_passed": 46,
+    "source_inventory_entries_passed": 41,
+    "standard_simulations_passed": 10,
+    "total_simulations_passed": 98
+  },
+  "bonus": {
+    "A": {
+      "basis": "05A one-bit corruption and 05D spectral inversion use distinct triggers and mechanisms. Initial selection independently observed activation, preserved baseline and fitted both; see frozen cycle 01 results. Simulation tier only, subject to complete documented submission/provenance. 05C is backup and not counted as a third bonus.",
+      "candidates": [
+        "05A",
+        "05D"
+      ],
+      "conditional_evaluator_estimate": 10,
+      "official_award": null,
+      "physical_points_supported": 0,
+      "rubric_evidence_level_each": 5,
+      "status": "distinct_additional_candidates_demonstrated_in_simulation_only"
+    },
+    "B": {
+      "audit": "cycles/05S-003/iteration-02-bonus.json",
+      "evaluator_estimate": 5,
+      "experiment_commit_sha": "4bf5e02856b6874c82a8eaf7983d54de4755c2e6",
+      "hardware_verified": false,
+      "latest_audit": "cycles/05S-004/bonus-receipt-audit.json",
+      "limitations": [
+        "No physical board proof; cannot claim full 10-point tier.",
+        "Digital PCM decoder assumes no sample-rate conversion or clock drift; no acoustic robustness claim.",
+        "Tentative inherited LED-role mapping; system-clock timing pass is not complete board timing signoff.",
+        "Full AI transcript sufficiency and documentation-model synthesis remain unverified.",
+        "Cycle005 independently verifies the supplied full recording on modified 05BB RTL; additional audio corpora and asynchronous bonus clock coverage remain untested."
+      ],
+      "normal_baseline_extension": {
+        "bclk_hz": 1000000,
+        "compared_words": 480260,
+        "hardware_verified": false,
+        "mismatches": 0,
+        "receipt": "cycles/05S-005/bonus-baseline/summary.json",
+        "simulated_frame_rate_hz": 31250,
+        "source_frames": 240000
+      },
+      "official_award": null,
+      "recommendation": "Retain separate optional 05BB package; full supplied-recording baseline now passes independently. Main ranking unchanged; no physical, drift/resampling, or new recovery-rate claim.",
+      "reviewed_package_sha": "83acf059f7b29fd0c8b1be16e952444ff5ccd84b",
+      "selected_main_implementation_has_channel": false,
+      "simulation": [
+        {
+          "attempted_frames": 3,
+          "ber": 0,
+          "compared_bits": 336,
+          "elapsed_seconds": 0.537344,
+          "incorrect_bits": 0,
+          "net_payload_bps": 625.2977608384945,
+          "raw_signaling_bps": 976.5625,
+          "recovered_frames": 3,
+          "sample_rate_hz": 31250
+        },
+        {
+          "attempted_frames": 3,
+          "ber": 0,
+          "compared_bits": 336,
+          "elapsed_seconds": 1.074688,
+          "incorrect_bits": 0,
+          "net_payload_bps": 312.64888041924723,
+          "raw_signaling_bps": 488.28125,
+          "recovered_frames": 3,
+          "sample_rate_hz": 15625
+        }
+      ],
+      "status": "separate_05BB_simulation_recovery_verified"
+    }
+  },
+  "candidate_availability": {
+    "05A": "available_local",
+    "05B": "available_local",
+    "05C": "available_local",
+    "05D": "available_local"
+  },
+  "common_baseline_commit_sha": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+  "completed_at_utc": "2026-11-13T17:11:10.183358+00:00",
+  "current_best_known_sha": "fd0ca7f6bce1d30bb1b1e6ce43603b4c7d51e5b6",
+  "cycle_evidence": [
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/audit-context-results.json",
+      "sha256_lf": "b0e5dc92712f4fe5b86f820764c1d03dada832b97024cdba55292274a7a6c77b"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/audit-context-tests.log",
+      "sha256_lf": "0a29a4c775ccbd7168643810b678a992e87593337abded77fbf16741a73205a1"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/baseline-before-corrected-fixture.log",
+      "sha256_lf": "e8e4cb12f7189dccf10a6c2508249632ff36433b8eb7f436c6933524c8b52b81"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/comparison.json",
+      "sha256_lf": "d9572705419daef1076ab1c55bb1408a9f4c105e8d3e41d7fb7a06594704d174"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/compile.log",
+      "sha256_lf": "4862206ff8d0b1ac1407590a8270c6a6761b7ce76afc75323dbdafae2db971f0"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/compile.log.json",
+      "sha256_lf": "5f1d89bf452f6011c8ca765138177c4e9d85461e9c92b8c551007b543a0e6af3"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/failed-attempt-01.json",
+      "sha256_lf": "aa90d2d5a2011b18440d0f477e80731e9b5d23579f4cdc250117f1f09c85f432"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/receipt.json",
+      "sha256_lf": "1cb21cc4ac971e8f5c60834066b8be8b94d6451e95d175b2cb79651bc1bb9056"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/simulation.log",
+      "sha256_lf": "5541d683304e9dd3990679dc4c0e2d925c6db1c4ea53bdf7f22c5b3d3b557893"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/simulation.log.json",
+      "sha256_lf": "64a2e01cbe4ee871b2f9ab528e5213968cb82bc5c26fee60284dbc6312ad0cf4"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/summary.json",
+      "sha256_lf": "9b477b338eacb99a51378c63e48c81696ba8d4822f380d7ade3da3ac85729952"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/bonus-baseline/verification-evidence.zip",
+      "sha256_lf": "061d485b00f2a61dc49ba3c1b545c22882fd33453784b33b8c3f55857ea02ca5"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/clock-drift/archive-validation.json",
+      "sha256_lf": "a24761c6cc5742d9b9b0faf456bb17be3794a44d01868f7853993c2f019d997f"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/clock-drift/evidence.zip",
+      "sha256_lf": "0dbb2f51d553e7532428fe0f81ff2f98673a1bf6606cef44b51ae5f3944b28c1"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/clock-drift/summary.json",
+      "sha256_lf": "1c0c32fa421d9ef1d9a8598f790a748f7eeec7a4b7ef4445b158e9e8a37158da"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/discovery.json",
+      "sha256_lf": "512cf4fa7e5064a40b3e2effedf748f8ad05a34434d8b88e630738780f26c35b"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/identity-after.log",
+      "sha256_lf": "292de628706242778bfeed1a2e358bd68d8647cbf25375ee89b440cbca63dacf"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/identity-before.log",
+      "sha256_lf": "e14d7f2a4ac702af4bd0d2b3b6bd9080685dd2d45b2006e2c4c8b5ed667b2b8c"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/identity-results.json",
+      "sha256_lf": "3e949303788a1905b8aa444dfe8b9569776edd5d760a28a3df8ab83de45d817f"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/peer-review.json",
+      "sha256_lf": "b470fbff117d9e3af7629ce59f9a96d87b6eee4c24121fcb88042595f4c460d0"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/port-inventory.json",
+      "sha256_lf": "bd16e9adb7255fa5d071ffe53380bb05ee942c728685d153d357f9e6817b801e"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/release-overlay/overlay.json",
+      "sha256_lf": "636c0e987d9ad8c2f1a0f76333c4c9bfd8dd928492577367815156b979a0e2aa"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/release-overlay/tests.log",
+      "sha256_lf": "ff72ad70a51286b2f5edf215ac54fdfed5e58e1e7e93c7eee9a1ebbdc0a67be6"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/release-overlay/validation.json",
+      "sha256_lf": "ab9a0b870553ff482760c3c1d1df5068512a1fa15a8727d4a4913ab0f03d3404"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/release-overlay/verification.json",
+      "sha256_lf": "432312dca4859bc8797a051e77c401751016f122dcaaa2774b718ea46d157c42"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/tooling-provenance.json",
+      "sha256_lf": "f2ce7d7c8824dcdd3866773acf73f1591b1cd7f4aa64e5a6c35bf9e94dd2ef81"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/documentation-receipt.json",
+      "sha256_lf": "3e6a154b63c757669c47d56ff1570ebfb9df8b9f6cecb6341c9ed76249f33f19"
+    },
+    {
+      "path": "handoffs/phase-05/cycles/05S-005/archive-validation.json",
+      "sha256_lf": "a2628e8398f0b7eafdb08403d2d350ffb31dd27c4086f3c73978c208aa872872"
+    }
+  ],
+  "cycle_evidence_hash_policy": "SHA256; JSON text CRLF normalized to LF; original raw audit digests remain in receipts",
+  "cycle_number": 5,
+  "evaluation_branch": "challenge3/05s-cycle-05",
+  "evaluation_worktree": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-05s-cycle-05",
+  "gate_results": {
+    "05A": {
+      "10_optional_bonus": "simulation_only_additional_candidate_evidence_no_data_recovery",
+      "1_source_integrity_and_provenance": "historical_source_pass_with_packaging_caveats_provenance_incomplete",
+      "2_baseline_equivalence": "simulation_pass_physical_open",
+      "3_functional_verification": "pass_available_simulations",
+      "4_regression_reliability": "pass_in_tested_scope",
+      "5_fpga_synthesis": "pass_retained_immutable_receipt",
+      "6_timing_resources": "pass_10mhz_up5k_sg48_seed1",
+      "7_reproducibility": "pass_historical_rerun_with_preparation_caveats",
+      "8_physical_evidence": "not_run",
+      "9_documentation_completeness": "partial_transcript_and_board_evidence_open"
+    },
+    "05B": {
+      "10_optional_bonus": "simulation_only_additional_candidate_evidence_no_data_recovery",
+      "1_source_integrity_and_provenance": "source_pass_provenance_incomplete",
+      "2_baseline_equivalence": "simulation_pass_physical_open",
+      "3_functional_verification": "pass_available_simulations",
+      "4_regression_reliability": "pass_in_tested_scope",
+      "5_fpga_synthesis": "pass_retained_immutable_receipt",
+      "6_timing_resources": "pass_10mhz_up5k_sg48_seed1",
+      "7_reproducibility": "pass_clean_archive_and_inventory",
+      "8_physical_evidence": "not_run",
+      "9_documentation_completeness": "partial_transcript_and_board_evidence_open"
+    },
+    "05C": {
+      "10_optional_bonus": "simulation_only_additional_candidate_evidence_no_data_recovery",
+      "1_source_integrity_and_provenance": "historical_source_pass_with_packaging_caveats_provenance_incomplete",
+      "2_baseline_equivalence": "simulation_pass_physical_open",
+      "3_functional_verification": "pass_available_simulations",
+      "4_regression_reliability": "pass_in_tested_scope",
+      "5_fpga_synthesis": "pass_retained_immutable_receipt",
+      "6_timing_resources": "pass_10mhz_up5k_sg48_seed1",
+      "7_reproducibility": "pass_historical_rerun_with_preparation_caveats",
+      "8_physical_evidence": "not_run",
+      "9_documentation_completeness": "partial_transcript_and_board_evidence_open"
+    },
+    "05D": {
+      "10_optional_bonus": "simulation_only_additional_candidate_evidence_no_data_recovery",
+      "1_source_integrity_and_provenance": "historical_source_pass_with_packaging_caveats_provenance_incomplete",
+      "2_baseline_equivalence": "simulation_pass_physical_open",
+      "3_functional_verification": "pass_available_simulations",
+      "4_regression_reliability": "pass_in_tested_scope",
+      "5_fpga_synthesis": "pass_retained_immutable_receipt",
+      "6_timing_resources": "pass_10mhz_up5k_sg48_seed1",
+      "7_reproducibility": "pass_historical_rerun_with_preparation_caveats",
+      "8_physical_evidence": "not_run",
+      "9_documentation_completeness": "partial_transcript_and_board_evidence_open"
+    }
+  },
+  "history": "selection-history.json",
+  "iteration": {
+    "accepted": [
+      "Independent I2S clock phase coverage for main best",
+      "Frozen candidate inventory and baseline identity",
+      "Release provenance reconciliation",
+      "Repeatable auditor invocation metadata",
+      "Separate 05BB full-recording normal baseline"
+    ],
+    "new_rtl_defects": [],
+    "not_adopted": [
+      "Promote 05BB into main on baseline-only evidence",
+      "Treat ideal-clock simulation as physical verification",
+      "Rewrite original Phase8 execution configuration or receipt hashes"
+    ],
+    "rejected_implementation_changes": [],
+    "synthesis_rerun": "not_required_no_RTL_constraints_or_synthesis_tool_changes"
+  },
+  "iterations": [
+    {
+      "focus": "Independent I2S clock phase coverage for main best",
+      "number": 1,
+      "receipt": "clock-drift/summary.json",
+      "status": "accepted_coverage"
+    },
+    {
+      "focus": "Frozen candidate inventory and baseline identity",
+      "number": 2,
+      "receipt": "identity-results.json",
+      "status": "accepted_tooling_fix"
+    },
+    {
+      "focus": "Release provenance reconciliation",
+      "number": 3,
+      "receipt": "release-overlay/validation.json",
+      "status": "accepted_overlay_packaging_pending"
+    },
+    {
+      "focus": "Repeatable auditor invocation metadata",
+      "number": 4,
+      "receipt": "audit-context-results.json",
+      "status": "accepted_tooling_fix"
+    },
+    {
+      "focus": "Separate 05BB full-recording normal baseline",
+      "number": 5,
+      "receipt": "bonus-baseline/summary.json",
+      "status": "accepted_coverage_no_main_promotion"
+    }
+  ],
+  "iterations_completed": 5,
+  "last_evaluation_cycle_id": "05S-005",
+  "last_reviewed_candidate_shas": {
+    "05A": "99a3fdb6d1f87ffd75bcfa46d7adc94664d97b29",
+    "05B": "9e172a865a543b03e226596689fd6691ffa2b779",
+    "05C": "f4e8eedcb55d73f5f3adc97431a4a1a3a9c65c87",
+    "05D": "51c223336f3d4d23854907bdee87dfd5ac1f2e98"
+  },
+  "last_reviewed_remote_candidate_shas": {
+    "05A": "99a3fdb6d1f87ffd75bcfa46d7adc94664d97b29",
+    "05B": "9e172a865a543b03e226596689fd6691ffa2b779",
+    "05C": "f4e8eedcb55d73f5f3adc97431a4a1a3a9c65c87",
+    "05D": "51c223336f3d4d23854907bdee87dfd5ac1f2e98"
+  },
+  "last_reviewed_source_refs": {
+    "refs/heads/challenge3/02-reverse-engineering": "1befb30e99a506698c45d4ca9394a3c7ec95c966",
+    "refs/heads/challenge3/03-baseline": "5dedf4c4ed10f47fbe9ec138c7db2019446cdb7f",
+    "refs/heads/challenge3/04-infrastructure": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+    "refs/heads/challenge3/05bb-bonus-b": "83acf059f7b29fd0c8b1be16e952444ff5ccd84b",
+    "refs/heads/challenge3/05s-cycle-02": "bcca3c88ca4748f8b6f9ccb189e137aee321fa69",
+    "refs/heads/challenge3/05s-cycle-03": "bcca3c88ca4748f8b6f9ccb189e137aee321fa69",
+    "refs/heads/challenge3/05s-cycle-03-preserved": "df22816fe29c479d404314bf0ae9e8baacdd1d3d",
+    "refs/heads/challenge3/05s-cycle-04": "ab71ea88c7853fed7917c31c59c2f0b6abc83d96",
+    "refs/heads/challenge3/05s-cycle-04-resume": "6271dc860d6992543f4c88f56900ca448cc49716",
+    "refs/heads/challenge3/05s-cycle-05": "6271dc860d6992543f4c88f56900ca448cc49716",
+    "refs/heads/challenge3/05s-selection": "6d9cacf4e12a7f2357c4f36fa91d9ef87429d046",
+    "refs/heads/challenge3/phase-t-audio-testing": "d92e9f8e16ed112464fd046bc96bf702e6191e9a",
+    "refs/heads/challenge3/quality-winner": "d953ddfd494b932b1a1546aeca2a9549d1ee70d3",
+    "refs/heads/challenge3/reconstruction-review": "e12aff7607664cad2cb98b47422ed73d07953869",
+    "refs/heads/codex/challenge3-phase-06-validation": "8daabe8bbe73af537143dc97181dbc3bb8c88c61",
+    "refs/heads/codex/challenge3-phase-08-release": "39a424d84a38562adfe8a9e4251b741b899ee93c",
+    "refs/remotes/destination/challenge3/02-reverse-engineering": "1befb30e99a506698c45d4ca9394a3c7ec95c966",
+    "refs/remotes/origin/challenge3/02-reverse-engineering": "1befb30e99a506698c45d4ca9394a3c7ec95c966",
+    "refs/remotes/origin/challenge3/03-baseline": "5dedf4c4ed10f47fbe9ec138c7db2019446cdb7f",
+    "refs/remotes/origin/challenge3/04-infrastructure": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+    "refs/remotes/origin/challenge3/phase-t-audio-testing": "1d9acbef21e0daffa5de5fdc658b056742e3f912",
+    "refs/remotes/origin/challenge3/quality-winner": "d953ddfd494b932b1a1546aeca2a9549d1ee70d3",
+    "refs/remotes/origin/challenge3/reconstruction-review": "e12aff7607664cad2cb98b47422ed73d07953869",
+    "refs/remotes/origin/codex/challenge3-phase-06-validation": "a1d3f7f054a87ac7a9a69e13f51154752660a8ea",
+    "refs/remotes/origin/codex/challenge3-phase-08-release": "babb81ad46c12d069427a7b39ab974ac93b76beb",
+    "refs/remotes/origin/codex/challenge3-worktree-evidence": "37e65ac6ffb3a10150ef84d549586c52743e6467"
+  },
+  "main_score_assessment": {
+    "automation_provisional": 9,
+    "creative_ai": null,
+    "documentation_provisional": 9,
+    "physical_demo": 0,
+    "qualification": "Physical baseline/exploit and transcript sufficiency unresolved. No competition-ready total.",
+    "quality_engineering_estimate_conditional_on_board": 20,
+    "total": null
+  },
+  "mode": [
+    "C"
+  ],
+  "new_evidence": {
+    "auditor_context_tests": 6,
+    "checkpoint_tests": 25,
+    "completed_hdl_experiments_repeated": false,
+    "failed_preparations_retained": [
+      "Initial baseline identity mutation fixture used nonancestor Phase2; corrected actual Phase4 parent",
+      "05BB preparation initially rejected CRLF/LF text identity; normalized using established Q policy without numerical changes"
+    ],
+    "hardware": "Only Bluetooth COM4/COM5 identified; no physical ports opened",
+    "main_clock_drift": {
+      "compared_words": 48888,
+      "directed_window_checks_passed": 45,
+      "half_periods_ns": [
+        501,
+        503,
+        797
+      ],
+      "mismatches": 0,
+      "rising_edge_phases_per_rate": 50,
+      "simulations_passed": 51
+    },
+    "release_overlay_tests": 6,
+    "separate_bonus_full_audio": {
+      "compared_words": 480260,
+      "flush_frames": 130,
+      "main_promotion": false,
+      "mismatches": 0,
+      "new_simulations": 1,
+      "source_frames": 240000
+    }
+  },
+  "official_rubric": {
+    "base_categories_max": {
+      "creative_ai": 35,
+      "documentation_reproducibility": 15,
+      "hardware_demonstration": 10,
+      "system_automation": 15,
+      "trojan_quality": 25
+    },
+    "note": "The category estimates below are evaluator judgments from submitted and fresh local evidence, not official judge scores. Creative AI is unscored because complete main-session prompt/response logs are not in these packages. No total is assigned.",
+    "source": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/main/finals/challenge_3/README.md"
+  },
+  "original_candidate_commit_sha": "9e172a865a543b03e226596689fd6691ffa2b779",
+  "original_candidate_id": "05B",
+  "original_candidate_shas": {
+    "05A": "99a3fdb6d1f87ffd75bcfa46d7adc94664d97b29",
+    "05B": "9e172a865a543b03e226596689fd6691ffa2b779",
+    "05C": "f4e8eedcb55d73f5f3adc97431a4a1a3a9c65c87",
+    "05D": "629c7d4a1dd158ff1b6585e0e84e9aff74f8810f"
+  },
+  "phase": "05S",
+  "previous_best_known_sha": "fd0ca7f6bce1d30bb1b1e6ce43603b4c7d51e5b6",
+  "previous_checkpoint_commit_sha": "6271dc860d6992543f4c88f56900ca448cc49716",
+  "previous_checkpoint_history": "handoffs/phase-05/cycles/05S-005/previous-checkpoint/selection-history.json",
+  "ranking": [
+    {
+      "candidate_id": "05B",
+      "rank": 1,
+      "role": "primary",
+      "snapshot_sha": "9e172a865a543b03e226596689fd6691ffa2b779"
+    },
+    {
+      "candidate_id": "05C",
+      "rank": 2,
+      "role": "backup",
+      "snapshot_sha": "f4e8eedcb55d73f5f3adc97431a4a1a3a9c65c87"
+    },
+    {
+      "candidate_id": "05D",
+      "rank": 3,
+      "role": "independent DSP coverage",
+      "snapshot_sha": "629c7d4a1dd158ff1b6585e0e84e9aff74f8810f"
+    },
+    {
+      "candidate_id": "05A",
+      "rank": 4,
+      "role": "minimal-payload comparison",
+      "snapshot_sha": "99a3fdb6d1f87ffd75bcfa46d7adc94664d97b29"
+    }
+  ],
+  "resume": {
+    "evaluation_checkpoint_branch": "challenge3/05s-cycle-05",
+    "first_read": [
+      "selection.json",
+      "selection-history.json",
+      "improvement-backlog.json",
+      "../quality-review/current-best.json"
+    ],
+    "inspect_command": "python experiments/phase05s/inspect.py --repo . --state handoffs/phase-05/selection.json --output build/NEXT-discovery.json",
+    "next_cycle_number": 6,
+    "policy": "Read cycle005 checkpoint; inspect changed source/evidence only. Preserve fd0ca7f. Main ideal-clock coverage and separate 05BB full recording are complete; do not repeat absent changes. Prioritize identified physical hardware and release-overlay integration.",
+    "verify_command": "python experiments/phase05s/verify_state.py --root ."
+  },
+  "schema_version": 3,
+  "status": "bounded_cycle_complete_provisional_selection",
+  "stop_reason": "Five focused iterations completed; main best preserved and physical hardware remains unidentified.",
+  "winner": {
+    "candidate_id": "05B",
+    "current_best_known_commit_sha": "fd0ca7f6bce1d30bb1b1e6ce43603b4c7d51e5b6",
+    "immutable_package_commit_sha": "9e172a865a543b03e226596689fd6691ffa2b779",
+    "unchanged_rtl_origin_commit_sha": "15a8a6525e225ad82d931b3bc75399f744638b2e"
+  }
+}

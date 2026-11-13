@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 8 saved candidate evidence",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "candidates": {
+      "type": "object",
+      "required": [
+        "05A",
+        "05B",
+        "05C",
+        "05D"
+      ],
+      "additionalProperties": {
+        "$ref": "#/$defs/candidate"
+      }
+    }
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "required": [
+        "candidate_id",
+        "model",
+        "environment",
+        "branch",
+        "source_commit",
+        "baseline_commit",
+        "saved_rank",
+        "saved_gates",
+        "execution"
+      ],
+      "properties": {
+        "candidate_id": {
+          "enum": [
+            "05A",
+            "05B",
+            "05C",
+            "05D"
+          ]
+        },
+        "model": {
+          "type": "string"
+        },
+        "environment": {
+          "type": "string"
+        },
+        "branch": {
+          "type": "string"
+        },
+        "source_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "baseline_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "latest_reviewed_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "registered_worktree": {
+          "type": "boolean"
+        },
+        "saved_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "saved_gates": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "current_gates": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "execution": {
+          "const": "saved_evidence_only"
+        }
+      }
+    }
+  }
+}

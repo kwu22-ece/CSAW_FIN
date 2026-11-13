@@ -1,0 +1,19 @@
+{
+  "agent": "existing Project Scribe controller",
+  "cycle": "phase08-cycle03",
+  "events": [
+    {"session": "phase08-cycle03-release-integrity", "exit_code": 0, "tracked_state_stable": true, "coverage": "six release integrity regression tests"},
+    {"session": "phase08-cycle03-selected-checkpoint", "exit_code": 0, "tracked_state_stable": true, "coverage": "verified completed selected-candidate quality, repeat-build and continuous-audio checkpoints"},
+    {"session": "phase08-cycle03-selected-raw-git-snapshot", "exit_code": 0, "tracked_state_stable": true, "coverage": "revalidated selected-50zm6lr6 using byte-preserving Git extraction"},
+    {"session": "phase08-cycle03-manifest-integrity", "exit_code": 0, "tracked_state_stable": true, "coverage": "six release integrity tests including stale-manifest exclusion"},
+    {"session": "phase08-cycle03-package-integrity", "exit_code": 0, "tracked_state_stable": true, "coverage": "907-member archive integrity and requirements audit"}
+  ],
+  "preview": "completed locally",
+  "recorded_event_count": 12,
+  "model_synthesis": "not_run; configured model remains a placeholder",
+  "external_publication": false,
+  "private_state_relative_to_project": ".state/phase-08-scribe/",
+  "engineering_report": "engineering.md",
+  "requirements_audit": "requirements.md",
+  "submission_brief": "submission-README.md"
+}
