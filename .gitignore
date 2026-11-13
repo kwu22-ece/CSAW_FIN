@@ -27,3 +27,6 @@ venv/
 .claude/settings.local.json
 .DS_Store
 Thumbs.db
+
+# Phase 3 scratch / regenerable build artifacts
+build/
