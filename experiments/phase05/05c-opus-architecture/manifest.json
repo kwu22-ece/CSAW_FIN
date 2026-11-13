@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "candidate_id": "05C",
+  "model": "Claude Opus 4.8 (claude-opus-4-8)",
+  "approach": "architecture-driven",
+  "base_commit_sha": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+  "candidate_commit_sha": "db2e291cbb6e7e8f87d415da35c0e967a82d6e1e",
+  "name": "csaw-challenge3-05c-opus-architecture",
+  "kind": "verified_design",
+  "ready": true,
+  "trojan": {
+    "trigger": "ordered 3-frame covert knock on the architecturally-unused RIGHT I2S slot: 0xC0DE,0xFACE,0xBEEF on consecutive frames; sticky `armed` latches on the 3rd match (restart credit on MAGIC0). Per-triple false-match prob 2^-48.",
+    "payload": "single 16-bit 2:1 mux at the end_frame TX load: y_d <= armed ? echo : y_filt. Armed => left (filtered) output passes the raw input (filter bypass); 63-tap MAC datapath untouched.",
+    "sticky": true,
+    "untriggered_equivalence": "bit-identical to recovered baseline"
+  },
+  "verification_evidence": [
+    "ai/design-research.md",
+    "ai/interaction-log.md",
+    "ai/candidate-evaluation.workflow.json",
+    "rtl/fir_audio_baseline.reference.v",
+    "reports/trojan-vs-baseline.diff",
+    "../../../handoffs/phase-04/integration-validation.json"
+  ],
+  "simulation": {
+    "sources": [
+      "rtl/fir_audio_top_trojan.v",
+      "rtl/trojan_adapter.sv"
+    ],
+    "parameters": {
+      "SAMPLE_BITS": 16,
+      "SLOT_BITS": 16,
+      "MSB_DELAY": 1,
+      "LEFT_LEVEL": 0,
+      "HALF_PERIOD_NS": 500,
+      "CLOCK_HALF_NS": 50,
+      "RESET_CYCLES": 64
+    }
+  },
+  "cases": {
+    "inactive_equivalence": "tests/inactive_equiv.manifest.json (8 recovered vectors vs UNMODIFIED baseline reference)",
+    "directed": "tests/directed.manifest.json (3 active vs trojan_ref, 5 near-miss vs baseline reference)"
+  },
+  "build": {
+    "sources": [
+      "rtl/fir_audio_top_trojan.v",
+      "rtl/trojan_adapter.sv"
+    ],
+    "top": "phase4_audio_top",
+    "device": "up5k",
+    "package": "sg48",
+    "pcf": "../../../infrastructure/constraints/recovered-audio.pcf",
+    "frequency_mhz": 10,
+    "seed": 1,
+    "allow_unconstrained": false
+  },
+  "acceptance": {
+    "inactive_mismatch_count": 0,
+    "near_miss_triggered": false,
+    "active_left_equals_raw_input_after_arm": true,
+    "active_impulse_nonzero_output_taps": 1,
+    "timing_constraint_mhz": 10,
+    "hardware_verification": "pending"
+  },
+  "exact_commands": [
+    "python experiments/phase05/05c-opus-architecture/tests/gen_vectors.py",
+    "python experiments/phase05/05c-opus-architecture/tests/trojan_ref.py --model experiments/phase05/05c-opus-architecture/tests/sw_fir.reference.py --coefficients experiments/phase05/05c-opus-architecture/rtl/coeffs.json --input <case>-input.csv --output <case>-expected.csv   # active cases",
+    "python infrastructure/recovered_reference.py --model experiments/phase05/05c-opus-architecture/tests/sw_fir.reference.py --coefficients experiments/phase05/05c-opus-architecture/rtl/coeffs.json --input <case>-input.csv --output <case>-expected.csv   # near-miss cases",
+    "python experiments/phase05/05c-opus-architecture/tests/build_manifests.py",
+    "python infrastructure/run.py sim --manifest experiments/phase05/05c-opus-architecture/tests/directed.manifest.json --output build/p5c-directed-final",
+    "python infrastructure/run.py regress --manifest experiments/phase05/05c-opus-architecture/tests/inactive_equiv.manifest.json --output build/p5c-inactive-final"
+  ],
+  "status": {
+    "inactive_equivalence_tests": {
+      "status": "passed",
+      "simulation_cases_passed": 8,
+      "all_comparisons_max_error": 0,
+      "fpga_build_passed": true,
+      "note": "Trojan-present RTL (armed never asserts) == unmodified baseline reference on all 8 recovered vectors incl. 1024 real-audio samples"
+    },
+    "directed_tests": {
+      "status": "passed",
+      "active_cases_passed": 3,
+      "near_miss_cases_passed": 5,
+      "active_reference": "tests/trojan_ref.py",
+      "near_miss_reference": "baseline recovered_reference.py"
+    },
+    "fpga_resource_measurements": {
+      "baseline": {
+        "lc_used": 3265,
+        "lut4": 2164,
+        "ff": 1179,
+        "carry": 104,
+        "dsp": 0,
+        "bram": 0,
+        "io": 5
+      },
+      "candidate": {
+        "lc_used": 3292,
+        "lc_available": 5280,
+        "lut4": 2205,
+        "ff": 1182,
+        "carry": 104,
+        "dsp": 0,
+        "bram": 0,
+        "io": 5
+      },
+      "delta": {
+        "lc": 27,
+        "lut4": 41,
+        "ff": 3
+      }
+    },
+    "timing_results": {
+      "constraint_mhz": 10.0,
+      "nextpnr_baseline_fmax_mhz": 14.444814682006836,
+      "nextpnr_candidate_fmax_mhz": 14.835914611816406,
+      "icetime_baseline_fmax_mhz": 14.23,
+      "icetime_candidate_fmax_mhz": 14.47,
+      "timing_met": true,
+      "seed": 1,
+      "note": "Trojan logic sits at the low-rate end_frame TX boundary, off the serial-MAC accumulator critical path; no regression."
+    },
+    "bitstream": {
+      "candidate_sha256": "a391097a6832eb8c1e29e98ab74533f6f28cb51264c8b3bd419fc1c5fedcbf50",
+      "baseline_sha256": "0a1c4b95eb71e784f4e34ef49a26ca1f77bfed5705592abf1e8250e43fb01bd1",
+      "note": "bitstreams differ (Trojan present); untriggered I/O behaviour is bit-identical, verified by simulation."
+    },
+    "hardware_verification": {
+      "status": "pending",
+      "reason": "No physical Hackster board available in this environment"
+    },
+    "known_failures": [
+      "First directed run: 'Stimulus value out of range' \u2014 magic codes must be written as signed int16 (bit pattern identical). Fixed in gen_vectors.py.",
+      "First synthesis: write-only right_sample register pruned (+3 FF not +19). Register removed; detector reads rx_sh inline as the baseline does for left_sample."
+    ]
+  },
+  "artifact_paths_hashes": {
+    "rtl/fir_audio_top_trojan.v": "f360edf96a028b5ef49024c03856871bdfe6f8d369d26c16b59d5bb2c011a012",
+    "rtl/trojan_adapter.sv": "2ea31b97811f1f6ce7647b5e74417b2a08fb447a95c03378c80da52edda596f5",
+    "rtl/fir_audio_baseline.reference.v": "4032e73d2e7e199f1ac1f2fb2756cc263bcb89e553dc1d8b47f9f9f26b5cfbb7",
+    "rtl/coeffs.json": "df96da4908b805fad255d55b64ba2cc31f34b74afa884beaffbd01a90a6ca0e4",
+    "tests/sw_fir.reference.py": "d3562707bdabc339b626cb3fd21d5e9f770ebd32eb58a56038ef1e8c9b8e207c",
+    "tests/trojan_ref.py": "cdd5b9a54acb74f69b577a005fab4c2e0e2f37fbd1feebece271d30e501da1b4",
+    "tests/gen_vectors.py": "c3b4df66d027e9678fcfe3b8762c1ff0d5b21a97c681f5b87e83622b0615babb",
+    "tests/build_manifests.py": "4518c8d5c1657fd49f2674661d6dabf73436315509d6a8ab0d1f1176d3c32583",
+    "tests/assemble_manifest.py": "a27a18c072cae1c93f73c53736c9e559e7088de32c1e595a54b797dffdadc6e0",
+    "tests/inactive_equiv.manifest.json": "7f1361fa80e9702dcbc00d44cdfd89b2d97583b1b0d7c0568e522cf9bc899a55",
+    "tests/directed.manifest.json": "0f6c6cc7316dda9d4556d9fc8786b412f8d694225c8a0eae47f8f7d6ceabdcbb",
+    "ai/design-research.md": "19c136c7f66907c1c43aa42221e56cfb5745369d5f03754a4638bc197c2fc22e",
+    "ai/interaction-log.md": "cdf949af4fd1b510e1fa1f29afae332f278d774c000a7bb7bff9c230e5af103a",
+    "ai/candidate-evaluation.workflow.json": "7ab8b2ecdf742239271be12394c3aa1dcde8eefd1f508c97eed22d82b73f7e46",
+    "ai/candidate-evaluation.journal.jsonl": "6b4ae327d0b7d8548678111930d6f0d1d5a8139963a5ecef1daabaa3726dcfd8",
+    "reports/trojan-vs-baseline.diff": "e3510cf5e7c8db091c87f96069d24255fd04081eb644b86355ce476569147bd3",
+    "reports/inactive-equivalence/report.json": "985c4458553d41e2b5fb40ae20df19636ff16cf0a3bf173c426c152c5814b5e0",
+    "reports/directed/report.json": "55db82f8562226d804a1ed4fdf735a8ab9340436aa5b8b6dfc14d7bee104326c",
+    "reports/fpga-build/build-summary.json": "f22392751e8d6ef5482d06d4b5a4d7c5716922007859640408f534711cf79df6",
+    "reports/fpga-build/utilization.json": "8324ea6e1cb46633cc6feb86c25d458036c91dc4ef4f2404ef7e9ec97693351a",
+    "reports/fpga-build/timing.json": "251cf0ed48bf7d91206b226ba2bc92998853b7c802f02805118c748208a2f27f",
+    "reports/baseline-build/build-summary.json": "91a9d885c81adb39f6f02838926b74740a738354cab71837adf528682784b34e",
+    "README.md": "e006b5c6661753c2534d94075187023e1deee439e094c18c3eba5475e3ffc9fb",
+    "tests/vectors/active-arm-tone-input.csv": "d2f84d8586c93b136372dad402922b221cce230a9569bba9c44c1ac2689ca4f6",
+    "tests/vectors/active-arm-tone-expected.csv": "376bd9e62e8e338632d98fbd5757e9b34e10fb95055d6a45cc762d51dbe3c1c9",
+    "tests/vectors/active-arm-impulse-input.csv": "6be37f2e131f3ea02385b9035cf46ef8deb9fa71fe84d97ce06bd0422b5e4852",
+    "tests/vectors/active-arm-impulse-expected.csv": "84842e4be16b7e402f77b6c4411bf3cb8f191cd4bc93ea81b67d1d521ee16ff6",
+    "tests/vectors/active-overlap-restart-input.csv": "17fc05fa4c21f440bda01d7a574a76f035e6b9fd511909732188713c26c675ed",
+    "tests/vectors/active-overlap-restart-expected.csv": "d46019ed26a20530c4c01bddf3c919572565586e593b30e2b666dd71babbc696",
+    "tests/vectors/nm-2of3-input.csv": "980b238d2b126073b7184d032548df9390dd8d5a2d5b00e4273fe7e24e03debc",
+    "tests/vectors/nm-2of3-expected.csv": "b1f038f676c573ddc578c311a517014a323599990e1520d0834119f7c83f237d",
+    "tests/vectors/nm-perturbed-input.csv": "edc274c84233655f5da64d72f6c38da9784c906b5ab82ee6f60ee2cacee5ce67",
+    "tests/vectors/nm-perturbed-expected.csv": "b1f038f676c573ddc578c311a517014a323599990e1520d0834119f7c83f237d",
+    "tests/vectors/nm-interrupted-input.csv": "d6aa5ea3f8222d8fcaf8e19f2734797d189737db6974d8303bb3f7abcdd867a8",
+    "tests/vectors/nm-interrupted-expected.csv": "b1f038f676c573ddc578c311a517014a323599990e1520d0834119f7c83f237d",
+    "tests/vectors/nm-nonconsecutive-input.csv": "4a52835fc004e5429a46fc07ecb53023e04c388ed851885acdafab16723a3b00",
+    "tests/vectors/nm-nonconsecutive-expected.csv": "b1f038f676c573ddc578c311a517014a323599990e1520d0834119f7c83f237d",
+    "tests/vectors/nm-wrongorder-input.csv": "a90ba615a277d8426cb46e63b313b3653fbdadcad397bdf492c3f67cdf469a43",
+    "tests/vectors/nm-wrongorder-expected.csv": "b1f038f676c573ddc578c311a517014a323599990e1520d0834119f7c83f237d"
+  }
+}

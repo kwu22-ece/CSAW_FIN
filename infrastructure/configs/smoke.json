@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "name": "independent-infrastructure-smoke",
+  "kind": "infrastructure_fixture",
+  "ready": true,
+  "simulation": {
+    "sources": ["../fixtures/loopback.sv"],
+    "fixture_reference": "identity"
+  },
+  "cases": [
+    {"name":"edges16", "stimulus":"edges", "frames":64},
+    {"name":"random16", "stimulus":"random", "frames":128, "seed":2026},
+    {"name":"impulse16", "stimulus":"impulse", "frames":32},
+    {"name":"sine16", "stimulus":"sine", "frames":64},
+    {"name":"silence16", "stimulus":"silence", "frames":16},
+    {"name":"packed16", "stimulus":"edges", "parameters":{"SLOT_BITS":16}},
+    {"name":"left-justified", "stimulus":"random", "parameters":{"MSB_DELAY":0,"SLOT_BITS":16}},
+    {"name":"polarity24", "stimulus":"edges", "parameters":{"SAMPLE_BITS":24,"LEFT_LEVEL":1}},
+    {"name":"packed32", "stimulus":"random", "parameters":{"SAMPLE_BITS":32}},
+    {"name":"narrow8", "stimulus":"edges", "parameters":{"SAMPLE_BITS":8,"SLOT_BITS":8}},
+    {"name":"provided-noisy-pcm", "input_wav":"../../what_a_piece_of_work-noisy.wav", "frames":256},
+    {"name":"provided-stereo-pcm", "input_wav":"../../what_a_piece_of_work.wav", "frames":256}
+  ],
+  "build": {
+    "sources":["../fixtures/counter.v"],
+    "top":"infrastructure_counter",
+    "device":"up5k",
+    "package":"sg48",
+    "frequency_mhz":10,
+    "seed":1,
+    "allow_unconstrained":true
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "name": "phase5c-inactive-equivalence",
+  "kind": "verified_design",
+  "ready": true,
+  "verification_evidence": [
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\handoffs\\phase-02\\codex-interface-handoff.v1.md",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\handoffs\\phase-02\\codex-interface-handoff.v2.md",
+    "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\provenance.json"
+  ],
+  "simulation": {
+    "sources": [
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\experiments\\phase05\\05c-opus-architecture\\rtl\\fir_audio_top_trojan.v",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\experiments\\phase05\\05c-opus-architecture\\rtl\\trojan_adapter.sv"
+    ],
+    "parameters": {
+      "SAMPLE_BITS": 16,
+      "SLOT_BITS": 16,
+      "MSB_DELAY": 1,
+      "LEFT_LEVEL": 0,
+      "HALF_PERIOD_NS": 500,
+      "CLOCK_HALF_NS": 50,
+      "RESET_CYCLES": 64
+    },
+    "reference_command": [
+      "{python}",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\infrastructure\\recovered_reference.py",
+      "--model",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\scripts\\sw_fir.py",
+      "--coefficients",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\recovered\\coeffs.json",
+      "--input",
+      "{input}",
+      "--output",
+      "{output}"
+    ],
+    "reference_sources": [
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\scripts\\sw_fir.py",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\recovered\\coeffs.json",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\infrastructure\\recovered_reference.py"
+    ]
+  },
+  "cases": [
+    {
+      "name": "supplied-vectors-1mhz",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\supplied-vectors-1mhz-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 500
+      },
+      "expected_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\supplied-vectors-1mhz-expected.csv"
+    },
+    {
+      "name": "supplied-vectors-625khz",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\supplied-vectors-625khz-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 800
+      },
+      "expected_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\supplied-vectors-625khz-expected.csv"
+    },
+    {
+      "name": "model-edges",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\model-edges-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 500
+      }
+    },
+    {
+      "name": "model-impulse",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\model-impulse-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 500
+      }
+    },
+    {
+      "name": "model-random",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\model-random-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 500
+      }
+    },
+    {
+      "name": "model-sine",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\model-sine-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 500
+      }
+    },
+    {
+      "name": "model-silence",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\model-silence-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 500
+      }
+    },
+    {
+      "name": "model-provided-audio",
+      "input_csv": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\vectors\\model-provided-audio-input.csv",
+      "parameters": {
+        "HALF_PERIOD_NS": 500
+      }
+    }
+  ],
+  "build": {
+    "sources": [
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\experiments\\phase05\\05c-opus-architecture\\rtl\\fir_audio_top_trojan.v",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\experiments\\phase05\\05c-opus-architecture\\rtl\\trojan_adapter.sv"
+    ],
+    "top": "phase4_audio_top",
+    "device": "up5k",
+    "package": "sg48",
+    "frequency_mhz": 10,
+    "seed": 1,
+    "pcf": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\infrastructure\\constraints\\recovered-audio.pcf",
+    "allow_unconstrained": false,
+    "timeout_seconds": 300
+  }
+}

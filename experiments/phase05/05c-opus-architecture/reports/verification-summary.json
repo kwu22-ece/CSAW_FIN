@@ -1,0 +1,52 @@
+{
+  "candidate": "05C architecture-driven",
+  "model": "claude-opus-4-8",
+  "inactive_equivalence": {
+    "sims": 8,
+    "max_error": 0,
+    "real_audio_samples": 1024,
+    "result": "bit-identical to baseline"
+  },
+  "directed": {
+    "active": 3,
+    "near_miss": 5,
+    "max_error": 0
+  },
+  "resources": {
+    "baseline": {
+      "lc_used": 3265,
+      "lut4": 2164,
+      "ff": 1179,
+      "carry": 104,
+      "dsp": 0,
+      "bram": 0,
+      "io": 5
+    },
+    "candidate": {
+      "lc_used": 3292,
+      "lc_available": 5280,
+      "lut4": 2205,
+      "ff": 1182,
+      "carry": 104,
+      "dsp": 0,
+      "bram": 0,
+      "io": 5
+    },
+    "delta": {
+      "lc": 27,
+      "lut4": 41,
+      "ff": 3
+    }
+  },
+  "timing": {
+    "constraint_mhz": 10.0,
+    "nextpnr_baseline_fmax_mhz": 14.444814682006836,
+    "nextpnr_candidate_fmax_mhz": 14.835914611816406,
+    "icetime_baseline_fmax_mhz": 14.23,
+    "icetime_candidate_fmax_mhz": 14.47,
+    "timing_met": true,
+    "seed": 1,
+    "note": "Trojan logic sits at the low-rate end_frame TX boundary, off the serial-MAC accumulator critical path; no regression."
+  },
+  "hardware": "pending"
+}

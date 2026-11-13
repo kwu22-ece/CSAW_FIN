@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "failures": 0,
+  "blocked": 0,
+  "cases": [
+    {
+      "name": "supplied-vectors-1mhz",
+      "status": "passed",
+      "detail": "516 samples, max error 0"
+    },
+    {
+      "name": "supplied-vectors-625khz",
+      "status": "passed",
+      "detail": "516 samples, max error 0"
+    },
+    {
+      "name": "model-edges",
+      "status": "passed",
+      "detail": "1028 samples, max error 0"
+    },
+    {
+      "name": "model-impulse",
+      "status": "passed",
+      "detail": "1028 samples, max error 0"
+    },
+    {
+      "name": "model-random",
+      "status": "passed",
+      "detail": "1028 samples, max error 0"
+    },
+    {
+      "name": "model-sine",
+      "status": "passed",
+      "detail": "1028 samples, max error 0"
+    },
+    {
+      "name": "model-silence",
+      "status": "passed",
+      "detail": "1028 samples, max error 0"
+    },
+    {
+      "name": "model-provided-audio",
+      "status": "passed",
+      "detail": "2052 samples, max error 0"
+    },
+    {
+      "name": "fpga-build",
+      "status": "passed",
+      "detail": "up5k/sg48, timing met, pack/unpack roundtrip verified; hardware unverified"
+    }
+  ],
+  "metadata": {
+    "manifest": "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\experiments\\phase05\\05c-opus-architecture\\tests\\inactive_equiv.manifest.json",
+    "manifest_sha256": "7f1361fa80e9702dcbc00d44cdfd89b2d97583b1b0d7c0568e522cf9bc899a55",
+    "kind": "verified_design",
+    "timestamp_utc": "2026-11-13T02:23:23.240901+00:00",
+    "waves": "none",
+    "verification_evidence": {
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\handoffs\\phase-02\\codex-interface-handoff.v1.md": "a37eb5c4a002768998cdff9dee646098251b42d4e05964d1a2752659d0f9f48e",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\handoffs\\phase-02\\codex-interface-handoff.v2.md": "dd4321ccc45a10a7dae13d93485d34ca50040e0e4e4dd7e75be6f491fda99649",
+      "C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN_worktrees\\05c-opus-architecture\\build\\recovered-inputs\\provenance.json": "d7b19fbf78e5973b3b7d89c751e6957291062a5f3619fa8a83efb747dc4bc0d0"
+    },
+    "git_head": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+    "git_status": "?? experiments/",
+    "toolchain": {
+      "tools": {
+        "iverilog": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\iverilog.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Icarus Verilog version 14.0 (devel) (s20260301-436-gd254ea49e-dirty)\n\nCopyright (c) 2000-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 14.0 (devel) (s20260301-436-gd254ea49e-dirty)\n\nCopyright (c) 1999-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 14.0 (devel) (s20260301-436-gd254ea49e-dirty)\n\nCopyright (c) 1998-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 14.0 (devel) (s20260301-436-gd254ea49e-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+          "sha256": "5c6e57860a8d0d6303fc0999612421f2a0546e5f1a04a5914f6c14cff15aa7c4",
+          "required": true
+        },
+        "vvp": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\vvp.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Icarus Verilog runtime version 14.0 (devel) (s20260301-436-gd254ea49e-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+          "sha256": "546a1c30c7ad2410cda9b1a1a055bf83f992516e718c35b7a769dec4e1b97b27",
+          "required": true
+        },
+        "yosys": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\yosys.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+          "sha256": "db6493c60ce020ce705ff4c7319e006f4429c4b0c8e0b57e20a1ea7ecd7861c4",
+          "required": true
+        },
+        "nextpnr-ice40": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\nextpnr-ice40.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-26-ga601751d)",
+          "sha256": "5c657bf7c5951812cc2668cdf1ae41220ac14b3d298014c329e06592162954c1",
+          "required": true
+        },
+        "icepack": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\icepack.EXE",
+          "available": true,
+          "exit_code": 1,
+          "probe": "Usage: C:\\Users\\lowbr\\oss-cad-suite\\bin\\icepack.EXE [options] [input-file [output-file]]\n\n    -u\n        unpack mode (implied when called as 'iceunpack')\n\n    -v\n        verbose (repeat to increase verbosity)\n\n    -s\n        disable final deep-sleep SPI flash command after bitstream is loaded\n\n    -b\n        write cram bitmap as netpbm file\n\n    -f\n        write cram bitmap (fill tiles) as netpbm file\n\n    -c\n        write cram bitmap (checkerboard) as netpbm file\n        repeat to flip the selection of tiles\n\n    -r\n        write bram data, not cram, to the netpbm file\n\n    -B0, -B1, -B2, -B3\n        only include the specified bank in the netpbm file\n\n    -n\n        skip initializing BRAM",
+          "sha256": "a8b1335269dc7625f4b5dd6f3d56d67a60ef075b0adb43abb96d2f8e97912de9",
+          "required": true
+        },
+        "iceunpack": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\iceunpack.EXE",
+          "available": true,
+          "exit_code": 1,
+          "probe": "Usage: C:\\Users\\lowbr\\oss-cad-suite\\bin\\icepack.exe [options] [input-file [output-file]]\n\n    -u\n        unpack mode (implied when called as 'iceunpack')\n\n    -v\n        verbose (repeat to increase verbosity)\n\n    -s\n        disable final deep-sleep SPI flash command after bitstream is loaded\n\n    -b\n        write cram bitmap as netpbm file\n\n    -f\n        write cram bitmap (fill tiles) as netpbm file\n\n    -c\n        write cram bitmap (checkerboard) as netpbm file\n        repeat to flip the selection of tiles\n\n    -r\n        write bram data, not cram, to the netpbm file\n\n    -B0, -B1, -B2, -B3\n        only include the specified bank in the netpbm file\n\n    -n\n        skip initializing BRAM",
+          "sha256": "a86f2a78f821d9aae63152a0c7f9646568071d3805022077c4d9b8931017369a",
+          "required": true
+        },
+        "icetime": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\icetime.EXE",
+          "available": true,
+          "exit_code": 1,
+          "probe": "Usage: C:\\Users\\lowbr\\oss-cad-suite\\bin\\icetime.EXE [options] input.asc\n\n    -p <pcf_file>\n    -P <chip_package>\n        provide this two options for correct IO pin names\n\n    -g <net_index>\n        write a graphviz description of the interconnect tree\n        that includes the given net to 'icetime_graph.dot'.\n\n    -o <output_file>\n        write verilog netlist to the file. use '-' for stdout\n\n    -r <output_file>\n        write timing report to the file (instead of stdout)\n\n    -j <output_file>\n        write timing report in json format to the file\n\n    -d lp384|lp1k|hx1k|lp4k|hx4k|lp8k|hx8k|up3k|up5k|u1k|u2k|u4k\n        select the device type (default = lp variant)\n\n    -C <chipdb-file>\n        read chip description from the specified file\n\n    -m\n        enable max_span_hack for conservative timing estimates\n\n    -i\n        only consider interior timing paths (not to/from IOs)\n\n    -t\n        print a timing report (based on topological timing\n        analysis)\n\n    -T <net_name>\n        print a timing report for the specified net\n\n    -N\n        list valid net names for -T <net_name>\n\n    -c <Mhz>\n        check timing estimate against clock constraint\n\n    -v\n        verbose mode (print all interconnect trees)\n\nC:\\Users\\lowbr\\oss-cad-suite\\bin\\icetime.EXE: unknown option -- h",
+          "sha256": "46b9cde185b69ba71ea66d3175b244e5daa5442fad1b358795f3829bfbed940c",
+          "required": true
+        },
+        "verilator": {
+          "path": "C:\\Users\\lowbr\\oss-cad-suite\\bin\\verilator_bin.EXE",
+          "available": true,
+          "exit_code": 0,
+          "probe": "Verilator 5.053 devel rev v5.052-73-g298922d88 (mod)",
+          "sha256": "9086ebba13a37680ead7b6ee0bd4ea011390ac7ee02d5f000a22fe68a207b937",
+          "required": false
+        }
+      },
+      "passed": true
+    }
+  }
+}
