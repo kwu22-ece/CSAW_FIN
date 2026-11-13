@@ -1,0 +1,221 @@
+{
+  "scope": "infrastructure fixtures only; no recovered filter/hardware equivalence claimed",
+  "implementation_commit": "2c04dba05a9bed3c00745ecd73b9e840afd37e2e",
+  "recorded_by": "Project Scribe record-test; session phase04-final-validation; exit 0; trackedStateStable true",
+  "framework_tests": {
+    "passed": 15,
+    "failed": 0,
+    "skipped": 0
+  },
+  "simulation_cases": 12,
+  "samples_compared": 2272,
+  "cases": [
+    {
+      "name": "edges16",
+      "status": "passed",
+      "detail": "128 samples, max error 0"
+    },
+    {
+      "name": "random16",
+      "status": "passed",
+      "detail": "256 samples, max error 0"
+    },
+    {
+      "name": "impulse16",
+      "status": "passed",
+      "detail": "64 samples, max error 0"
+    },
+    {
+      "name": "sine16",
+      "status": "passed",
+      "detail": "128 samples, max error 0"
+    },
+    {
+      "name": "silence16",
+      "status": "passed",
+      "detail": "32 samples, max error 0"
+    },
+    {
+      "name": "packed16",
+      "status": "passed",
+      "detail": "128 samples, max error 0"
+    },
+    {
+      "name": "left-justified",
+      "status": "passed",
+      "detail": "128 samples, max error 0"
+    },
+    {
+      "name": "polarity24",
+      "status": "passed",
+      "detail": "128 samples, max error 0"
+    },
+    {
+      "name": "packed32",
+      "status": "passed",
+      "detail": "128 samples, max error 0"
+    },
+    {
+      "name": "narrow8",
+      "status": "passed",
+      "detail": "128 samples, max error 0"
+    },
+    {
+      "name": "provided-noisy-pcm",
+      "status": "passed",
+      "detail": "512 samples, max error 0"
+    },
+    {
+      "name": "provided-stereo-pcm",
+      "status": "passed",
+      "detail": "512 samples, max error 0"
+    },
+    {
+      "name": "fpga-build",
+      "status": "passed",
+      "detail": "up5k/sg48, timing met, pack/unpack roundtrip verified; hardware unverified"
+    }
+  ],
+  "build": {
+    "passed": true,
+    "frequency_mhz": 10.0,
+    "fmax": {
+      "clk$SB_IO_IN_$glb_clk": {
+        "achieved": 79.74481964111328,
+        "constraint": 10
+      }
+    },
+    "seed": 1,
+    "utilization": {
+      "ICESTORM_DSP": {
+        "available": 8,
+        "used": 0
+      },
+      "ICESTORM_HFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_LC": {
+        "available": 5280,
+        "used": 27
+      },
+      "ICESTORM_LFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_PLL": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 30,
+        "used": 0
+      },
+      "ICESTORM_SPRAM": {
+        "available": 4,
+        "used": 0
+      },
+      "IO_I3C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_FILTER_50NS": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 1
+      },
+      "SB_I2C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_IO": {
+        "available": 39,
+        "used": 6
+      },
+      "SB_LEDDA_IP": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_RGBA_DRV": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_SPI": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "constrained_pins": false,
+    "hardware_validated": false,
+    "bitstream_sha256": "04764d49c38bede4af1d9d78b0717615dff3a0ea2c6e23b832940a2d45b034fc"
+  },
+  "repeat_bitstream_sha256": "04764d49c38bede4af1d9d78b0717615dff3a0ea2c6e23b832940a2d45b034fc",
+  "artifacts_directory": "build/final-validation-v2",
+  "artifact_sha256": {
+    "report.json": "b4e06aedead3677c42949c442bf8c47dc1456809c11ef2bb43d63cf29adc4291",
+    "report.md": "6baf245183ebaaa60ee1a264972f402ba6b94218175969e9dad32c042b9d9566",
+    "junit.xml": "f55a28a0dc643908d0263511898fdebe437056a2dec6959330c4ba33a1b5bc20",
+    "unit-tests.log": "f492760d280e347c33da3e529c5bf93fb20f3b72b11a1ea586d60aeb1116880c",
+    "fpga-build/build-summary.json": "68c81dd58c6f628330b4031672b3d06e533d6ec19c2f2b33f00be4bcc714c929",
+    "fpga-build/timing.json": "4629ffa7ad767961d7189693fbb0a062b3ada85bcb9d1f680dcb45103649e6b8",
+    "fpga-build/utilization.json": "a21013dd641a097a60d0492a5a581a85aa63296f51bc59f0059b8bb68d07f17c",
+    "fpga-build/icetime.txt": "e0c3390f7eff4fa350514afa43d8bb40a9d77fe2da0571791518e38cd316b2e3",
+    "fpga-build/bitstream.bin": "04764d49c38bede4af1d9d78b0717615dff3a0ea2c6e23b832940a2d45b034fc"
+  },
+  "tools": {
+    "iverilog": {
+      "probe_first_line": "Icarus Verilog version 14.0 (devel) (s20260301-972-g5bbcab257-dirty)",
+      "available": true,
+      "sha256": "a61b94abe81b5f80eeceea6fb489717a0439ce92e34e57fee0bea65031f9409c"
+    },
+    "vvp": {
+      "probe_first_line": "Icarus Verilog runtime version 14.0 (devel) (s20260301-972-g5bbcab257-dirty)",
+      "available": true,
+      "sha256": "4b6f69ec3db8dc3b9bcc74a34999f844305348d7791480a1aeba348dd0c43276"
+    },
+    "yosys": {
+      "probe_first_line": "Yosys 0.70+385 (git sha1 098e46a36, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+      "available": true,
+      "sha256": "f7980ce72f198c1c58552a4e0cfb355925e47e510bee94869cff7ef159c7c585"
+    },
+    "nextpnr-ice40": {
+      "probe_first_line": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-91-gf934534a)",
+      "available": true,
+      "sha256": "ef95be4860ab09836608c20b41f8c1be3afa340c227302181c3bf411e5595ed2"
+    },
+    "icepack": {
+      "probe_first_line": "Usage: C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icepack.EXE [options] [input-file [output-file]]",
+      "available": true,
+      "sha256": "5d0a68756b359082bf28fb2c07e20426b4a6632c96473982b7c2fe9ee22cffed"
+    },
+    "iceunpack": {
+      "probe_first_line": "Usage: C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\iceunpack.EXE [options] [input-file [output-file]]",
+      "available": true,
+      "sha256": "5d0a68756b359082bf28fb2c07e20426b4a6632c96473982b7c2fe9ee22cffed"
+    },
+    "icetime": {
+      "probe_first_line": "Usage: C:\\Users\\lowbr\\Documents\\College\\AI\\CSAW_FIN\\.worktrees\\phase-04\\.tools\\oss-cad-suite\\bin\\icetime.EXE [options] input.asc",
+      "available": true,
+      "sha256": "fb18c2767fd91e86c7c8028ae9f2c66566a2bb99f7474f49acaa7caef24aabdb"
+    },
+    "verilator": {
+      "probe_first_line": "Verilator 5.055 devel rev v5.054-183-g9040f8666 (mod)",
+      "available": true,
+      "sha256": "3e8b7aaf870ff3eb11ea0cc6df7499df1d841812a56d23fdb7e0b2921822797a"
+    }
+  },
+  "awaiting": [
+    "verified RTL and port adapter",
+    "verified interface, clocks, reset and latency",
+    "verified filter vectors and mathematical model",
+    "verified board package and PCF"
+  ],
+  "recovered_template_exit_code": 2
+}

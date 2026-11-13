@@ -1,0 +1,7 @@
+# Phase 2 codex-interface-handoff.v1.md section 1: verified UP5K/SG48 pins.
+# Audio-only top; provisional LED assignments are deliberately absent.
+set_io ICE_CLK 37
+set_io I2S_BCLK 36
+set_io I2S_WS 34
+set_io I2S_SD_IN 32
+set_io I2S_SD_OUT 31
