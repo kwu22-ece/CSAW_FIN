@@ -1,0 +1,14 @@
+{
+  "handoff_commit": "d953ddfd494b932b1a1546aeca2a9549d1ee70d3",
+  "selected_candidate": "05B",
+  "selected_commit": "fd0ca7f6bce1d30bb1b1e6ce43603b4c7d51e5b6",
+  "recorded_results": {
+    "framework_tests_passed": 15,
+    "baseline_normal_words": 22248,
+    "baseline_normal_mismatches": 0,
+    "full_audio_words": 481082,
+    "full_audio_mismatches": 0,
+    "source_inventory_entries_passed": 41,
+    "hardware_status": "not_run"
+  }
+}

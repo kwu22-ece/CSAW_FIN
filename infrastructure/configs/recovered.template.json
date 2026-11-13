@@ -1,0 +1,20 @@
+{
+  "schema_version":1,
+  "name":"recovered-audio-design",
+  "kind":"verified_design",
+  "ready":false,
+  "awaiting":"Phase 2/3: verified RTL, adapter/port map, I2S framing, clock/reset, latency, golden vectors/model, and board PCF/package",
+  "verification_evidence":["../../handoffs/phase-02/VERIFIED_INTERFACE.md","../../handoffs/phase-03/VERIFIED_BASELINE.md"],
+  "simulation": {
+    "sources":["../../rtl/VERIFIED_TOP.v","../adapters/VERIFIED_ADAPTER.sv"],
+    "parameters":{"SAMPLE_BITS":16,"SLOT_BITS":32,"MSB_DELAY":1,"LEFT_LEVEL":0,"HALF_PERIOD_NS":500,"CLOCK_HALF_NS":50,"RESET_CYCLES":10},
+    "timeout_seconds":120
+  },
+  "cases":[{"name":"verified-baseline", "input_csv":"../../handoffs/phase-03/input.csv", "expected_csv":"../../handoffs/phase-03/expected.csv", "tolerance":0,"latency_words":0}],
+  "build": {
+    "sources":["../../rtl/VERIFIED_TOP.v"],"top":"VERIFIED_TOP",
+    "device":"up5k","package":"REPLACE_WITH_VERIFIED_PACKAGE",
+    "pcf":"../../constraints/VERIFIED_BOARD.pcf", "frequency_mhz":10,"seed":1,
+    "allow_unconstrained":false
+  }
+}

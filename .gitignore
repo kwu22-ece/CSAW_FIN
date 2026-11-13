@@ -27,3 +27,8 @@ venv/
 .claude/settings.local.json
 .DS_Store
 Thumbs.db
+
+# Phase 4 local toolchain, worktrees, and generated verification artifacts
+.worktrees/
+.tools/
+build/
