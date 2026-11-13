@@ -1,0 +1,3 @@
+# The challenge-provided binary bitstream is not redistributed here.
+# Recover it from the official challenge repo (sha256 in recovered/README.md).
+*.bin
