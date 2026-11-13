@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "e72522f265ac36da713cd7a0dcf8dbc64ab21209",
+  "reconstruction_commit": "1befb30e99a506698c45d4ca9394a3c7ec95c966",
+  "selection_commit": "6d9cacf4e12a7f2357c4f36fa91d9ef87429d046",
+  "quality_review_commit": "d953ddfd494b932b1a1546aeca2a9549d1ee70d3",
+  "candidates": {
+    "05A": {"model": "Luna 5.6", "environment": "Codex", "branch": "challenge3/05a-luna", "snapshot": "99a3fdb6d1f87ffd75bcfa46d7adc94664d97b29"},
+    "05B": {"model": "Astra", "environment": "Codex", "branch": "challenge3/05b-astra", "snapshot": "9e172a865a543b03e226596689fd6691ffa2b779"},
+    "05C": {"model": "Claude Opus Architecture", "environment": "Claude Code", "branch": "challenge3/05c-opus-architecture", "snapshot": "f4e8eedcb55d73f5f3adc97431a4a1a3a9c65c87"},
+    "05D": {"model": "Claude Opus DSP", "environment": "Claude Code", "branch": "challenge3/05d-opus-dsp", "snapshot": "629c7d4a1dd158ff1b6585e0e84e9aff74f8810f"}
+  },
+  "clean_baseline": {
+    "suite_release": "2026-11-12",
+    "expected_bitstream_sha256": "5eba9279b177b8859ceea0bd5c685c9ac442a50414906792711626c1b2a38fda",
+    "tools": {
+      "iverilog": "a61b94abe81b5f80eeceea6fb489717a0439ce92e34e57fee0bea65031f9409c",
+      "vvp": "4b6f69ec3db8dc3b9bcc74a34999f844305348d7791480a1aeba348dd0c43276",
+      "yosys": "f7980ce72f198c1c58552a4e0cfb355925e47e510bee94869cff7ef159c7c585",
+      "nextpnr-ice40": "ef95be4860ab09836608c20b41f8c1be3afa340c227302181c3bf411e5595ed2",
+      "icepack": "5d0a68756b359082bf28fb2c07e20426b4a6632c96473982b7c2fe9ee22cffed",
+      "iceunpack": "5d0a68756b359082bf28fb2c07e20426b4a6632c96473982b7c2fe9ee22cffed",
+      "icetime": "fb18c2767fd91e86c7c8028ae9f2c66566a2bb99f7474f49acaa7caef24aabdb"
+    },
+    "sample_counts": {
+      "supplied-vectors-1mhz": 516,
+      "supplied-vectors-625khz": 516,
+      "model-edges": 1028,
+      "model-impulse": 1028,
+      "model-random": 1028,
+      "model-sine": 1028,
+      "model-silence": 1028,
+      "model-provided-audio": 2052
+    }
+  }
+}
