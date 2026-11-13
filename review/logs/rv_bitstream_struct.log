@@ -1,0 +1,36 @@
+== TILE-TYPE SET-BIT SUMMARY ==
+  .comment      : 1 tiles, 0 with >=1 set bit
+  .device       : 1 tiles, 0 with >=1 set bit
+  .dsp0_tile    : 8 tiles, 8 with >=1 set bit
+  .dsp1_tile    : 8 tiles, 8 with >=1 set bit
+  .dsp2_tile    : 8 tiles, 8 with >=1 set bit
+  .dsp3_tile    : 8 tiles, 8 with >=1 set bit
+  .io_tile      : 48 tiles, 13 with >=1 set bit
+  .ipcon_tile   : 28 tiles, 28 with >=1 set bit
+  .logic_tile   : 660 tiles, 303 with >=1 set bit
+  .ram_data     : 30 tiles, 0 nonzero nibbles total; non-zero at NONE (all zero-initialized)
+  .ramb_tile    : 30 tiles, 13 with >=1 set bit
+  .ramt_tile    : 30 tiles, 13 with >=1 set bit
+
+== DSP (MAC16) FUNCTIONAL-CONFIG CHECK ==
+  .dsp0_tile: 8 instances, 2 distinct bit-pattern(s), 80 set bits each
+      pattern 2b02b0859d: 4 tiles @ [(0, 5), (25, 5), (0, 15), (25, 15)]
+      pattern 3c028cd277: 4 tiles @ [(0, 10), (25, 10), (0, 23), (25, 23)]
+  .dsp1_tile: 8 instances, 1 distinct bit-pattern(s), 72 set bits each
+      pattern 3c028cd277: 8 tiles @ [(0, 6), (25, 6), (0, 11), (25, 11), (0, 16), (25, 16), (0, 24), (25, 24)]
+  .dsp2_tile: 8 instances, 1 distinct bit-pattern(s), 72 set bits each
+      pattern 3c028cd277: 8 tiles @ [(0, 7), (25, 7), (0, 12), (25, 12), (0, 17), (25, 17), (0, 25), (25, 25)]
+  .dsp3_tile: 8 instances, 2 distinct bit-pattern(s), 72 set bits each
+      pattern 3c028cd277: 6 tiles @ [(0, 8), (25, 8), (0, 13), (25, 13), (0, 18), (25, 18)]
+      pattern 2b02b0859d: 2 tiles @ [(0, 26), (25, 26)]
+  => every DSP sub-tile pattern is replicated across blocks (position-dependent default): False
+     (functional use would make one block's pattern UNIQUE; none is.)
+
+== RAM (SB_RAM40_4K) CHECK ==
+  .ramb_tile with config bits: [(6, 5), (19, 5), (6, 15), (19, 15), (6, 17), (6, 19), (6, 21), (6, 23), (6, 25), (6, 27), (19, 27), (6, 29), (19, 29)]
+  .ramt_tile with config bits: [(6, 4), (19, 4), (19, 8), (6, 14), (19, 14), (6, 18), (6, 20), (6, 22), (6, 24), (6, 26), (19, 26), (6, 28), (6, 30)]
+  => physically-configured RAM blocks (ramb+ramt tile keys): 26  (icebox_stat reports 'BRAMs: 2')
+  .ram_data non-zero blocks: NONE -> zero-initialized
+
+== ICEBOX_STAT CROSS-TALLY ==
+  .logic_tile with bits: 303  .io_tile with bits: 13

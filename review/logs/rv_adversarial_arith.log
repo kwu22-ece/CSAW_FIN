@@ -1,0 +1,16 @@
+echo calibration: LAT=2 echo match 1777/1777
+
+== ROUNDING-RULE DISCRIMINATION (netlist vs models, 1779 frames) ==
+  half_up(+inf)   mismatches=    0  <== MATCHES NETLIST
+  floor(-inf)     mismatches=  599
+  trunc(->0)      mismatches=  528
+  half_even       mismatches=   60
+  half_away       mismatches=   60
+
+== SATURATION / ACCUMULATOR-WIDTH (netlist ground truth) ==
+  worst_pos_meas  frame=286 acc=2072462456 netlist=32767 model=32767 OK
+  worst_neg_meas  frame=445 acc=-2072495224 netlist=-32768 model=-32768 OK
+  near_pos_meas   frame=604 acc=1865198760 netlist=32767 model=32767 OK
+  frames hitting a rail: 11 (saturation exercised: True)
+
+RESULT: rules matching netlist exactly: ['half_up(+inf)'] | unique round-half-+inf: True

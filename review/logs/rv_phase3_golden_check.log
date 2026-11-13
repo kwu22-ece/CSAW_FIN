@@ -1,0 +1,12 @@
+== (A) VALUE CHECK: Phase3 golden vs independent model (latency-shift sweep) ==
+  shift=0: filtered 1/256  echo 0/256
+  shift=1: filtered 2/255  echo 0/255
+  shift=2: filtered 254/254  echo 254/254
+  shift=3: filtered 2/253  echo 0/253
+  shift=4: filtered 0/252  echo 0/252
+  shift=5: filtered 2/251  echo 0/251
+  => best shift=2: filtered 254/254, echo 254/254 (values CORRECT; latency baked into the stream)
+
+== (B) FORMAT CHECK: Phase3 golden vs Phase4 results.read_samples() ==
+  REJECTED: ValueError - C:/Users/lowbr/AppData/Local/Temp/claude/d6204843cd24b45c/289bbc1e-29fb-4dd3-a11c-8d3700e6bed7/scratchpad/p3_reference_io.csv: nonsequential index or invalid channel at 1
+  first 6 index values: [0, 0, 1, 1, 2, 2]  (Phase4 requires 0,1,2,3,4,5 = per-row word index)

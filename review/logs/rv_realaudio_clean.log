@@ -1,0 +1,9 @@
+echo LAT=2 (echo match 1.0000)
+
+== REAL-AUDIO BIT-EXACT (2048 samples) ==
+  netlist vs INDEPENDENT model : 2048/2048 exact (0 mismatch)
+  netlist vs sw_fir.py         : 2048/2048 exact (0 mismatch)
+  my model vs sw_fir.py        : 2048/2048 exact (0 mismatch)
+  sample stats: in[min/max]=-1796/2201 out[min/max]=-1796/2200
+
+RESULT: BIT-EXACT (netlist==independent model on real audio)

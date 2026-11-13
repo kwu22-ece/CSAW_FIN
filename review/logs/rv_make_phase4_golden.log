@@ -1,0 +1,6 @@
+wrote handoffs/reconstruction-review/phase4-golden\input.csv and handoffs/reconstruction-review/phase4-golden\golden_output.csv: 256 audio frames -> 512 interleaved words each
+latency_words to pass to Phase4 compare(): 4  (2-frame pipeline x 2 channels)
+Phase4 read_samples(input)  OK: 512 words, header accepted
+Phase4 read_samples(golden) OK: 512 words, header accepted
+Phase4 compare(golden,golden): passed=True samples=512 max_abs_err=0
+first 6 golden rows: [{'index': 0, 'channel': 0, 'value': 1}, {'index': 1, 'channel': 1, 'value': -1972}, {'index': 2, 'channel': 0, 'value': 0}, {'index': 3, 'channel': 1, 'value': -2240}, {'index': 4, 'channel': 0, 'value': -2}, {'index': 5, 'channel': 1, 'value': -3375}]

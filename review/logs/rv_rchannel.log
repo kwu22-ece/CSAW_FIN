@@ -1,0 +1,6 @@
+frames=512
+filtered-left == FIR(LEFT)  : 512/512 mismatch=0
+echo-right     == LEFT input: 512/512 mismatch=0
+(control) echo-right == RIGHT input: 0/512  [expect ~0 since R!=L]
+(control) filtered == FIR(RIGHT)    : 0/512  [expect ~0 since R!=L]
+RESULT: RIGHT CHANNEL IGNORED (filtered=FIR(L), echo=L)

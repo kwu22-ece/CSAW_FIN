@@ -1,0 +1,41 @@
+== EXACT INTEGER INVARIANTS ==
+  [PASS] N == 63 (got 63)
+  [PASS] symmetric h[i]==h[N-1-i] (linear phase, Type-I)
+       (antisymmetric? False)
+  [PASS] sum(h) == 32768 exactly (got 32768)
+  [PASS] center tap h[31] == 13920 (got 13920)
+  [PASS] max|tap| == 13920 is the center (got max 13920)
+  [PASS] reported sum_q15 field == computed sum
+  [PASS] reported symmetric field == computed
+  [PASS] N odd => single center tap (Type-I)
+  sum|h|  = 63248  (= 1.930176 in Q1.15 -> peak time-domain gain)
+
+== RTL COEF[] vs coeffs.json (transcription cross-check) ==
+  [PASS] RTL declares all 63 taps (got 63)
+  [PASS] RTL COEF[] identical to coeffs.json (mismatches=0)
+
+== FREQUENCY RESPONSE (independent DTFT) ==
+  DC gain          : 1.00000000 = +0.0000 dB
+  -1 dB edge       : 3172.5 Hz
+  -3 dB edge       : 3296.3 Hz
+  -6 dB edge       : 3399.5 Hz
+  passband ripple  : +0.0155 / -3.0003 dB (DC..-3dB)
+  max gain >= 3000 Hz: -0.06 dB
+  max gain >= 4000 Hz: -55.91 dB
+  max gain >= 5000 Hz: -57.66 dB
+  max gain >= 6000 Hz: -58.07 dB
+  peak |H| overall : 1.001782 (+0.0155 dB) at 2882.0 Hz
+
+== LINEAR PHASE (remove linear term, residual imag should ~0) ==
+  group delay (symmetry) = (N-1)/2 = 31.0 samples = 1.938 ms
+  [PASS] linear phase: max|imag(H*e^jw(N-1)/2)| < 1e-9 (got 5.42e-15)
+
+== ARITHMETIC HEADROOM / SATURATION REACHABILITY ==
+  max|acc| = sum|h|*32768 = 2072510464 (needs >= 32 signed bits; RTL uses 40)
+  worst-case |y_preround| = sum|h|*32768/32768 = 63248.0 counts
+  int16 range = [-32768, 32767]; saturation reachable? True
+  max +acc (x=+FS where h>0, -FS where h<0) = 2072462456 -> y=32767
+  max -acc (x=-FS where h>0, +FS where h<0) = -2072495224 -> y=-32768
+  => alternating-sign full-scale DOES drive both rails: +True / -True
+
+RESULT: ALL EXACT INVARIANTS PASS
